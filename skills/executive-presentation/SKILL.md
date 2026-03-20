@@ -1,82 +1,214 @@
 ---
 name: executive-presentation
-description: Create executive presentations using top-down structured communication and modern storytelling techniques. Use when preparing client presentations, board decks, or C-suite communications.
+description: Create executive presentations using top-down structured communication and storytelling techniques. Use when preparing client presentations, board decks, steering committee updates, or any executive-level communication that requires clear, compelling storytelling.
 ---
 
-# Executive Presentation Skill
+# Executive Presentation
 
-You are a presentation design assistant applying top-down structured communication and storytelling techniques. You structure presentations for maximum clarity and impact, ensuring the main message is clear and supported by compelling evidence.
-
-**Important**: This skill provides presentation frameworks and communication techniques. Presenters should customize content to their specific audience and context.
-
-## Core Methodology Reference
-
-The `/presentation-create` command covers the end-to-end presentation workflow: top-down pyramid structure, Situation-Complication-Resolution framing, slide-by-slide templates (Title, Executive Summary, Problem, Analysis, Recommendation, Financial Impact, Roadmap), visual design guidelines, the "So What?" test, rehearsal checklists, and Q&A preparation tables. Use that command for building a complete presentation from scratch.
-
-This skill adds specialized techniques that elevate executive communication beyond structure: emotional storytelling, audience adaptation, advanced visual design, additional presentation formats, and the behavioral principles that separate competent presentations from compelling ones.
+Structure presentations for maximum clarity and impact with senior audiences. The core discipline is top-down structured communication: state the recommendation first, then support it with evidence organized in a logical pyramid.
 
 ---
 
-## Storytelling for Emotional Impact
+## Top-Down Communication Structure
+
+Every consulting presentation follows the same logic, whether it's a 5-slide update or a 50-slide strategy deck.
+
+### The Pyramid
+
+```
+                    ┌─────────────┐
+                    │   Answer    │  ← State this first
+                    └──────┬──────┘
+               ┌───────────┼───────────┐
+         ┌─────┴─────┐ ┌──┴──┐ ┌──────┴──────┐
+         │ Argument 1│ │Arg 2│ │ Argument 3  │  ← 2-3 supporting reasons
+         └─────┬─────┘ └──┬──┘ └──────┬──────┘
+           ┌───┼───┐   ┌──┼──┐   ┌────┼────┐
+           │E1 │E2 │   │E3│E4│   │E5  │E6  │  ← Evidence for each
+           └───┴───┘   └──┴──┘   └────┴────┘
+```
+
+**The Answer** (top of the pyramid): One sentence that is the main point of the presentation. If the audience remembers nothing else, they remember this.
+
+**Supporting Arguments** (2-3 maximum): The reasons why your answer is true. Each must be mutually exclusive and collectively exhaustive (MECE).
+
+**Evidence** (3 facts per argument): Data, examples, case studies that support each argument. Every fact must connect back to the argument above it.
+
+This structure applies at every level: the deck as a whole, each section, each slide, each bullet point.
+
+### Situation-Complication-Resolution (SCR)
+
+The narrative arc that carries the pyramid:
+
+```
+[Situation] ────► [Complication] ────► [Resolution]
+      │                  │                    │
+   "This is          "But now           "Therefore,
+    where we           there's a          we should
+    are..."            problem..."         do this..."
+```
+
+**Situation**: What the audience already knows or agrees with. Establish common ground. Keep it brief — you're not teaching, you're aligning.
+
+**Complication**: What has changed, what's broken, what's at risk. This creates the tension that makes the audience care. Quantify the cost of inaction.
+
+**Resolution**: Your recommendation. This is the answer from the top of the pyramid, now delivered with the narrative momentum of the complication behind it.
+
+---
+
+## Building the Presentation
+
+### Step 1: Define the Core Message
+
+Before opening any slide tool, write these three things:
+
+1. **The answer in one sentence** — "We should enter the German market through acquisition of [Target] for EUR 120M"
+2. **The three supporting arguments** — Why now, why this target, why acquisition vs. organic
+3. **The evidence for each** — Market data, target financials, comparable transactions
+
+If you cannot write these clearly, you are not ready to build slides.
+
+### Step 2: Structure the Deck
+
+| Slide Type | Purpose | Key Elements |
+|------------|---------|--------------|
+| Title | Set expectation | Punchy title (max 6 words), subtitle with key message, presenter, date |
+| Executive Summary | Full message for time-pressed readers | 3-5 bullets covering the complete recommendation; bottom line up front |
+| Context/Situation | Establish common ground | Facts the audience agrees with, current state data |
+| Problem/Complication | Create urgency | Impact metric, trend visualization, quantified cost of inaction |
+| Analysis | Show the thinking | Framework visual (2x2, waterfall, etc.), key insight in one sentence |
+| Recommendation | Present the answer | Recommendation in one line; why now, why us, why this; quantified impact |
+| Financial Impact | Prove the value | Benefits, costs, net value; waterfall or bridge chart; key assumptions and sensitivity |
+| Roadmap/Next Steps | Call to action | Phased timeline with actions, owners, dates; immediate first action |
+
+### Step 3: Design Each Slide
+
+**The 10/20/30 rule (adapted):**
+- 10 slides maximum for a typical recommendation
+- 20 minutes maximum presentation time
+- 30-point minimum font for projected presentations
+
+**Slide anatomy:**
+
+```
+┌─────────────────────────────────────────┐
+│ ACTION TITLE (complete sentence)        │  ← The slide's takeaway
+├─────────────────────────────────────────┤
+│                                         │
+│   [Exhibit: chart, table, framework]    │  ← Visual evidence
+│                                         │
+│                                         │
+│                                         │
+│ Source: [data source, date]             │  ← Attribution
+└─────────────────────────────────────────┘
+```
+
+The action title is what distinguishes consulting slides from everything else. "Revenue declined 12% driven by customer churn" not "Revenue Overview." Write it as a complete sentence stating the takeaway. If you can't write the action title, the slide doesn't have a point.
+
+The body is exhibit-driven. Charts, tables, and frameworks dominate — not paragraphs or bullets. One focused exhibit is ideal. Two related exhibits side by side works when they jointly support the action title.
+
+### Step 4: Refine and Test
+
+**The "So What?" test** — for each slide, ask:
+- So what? (Why does the audience care about this?)
+- Says who? (Is this credible? What's the source?)
+- What if? (What are the implications?)
+
+If you can't answer "so what?" in one sentence, cut or restructure the slide.
+
+**Rehearsal checklist:**
+- Main message is clear in the first 30 seconds
+- Each slide has one key takeaway
+- Transitions between slides are logical and scripted
+- Data supports the message without overwhelming it
+- Recommendations are specific and actionable
+- Time allocation matches importance (don't spend 10 minutes on context and 2 on recommendations)
+- Backup slides prepared for likely Q&A
+- Technology tested before presenting
+
+---
+
+## Storytelling Techniques
 
 ### Creating Tension and Resolution
 
 | Element | Technique | Example |
 |---------|-----------|---------|
-| Start strong | Use a provocative question or data point | "What if everything you thought about growth was wrong?" |
-| Create tension | Highlight the cost of inaction | "Every quarter we wait costs us $X million" |
-| Show the journey | Share a human story | "We met with 50 customers and heard the same thing three times" |
+| Start strong | Provocative question or data point | "What if everything you thought about growth was wrong?" |
+| Create tension | Highlight cost of inaction | "Every quarter we wait costs us $X million" |
+| Show the journey | Share a concrete finding | "We met with 50 customers and heard the same thing three times" |
 | Build to climax | Layer insights | "First we found X, then Y, which led us to Z" |
 | End with action | Clear call to decision | "We recommend you approve Phase 1 by Friday" |
 
-### Modern Storytelling Elements
+### Data Storytelling
 
-- **Data storytelling**: Weave data naturally into the narrative — numbers inform, stories transform
-- **Visual analytics**: Show dynamic charts and live dashboards where possible
-- **AI insights**: Highlight machine learning findings prominently with distinct visual treatment
-- **Digital proof points**: Include technology/digital case studies
-- **Interactive Q&A**: Build in decision moments for the audience
+Numbers inform, stories transform. Effective data storytelling means:
 
-### Modern Enhancements to Top-Down Communication
-
-- **Data-first framing**: Lead with the most compelling data point
-- **AI-insight integration**: Highlight AI-derived insights prominently
-- **Interactive elements**: Build in decision points for the audience
-- **Digital-native design**: Consider screen-first, presentation-second
+- **Lead with the most compelling data point** — don't bury the headline
+- **Annotate charts** — call out the insight, don't make readers find it
+- **Show change, not state** — trends and deltas are more compelling than snapshots
+- **Use comparison** — "3x the industry average" lands harder than "15%"
+- **Connect to consequences** — every number should answer "and that means..."
 
 ---
 
-## Additional Presentation Formats
+## Audience Adaptation
 
-The `/presentation-create` command covers the standard consulting deck structure. The formats below provide additional templates not covered by that command.
+### Know Your Audience
 
-### AI/Technology Presentation Addendum
+| Audience | What They Want | How to Deliver |
+|----------|---------------|----------------|
+| CEO / Board | Decision, strategic implications, risk | Lead with recommendation, quantify impact, address key risks |
+| CFO | Financial proof, ROI, assumptions | Detailed financials, sensitivity analysis, conservative estimates |
+| COO | Implementation feasibility, resources | Operational plan, resource requirements, timeline |
+| CTO | Technical viability, architecture | Technical assessment, scalability, integration requirements |
+| Steering Committee | Progress, decisions needed, blockers | Status against plan, decision items, escalations |
+| Mixed / Large Group | Alignment, clarity, next steps | Simple message, clear visuals, explicit ask |
 
-```
-## [Technology/Digital Section]
+### Adapting in Real Time
 
-## Slide X: Digital Transformation Impact
-### The Opportunity
-[Quantified digital value]
+Read the room. Watch for:
+- **Leaning forward, nodding** — they're with you, keep going
+- **Checking phones, side conversations** — you've lost them, skip ahead to the punchline
+- **Furrowed brows, crossed arms** — they disagree, pause and address it
+- **Asking detailed questions early** — they want to go deeper, offer to jump to the relevant section
 
-### Our Approach
-- [Digital solution 1]
-- [AI/ML application]
-- [Automation potential]
+Be prepared to skip slides, dive deeper, or reorder based on audience signals. A rigid delivery of all 10 slides is worse than a responsive delivery of 6.
 
-### Expected Results
-| Metric | Current | Future | Improvement |
-|--------|---------|--------|-------------|
-| [Metric 1] | [Value] | [Value] | [%] |
-| [Metric 2] | [Value] | [Value] | [%] |
+---
 
-### Technology Requirements
-- [Investment needed]
-- [Timeline]
-- [Capability building]
-```
+## Visual Design
+
+### Chart Selection
+
+| Chart Type | Use For | Best Practice |
+|------------|---------|---------------|
+| Bar chart | Comparing categories | Sort by value; horizontal bars for long labels |
+| Line chart | Showing trends over time | Max 3-4 lines; clear labels |
+| Pie chart | Parts of a whole | Max 5 slices; avoid 3D |
+| Waterfall | Showing drivers of change | Clear positive/negative colors; label each bridge |
+| Table | Detailed comparison data | Highlight key numbers; max 5 rows in main deck |
+| Scatter | Correlation between variables | Label outliers; add trend line if meaningful |
+
+### Design Principles
+
+- Use brand colors consistently (client's or firm's, depending on context)
+- Limit to 3-4 colors per slide
+- Use color to highlight, not decorate
+- Ensure high contrast for readability
+- White space is a feature, not wasted space
+- Use consistent fonts and sizes throughout
+- Consider accessibility (color-blind friendly palettes)
+- For projected presentations: larger fonts, fewer elements, higher contrast
+- For leave-behind documents: denser layout is acceptable
+
+---
+
+## Additional Formats
 
 ### One-Page Recommendation Memo
+
+When a full deck is overkill:
 
 ```
 # Memo: [Recommendation Title]
@@ -93,13 +225,13 @@ The `/presentation-create` command covers the standard consulting deck structure
 3. [Key finding 3 with evidence]
 
 ## Value
-- [Benefit 1 - quantified]
-- [Benefit 2 - quantified]
+- [Benefit 1 — quantified]
+- [Benefit 2 — quantified]
 
 ## Implementation
-- [Timeline]
-- [Key milestones]
-- [Investment required]
+- Timeline: [Duration]
+- Key milestones: [Milestones]
+- Investment required: [Amount]
 
 ## Risks and Mitigations
 | Risk | Mitigation |
@@ -108,135 +240,55 @@ The `/presentation-create` command covers the standard consulting deck structure
 | [Risk 2] | [Mitigation] |
 
 ## Decision Needed
-[What you need from the decision-maker]
+[What you need from the decision-maker, by when]
 
 ## Next Steps
-1. [Immediate action]
-2. [Follow-up action]
+1. [Immediate action — owner — date]
+2. [Follow-up action — owner — date]
 ```
 
 ---
 
-## Advanced Visual Design
+## Handling Q&A
 
-### Chart Selection Guide
+### Preparation
 
-| Chart Type | Use For | Best Practice |
-|------------|---------|---------------|
-| Bar chart | Comparing categories | Sort by value, horizontal bars |
-| Line chart | Showing trends | Max 3-4 lines, clear labels |
-| Pie chart | Showing parts of whole | Max 5 slices, avoid 3D |
-| Waterfall | Showing drivers | Clear positive/negative colors |
-| Table | Detailed data | Highlight key numbers |
-| Heat map | Showing patterns | Clear legend, intuitive colors |
-| Sankey | Showing flow | Label clearly, limited nodes |
+For every presentation, build an anticipation table:
 
-### Color and Design Principles
+| Anticipated Question | Why It's Hard | Best Response | Fallback |
+|---------------------|---------------|---------------|----------|
+| "Why not option B?" | They may prefer it | Data comparison showing A outperforms | "Happy to model both scenarios" |
+| "What's the downside?" | Acknowledging risk | Quantified risk with mitigation plan | "We've stress-tested three scenarios" |
 
-- Use brand colors consistently
-- Limit to 3-4 colors per slide
-- Use color to highlight, not decorate
-- Ensure high contrast for readability
-- Keep slides uncluttered — white space is good
-- Use consistent fonts and sizes
-- Consider accessibility (color-blind friendly palettes)
-
----
-
-## Handling Difficult Q&A
-
-The `/presentation-create` command includes a Q&A anticipation table. This section adds the response framework and preparation depth for high-stakes situations.
-
-### Preparation for Hard Questions
-
-```
-## Anticipating Questions
-
-### Hard Questions
-1. [Difficult question]
-   - Why it's hard: [Reason]
-   - Best response: [Answer]
-   - Fallback: [Alternative]
-
-### Emotional Reactions
-- [Reaction 1]: How to address
-- [Reaction 2]: How to address
-```
+Have backup slides with detailed methodology, additional data tables, alternative scenarios, risk analysis, and competitive benchmarking.
 
 ### Response Framework
 
-```
-## Answering Difficult Questions
+1. **Listen completely** — don't interrupt, let them finish, acknowledge the question
+2. **Confirm understanding** — "So what you're asking is..." or "Let me make sure I understand..."
+3. **Answer directly** — lead with the answer, support with evidence, be concise
+4. **Confirm resolution** — "Does that address your question?"
 
-### STEP 1: Listen Completely
-- Don't interrupt
-- Let them finish
-- Nod and acknowledge
-
-### STEP 2: Confirm Understanding
-- "So what you're asking is..."
-- "Let me make sure I understand..."
-
-### STEP 3: Answer Directly
-- Lead with the answer
-- Support with evidence
-- Be concise
-
-### STEP 4: Confirm
-- "Does that address your question?"
-- "Is that clear?"
-```
-
-### Q&A Enhancements
-
-- **Data at the ready**: Have supporting data for likely questions
-- **AI backup**: Know which AI insights can support your answers
-- **Digital demos**: Have live system demos prepared if relevant
-- **Follow-up commitment**: "I'll send you more detail on that"
+If you don't know the answer: say so. "I don't have that data with me. I'll follow up by [date]." Credibility is built by honesty, not by bluffing.
 
 ---
 
 ## Behavioral Principles
 
-- **Lead with the answer, always**: Executives lose patience with build-up; state the recommendation in the first 30 seconds and earn the right to explain afterward
-- **Every slide must pass the "so what?" test**: If you cannot articulate why the audience should care about a slide in one sentence, cut or restructure it
-- **Quantify or don't claim it**: Unsupported claims erode credibility; attach a number, a source, or a date to every assertion
-- **Design for the skeptic in the room**: Assume at least one audience member will challenge your logic; build the pyramid so each level withstands scrutiny independently
-- **Less content, more conviction**: A 7-slide deck delivered with authority beats a 30-slide deck that hedges; cut ruthlessly and own what remains
-- **Rehearse transitions, not just slides**: The story arc breaks when transitions are weak; script the bridge sentence between each section
-- **Adapt in real time**: Read body language and questions; be prepared to skip slides, dive deeper, or reorder based on audience signals
+- **Lead with the answer, always.** Executives lose patience with build-up. State the recommendation in the first 30 seconds and earn the right to explain afterward.
+- **Every slide must pass the "so what?" test.** If you cannot articulate why the audience should care in one sentence, cut or restructure it.
+- **Quantify or don't claim it.** Unsupported claims erode credibility. Attach a number, a source, or a date to every assertion.
+- **Design for the skeptic in the room.** Assume at least one audience member will challenge your logic. Build the pyramid so each level withstands scrutiny independently.
+- **Less content, more conviction.** A 7-slide deck delivered with authority beats a 30-slide deck that hedges. Cut ruthlessly and own what remains.
+- **Rehearse transitions, not just slides.** The story arc breaks when transitions are weak. Script the bridge sentence between each section.
+- **Adapt in real time.** Read body language and questions. Be prepared to skip slides, dive deeper, or reorder based on audience signals.
+- **Consider the hybrid audience.** When presenting to both in-room and remote participants, design for the screen first. Ensure virtual participants can read every element.
 
 ---
 
 ## PPTX Generation
 
 When generating actual .pptx files (not markdown outlines), read
-[pptx-consulting.md](pptx-consulting.md) for consulting-specific slide
-masters, anatomy rules, and layout patterns for pptxgenjs. Default to
+[references/pptx-generation.md](references/pptx-generation.md) for consulting-specific slide
+masters, anatomy rules, and layout patterns using pptxgenjs. Default to
 `LAYOUT_WIDE` (13.33" x 7.5") for consulting decks.
-
----
-
-## Notes
-
-- Top-down structured communication applies to every level: deck, section, slide, bullet
-- If your grandmother can't understand it, simplify
-- Executives appreciate brevity — earn their time by being concise
-- Always highlight the AI/digital dimension of recommendations
-- Data storytelling is more important than ever — weave data into narratives
-- Consider the hybrid meeting environment — present for both in-room and remote
-- Practice doesn't make perfect — practice makes prepared
-- Your presentation is only as good as your preparation
-
----
-
-### When to Apply This Skill vs. the Command
-
-| Situation | Use |
-|-----------|-----|
-| Building a complete presentation end-to-end | `/presentation-create` command |
-| Needing advanced storytelling and emotional impact techniques | This skill |
-| Creating an AI/Technology addendum or One-Page Memo | This skill |
-| Selecting chart types and advanced visual design guidance | This skill |
-| Preparing for high-stakes Q&A with response framework | This skill |
-| Understanding behavioral principles for executive communication | This skill |

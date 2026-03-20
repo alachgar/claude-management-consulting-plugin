@@ -1,6 +1,6 @@
 # Management Consulting Plugin
 
-28 commands and 9 skills for the full consulting engagement lifecycle, from RFP teardown to project close-out.
+28 commands and 17 skills for the full consulting engagement lifecycle, from RFP teardown to project close-out.
 
 > Built on the [Agent Skills](https://agentskills.io) open standard. Works with Claude Code, Cursor, Windsurf, Cline, GitHub Copilot, Gemini CLI, and [20+ other agents](https://agentskills.io).
 
@@ -123,15 +123,23 @@ Skills are domain knowledge the agent draws on automatically when the conversati
 
 | Skill | What it knows |
 |---|---|
-| `problem-solving` | Hypothesis-driven problem solving, issue trees, structured decomposition |
-| `strategic-frameworks` | Framework selection by business question, multi-framework synthesis, competitive and portfolio analysis |
-| `workshop-facilitation` | Session design, ideation techniques, group facilitation, innovation sprints |
-| `executive-presentation` | Top-down structured communication, storytelling for executives, slide design and visual analytics |
-| `financial-modeling` | Business case math, sensitivity analysis, scenario modeling, investment projections |
-| `change-management` | Transformation planning, resistance management, individual adoption tracking, communications planning |
-| `process-excellence` | Process analysis, value stream mapping, root cause investigation, control plans |
-| `project-governance` | Responsibility matrices, steering committees, stage gates, decision frameworks |
+| `problem-solving` | Hypothesis-driven MECE problem solving, issue trees, structured decomposition, analytical workplans |
+| `strategic-frameworks` | Named framework application (Five Forces, PESTLE, 7S, VRIO, SWOT, Ansoff, etc.), multi-framework synthesis |
+| `financial-modeling` | Business case math, ROI/NPV/IRR/DCF, sensitivity analysis, scenario modeling, valuations |
+| `executive-presentation` | Top-down structured communication, storylining, slide design, PPTX generation guidance |
+| `change-management` | Transformation planning, stakeholder engagement, resistance management, communications, training design |
+| `process-excellence` | Lean Six Sigma DMAIC, value stream mapping, root cause analysis, process mining, control plans |
+| `project-governance` | RACI matrices, steering committees, stage gates, risk registers, status reporting (RAG) |
 | `due-diligence` | Commercial, operational, and strategic assessment, red flag identification, integration planning |
+| `workshop-facilitation` | Strategy workshops, design thinking sessions, innovation sprints, facilitation methodology |
+| `proposal-development` | RFP analysis, proposal writing, SOW drafting, pitch decks, value propositions |
+| `engagement-setup` | Kickoff workshop design, discovery planning, stakeholder mapping, workstream standup |
+| `implementation-planning` | Option scoring, business cases, roadmap design, detailed implementation plans with workstreams |
+| `org-design` | Organizational structure, operating models, role frameworks, spans of control, transition planning |
+| `pricing-strategy` | Fee structures (fixed, T&M, value-based), rate cards, engagement economics, margin analysis |
+| `thought-leadership` | POVs, white papers, case studies, industry briefs, thesis development through publication |
+| `project-closeout` | Deliverable handover, knowledge transfer, lessons learned, financial reconciliation, follow-on opportunities |
+| `report-generation` | Strategic reports, SCQA framing, evidence-based argumentation, chart selection, quality assurance |
 
 ## Example Workflows
 
@@ -186,8 +194,6 @@ Every command works out of the box with web search and whatever context you prov
 | Presentations | Describe what you need | PowerPoint, Google Slides |
 | Market research | Web search | Industry databases, CRM data |
 | Project management | Paste your status | Jira, Confluence, project tools |
-
-See [CONNECTORS.md](CONNECTORS.md) for integration details.
 
 ## Settings
 

@@ -1,288 +1,316 @@
 ---
 name: workshop-facilitation
-description: Design and facilitate strategy workshops, design thinking sessions, and innovation sprints with modern hybrid methodologies. Use when planning facilitated sessions, conducting discovery workshops, or running strategy alignment sessions.
+description: Design and facilitate strategy workshops, design thinking sessions, and innovation sprints. Use when planning facilitated sessions, conducting discovery workshops, running strategy alignment sessions, or any collaborative session requiring structured methodology and engagement techniques.
 ---
 
-# Workshop Facilitation Skill
+# Workshop Facilitation
 
-You are a workshop design and facilitation assistant. You help plan, structure, and run effective strategy workshops, design thinking sessions, and innovation sprints. You apply proven facilitation methodologies and design thinking approaches.
-
-**Important**: This skill provides facilitation frameworks and session designs. Facilitators should have appropriate training and experience before leading high-stakes client workshops.
-
----
-
-## Workshop Planning Framework
-
-### Phase 1: Define Workshop Objectives
-
-```
-## Workshop Design: [Workshop Name]
-
-### Business Context
-- **Client**: [Organization name]
-- **Situation**: [Why is this workshop needed?]
-- **Timing**: [When in the project?]
-- **Format**: [In-person / Virtual / Hybrid]
-
-### Objectives
-| Objective | Success Metric | Priority |
-|-----------|----------------|----------|
-| [Objective 1] | [How we'll measure success] | Must have |
-| [Objective 2] | [How we'll measure success] | Should have |
-| [Objective 3] | [How we'll measure success] | Nice to have |
-
-### Participants
-| Role | Name | Influence | Interest | Pre-work Required | Remote/On-site |
-|------|------|-----------|----------|-------------------|----------------|
-| [Role 1] | [Name] | [High/Med/Low] | [High/Med/Low] | [Yes/No] | [R/O/B] |
-| [Role 2] | [Name] | [High/Med/Low] | [High/Med/Low] | [Yes/No] | [R/O/B] |
-
-### Stakeholder Map
-- **Decision makers**: [Who must approve outcomes]
-- **Influencers**: [Who shapes discussion]
-- **Participants**: [Who contributes]
-- **Experts**: [Who provides input]
-```
-
-### Phase 2: Design Session Structure
-
-```
-### Workshop Flow
-
-#### Opening (X minutes)
-- Welcome and introductions [X min]
-- Workshop objectives and agenda [X min]
-- Logistics and ground rules [X min]
-- Technology setup check [X min] (for virtual/hybrid)
-
-#### Context Setting (X minutes)
-- [Presentation or briefing on current state] [X min]
-- Q&A [X min]
-
-#### [Module 1 Name] (X minutes)
-- [Activity 1] [X min]
-- [Activity 2] [X min]
-- [Activity 3] [X min]
-- [Break] [X min] (if > 90 min)
-
-#### [Module 2 Name] (X minutes)
-- [Activity 1] [X min]
-- [Activity 2] [X min]
-- Synthesis [X min]
-
-#### [Module 3 Name] (X minutes)
-- [Activity 1] [X min]
-- [Activity 2] [X min]
-- Decision/ratification [X min]
-
-#### Closing (X minutes)
-- Summary and key decisions [X min]
-- Next steps and owner assignments [X min]
-- Feedback collection [X min]
-
-### Total Time: [X hours]
-```
+Design, plan, and run effective strategy workshops, design thinking sessions, and innovation sprints. This covers the full lifecycle: objective-setting, participant planning, methodology selection, agenda design, facilitation techniques, and post-workshop follow-through.
 
 ---
 
-## Workshop Formats (Unique to Skill)
+## Workshop Planning
 
-The `/workshop-facilitate` command covers Design Thinking, Design Sprint, Strategy Offsite, Innovation Workshop, Retrospective, and Digital Transformation methodologies with full workflow steps, materials checklists, facilitation scripts, and post-workshop follow-up. Use that command for end-to-end workshop execution.
+### Define Objectives
 
-The formats below are **not covered** by the command and provide additional workshop designs.
+Before designing anything, answer these questions:
 
-### 1. Discovery Workshop
+1. **Why is this workshop needed?** — What decision, alignment, or output does it serve?
+2. **What does success look like?** — Concrete deliverables, not "productive discussion"
+3. **Who needs to be in the room?** — And who explicitly does not
+4. **What format fits the constraints?** — In-person, virtual, hybrid, duration
 
-**Purpose**: Understand current state, challenges, and opportunities
+### Participant Planning
 
-```
-## Discovery Workshop Design
+Map your participants before designing the agenda. The design should accommodate who's actually in the room.
 
-### Objectives
-- Understand current business situation
-- Identify key challenges and pain points
-- Map stakeholder perspectives
-- Surface assumptions and hypotheses
+| Dimension | Why It Matters |
+|-----------|---------------|
+| Decision makers | They must approve outcomes — design for their decision points |
+| Influencers | They shape discussion — give them structured airtime |
+| Subject matter experts | They provide input — design activities that extract their knowledge |
+| Skeptics | They'll challenge ideas — plan for productive challenge, not shutdown |
+| Introverts | They won't volunteer — design silent-first activities |
+| Remote participants | They're disadvantaged by default — over-design for their inclusion |
 
-### Suggested Flow (Half Day)
+### Format Considerations
 
-#### Part 1: Business Context (60 min)
-- Company overview and history
-- Strategic priorities and goals
-- Current challenges
+| Format | Best For | Watch Out For |
+|--------|----------|---------------|
+| In-person | Deep collaboration, trust-building, complex decisions | Travel cost, scheduling difficulty |
+| Virtual | Global teams, speed, accessibility | Fatigue after 90 min, harder to read the room |
+| Hybrid | Mixed locations, real-time interaction | Remote participants becoming second-class citizens |
+| Async-first | Reflection time, global time zones, pre-work | Loses energy and spontaneity |
 
-#### Part 2: Stakeholder Perspectives (60 min)
-- Round-robin: Each stakeholder shares view
-- Common themes and differences
-- Priority ranking of challenges
-
-#### Part 3: Journey Mapping (60 min)
-- Map key business processes
-- Identify pain points and gaps
-- Quick wins identification
-
-#### Part 4: Opportunity Framing (60 min)
-- Problem statement development
-- Success criteria definition
-- Next steps agreement
-
-### Key Outputs
-- Current state assessment
-- Challenge prioritization
-- Opportunity shortlist
-- Project charter draft
-```
-
-### 2. Strategy Alignment Workshop
-
-**Purpose**: Align leadership on strategic direction
-
-```
-## Strategy Alignment Workshop Design
-
-### Objectives
-- Align leadership on strategic direction
-- Resolve strategic trade-offs
-- Build commitment to strategy
-- Identify execution priorities
-
-### Suggested Flow (Full Day)
-
-#### Morning: Current State (3 hours)
-
-**Session 1: External Reality (60 min)**
-- Market trends and competitive forces
-- Customer insights
-- PESTLE implications
-- Include AI/digital disruption
-
-**Session 2: Internal Reality (60 min)**
-- Performance review
-- Capability assessment
-- Digital maturity review
-
-**Session 3: Strategic Choices (60 min)**
-- Strategy options review
-- Trade-off decisions
-- Preliminary direction
-
-#### Afternoon: Future State (3 hours)
-
-**Session 4: Strategic Direction (60 min)**
-- Strategic narrative
-- Strategic pillars
-- Success definition
-
-**Session 5: Execution Priorities (60 min)**
-- Key initiatives
-- Resource allocation
-- Timeline
-
-**Session 6: Commitment (60 min)**
-- Role assignments
-- Governance
-- Next steps
-
-### Key Outputs
-- Agreed strategic direction
-- Strategic pillars
-- Initiative priorities
-- Action assignments
-```
-
-### 3. AI Strategy Workshop
-
-**Purpose**: Develop organizational AI strategy
-
-```
-## AI Strategy Workshop Design
-
-### Objectives
-- Assess current AI maturity
-- Identify high-value AI use cases
-- Develop AI roadmap
-- Build AI governance framework
-
-### Suggested Flow (1-2 Days)
-
-#### Part 1: AI Readiness Assessment (3 hours)
-- Current AI capabilities audit
-- Data maturity assessment
-- Talent and skills review
-- Technology infrastructure review
-
-#### Part 2: Opportunity Identification (3 hours)
-- Industry AI use cases review
-- Value driver analysis
-- Use case prioritization matrix
-- Quick wins identification
-
-#### Part 3: Strategy Development (3 hours)
-- AI vision and principles
-- Strategic pillars
-- Investment priorities
-- Governance framework
-
-#### Part 4: Roadmap & Action Planning (3 hours)
-- Phased roadmap development
-- Resource requirements
-- Success metrics
-- Immediate next steps
-
-### Key Outputs
-- AI maturity scorecard
-- Prioritized use case pipeline
-- AI strategy one-pager
-- Implementation roadmap
-- Governance recommendations
-```
+For virtual and hybrid sessions: test all technology beforehand, have dedicated tech support, and build in 50% more breaks than you think you need.
 
 ---
 
-## Workshop Enhancements
+## Workshop Methodologies
 
-### Analytics-Enabled Facilitation
+Select based on what you're trying to achieve, not what sounds impressive.
 
-| Phase | AI Application |
-|-------|-----------------|
-| Pre-workshop | Generate participant briefs, analyze pre-survey data |
-| During workshop | Real-time transcription, sentiment analysis, synthesis |
-| Post-workshop | Generate summary, action items, follow-up content |
+### Design Thinking
 
-### Hybrid Best Practices
+Best for: User-centered innovation, new product concepts, service design
 
-- Test all technology before workshop
-- Have dedicated tech support person
-- Ensure remote participants have equal voice
-- Use visual documentation more heavily
-- Build in more breaks for virtual
-- Record for asynchronous participants
-- Create digital "water cooler" spaces
+```
+EMPATHIZE → DEFINE → IDEATE → PROTOTYPE → TEST
+    │           │         │         │         │
+ [User       [Point of   [Brain-    [Build    [Learn
+  Research]  View]      storm]     It]       & Iterate]
+```
 
-### Digital Collaboration Tools
+Half-day minimum. Full day preferred. Requires real user data or customer insights as input — don't run design thinking on assumptions.
 
-- **Miro/Mural**: Visual collaboration
-- **Menti/Polling**: Real-time polls
-- **Synthesis tools**: Analytics-powered synthesis
-- **Notion/Confluence**: Documentation
-- **Zoom/Teams**: Video conferencing
-- **Slido**: Q&A and polling
+### Design Sprint (Google Ventures model)
+
+Best for: Fast decision-making, validating ideas quickly, team alignment on direction
+
+```
+DAY 1: Map      DAY 2: Sketch   DAY 3: Decide  DAY 4: Prototype  DAY 5: Test
+[Understand]    [Concepts]      [Choose]       [Build]           [Validate]
+```
+
+Compressed variants (3-day, 2-day) work but sacrifice depth. The 5-day version produces real user-tested prototypes. Requires a dedicated sprint team and a clear decider.
+
+### Strategy Offsite
+
+Best for: Annual planning, strategic direction, competitive positioning
+
+```
+CONTEXT → ANALYSIS → OPTIONS → DECISION → COMMITMENT
+  │          │          │          │           │
+[Where    [Where     [Where    [Where     [How
+ we are]   we are]    we can    we will]    we get
+            (deep)    go]        (choose)    there]
+```
+
+Full day minimum. Multi-day for comprehensive strategy development. The most common failure mode is spending all day on context and analysis, then rushing decisions in the last hour. Protect decision time.
+
+### Innovation Workshop
+
+Best for: Generating new ideas, breakthrough thinking, challenging assumptions
+
+```
+WARM-UP → FRAME → GENERATE → EVALUATE → PRIORITIZE → PLAN
+   │         │         │          │           │         │
+[Get      [Define   [Many      [Screen    [Select    [Next
+ creative]  the      ideas]      ideas]     best]      actions]
+            challenge]
+```
+
+Half day to full day. Quantity of ideas matters early; quality filtering comes later. Warm-up exercises are not optional — they shift people out of operational thinking.
+
+### Retrospective
+
+Best for: Team improvement, lessons learned, process optimization
+
+```
+SET THE STAGE → GATHER DATA → GENERATE INSIGHTS → DECIDE ACTIONS → CLOSE
+```
+
+60-90 minutes. Keep it focused. The most important output is 2-3 specific actions with owners and dates, not a comprehensive list of everything that went wrong.
+
+### Discovery Workshop
+
+Best for: Understanding current state at project kickoff, surfacing stakeholder perspectives
+
+**Suggested flow (half day):**
+1. **Business Context** (60 min) — Company overview, strategic priorities, current challenges
+2. **Stakeholder Perspectives** (60 min) — Round-robin sharing, theme identification, priority ranking
+3. **Journey Mapping** (60 min) — Map key processes, identify pain points and gaps, spot quick wins
+4. **Opportunity Framing** (60 min) — Problem statement development, success criteria, next steps
+
+Key outputs: current state assessment, challenge prioritization, opportunity shortlist, project charter draft.
+
+### Strategy Alignment Workshop
+
+Best for: Getting leadership aligned on strategic direction when there are competing views
+
+**Suggested flow (full day):**
+
+Morning — Current State (3 hours):
+1. **External Reality** (60 min) — Market trends, competitive forces, customer insights
+2. **Internal Reality** (60 min) — Performance review, capability assessment, digital maturity
+3. **Strategic Choices** (60 min) — Options review, trade-off decisions, preliminary direction
+
+Afternoon — Future State (3 hours):
+4. **Strategic Direction** (60 min) — Strategic narrative, strategic pillars, success definition
+5. **Execution Priorities** (60 min) — Key initiatives, resource allocation, timeline
+6. **Commitment** (60 min) — Role assignments, governance, next steps
+
+Key outputs: agreed strategic direction, strategic pillars, initiative priorities, action assignments.
+
+---
+
+## Agenda Design
+
+### Timing Principles
+
+- **Never exceed 90 minutes** without a break for in-person sessions
+- **Never exceed 60 minutes** without a break for virtual sessions
+- **Allocate 60% to activities**, 20% to transitions and breaks, 20% to opening/closing/synthesis
+- **Front-load divergent thinking** (morning energy is better for creative work)
+- **Schedule decisions after breaks** (fresh minds make better choices)
+- **Build in buffer** — every activity takes 10-15% longer than planned
+
+### Standard Agenda Template
+
+```
+08:30  Registration & Coffee
+09:00  Opening & Objectives          [Facilitator]     [30 min]
+09:30  Context Setting               [Presenter]       [30 min]
+10:00  Activity 1                    [Facilitator]     [60 min]
+11:00  Break                                           [15 min]
+11:15  Activity 2                    [Facilitator]     [90 min]
+12:45  Lunch                                           [45 min]
+13:30  Activity 3                    [Facilitator]     [90 min]
+15:00  Break                                           [15 min]
+15:15  Synthesis & Decisions         [Facilitator]     [60 min]
+16:15  Next Steps & Close            [Facilitator]     [30 min]
+```
+
+### Activity Design Template
+
+For each activity, define:
+- **Purpose**: Why this activity exists (ties back to a workshop objective)
+- **Method**: How it works step by step
+- **Inputs**: What participants need to have or know before starting
+- **Outputs**: What tangible thing is produced
+- **Time**: Duration with step-by-step breakdown
+- **Facilitation notes**: Common failure modes, what to watch for
+
+---
+
+## Facilitation Techniques
+
+### Opening
+
+Set the tone in the first 5 minutes. Cover:
+- Why we're here (purpose, not logistics)
+- What we'll produce by the end (specific deliverables)
+- Ground rules (be present, build on ideas, respect time, all voices matter)
+- For virtual/hybrid: quick tech check, camera expectations
+
+### Managing Group Dynamics
+
+| Challenge | Response |
+|-----------|----------|
+| Dominant participant | "Let's hear from someone who hasn't spoken yet." Or use structured rounds. |
+| Quiet group | Silent writing before discussion. Go around the room explicitly. |
+| Conflict between participants | Acknowledge both views. "You're both raising important points. Let's capture both and evaluate them against our criteria." |
+| Off-topic tangent | "Great point — I'm going to capture that on the parking lot so we don't lose it. Let's stay focused on [current topic]." |
+| Energy drop | Switch format. Stand up. Do a quick poll. Take an unscheduled break. |
+| Time pressure | "We need to move forward. Let's capture remaining thoughts on sticky notes and focus on decisions." |
+| HiPPO effect (highest-paid person dominates) | Use anonymous voting. Have juniors share before seniors. Pre-collect input. |
+
+### Decision-Making Methods
+
+| Method | When to Use | How It Works |
+|--------|-------------|--------------|
+| Dot voting | Ranking many options quickly | Each person gets 3-5 dots, places them on preferred options |
+| Thumbs up/down/sideways | Quick alignment check | Thumbs up = agree, down = disagree, sideways = concerns |
+| Multi-voting + discussion | Complex decisions with trade-offs | Vote first, then discuss the top 3-5 options |
+| Gradients of agreement | When consensus matters | 1-5 scale from "fully support" to "can't live with it" |
+| Decision rights matrix (RACI) | When authority is unclear | Clarify who decides, who's consulted, who's informed |
+
+### Transitions
+
+Script your transitions. The story arc of a workshop breaks when transitions are sloppy.
+
+- Between activities: "Here's what we just accomplished [summary]. Now we're going to build on that by [next activity purpose]."
+- At midpoint: "We're halfway through. So far we've [summary of outputs]. Here's what we need to accomplish in the second half."
+- Before decisions: "We've done the analysis. Now it's time to make choices. Here's what we're deciding and how."
+
+### Closing
+
+Never let a workshop trail off. Structured close:
+1. **Summary of outputs** — what we produced
+2. **Decisions made** — what was decided, by whom
+3. **Action items** — specific actions, owners, due dates (not vague commitments)
+4. **Feedback** — quick round or one-word checkout
+5. **Clear end** — thank participants, state next communication
+
+---
+
+## Hybrid Workshop Design
+
+Hybrid is the hardest format to facilitate well. Remote participants are disadvantaged by default — the facilitator must actively compensate.
+
+**Non-negotiable practices:**
+- Camera on for all participants (room camera showing full room, individual cameras for remote)
+- Dedicated "remote advocate" in the room who monitors chat and speaks on behalf of remote participants
+- Digital whiteboard as the primary workspace (not a physical whiteboard that remote participants can't see)
+- All materials shared digitally before the session
+- Explicit turn-taking that includes remote voices ("Before we continue, let me check in with our remote participants")
+- Polls and voting through digital tools (not hand-raising that remote can't see)
+
+**Technology requirements:**
+- Room camera with wide-angle view
+- Quality microphone (built-in laptop mics are insufficient)
+- Screen sharing capability
+- Digital whiteboard (Miro, Mural, FigJam, or similar)
+- Polling tool for real-time voting
+
+---
+
+## Post-Workshop Follow-Through
+
+The real workshop happens after. Outcomes without follow-through are theater.
+
+### Immediate (same day)
+- Send thank-you to participants
+- Share key takeaways and photos/screenshots of outputs
+- Confirm action items with owners
+
+### Within one week
+- Distribute full workshop summary (decisions, action items, key outputs)
+- Share all materials and digital artifacts
+- Send recording if virtual
+- Schedule follow-up meetings for action items
+
+### Within two weeks
+- Track action item progress
+- Gather feedback on workshop effectiveness
+- Document lessons learned for future workshops
+
+### Workshop Summary Template
+
+```
+# Workshop Summary: [Name]
+Date: [Date]
+
+## Participants
+[Names and roles]
+
+## Objectives and Whether Achieved
+[Objective — achieved/partially/not achieved]
+
+## Key Outputs
+[Deliverables produced]
+
+## Decisions Made
+[Decision — rationale — decision maker]
+
+## Action Items
+| Action | Owner | Due Date | Status |
+|--------|-------|----------|--------|
+
+## Parking Lot (items deferred)
+[Topics captured but not addressed]
+
+## Next Steps
+[Next milestone, date, owner]
+```
 
 ---
 
 ## Behavioral Principles
 
-- **Energy management is facilitation**: Monitor group energy; switch formats, take breaks, or introduce movement when energy dips
-- **Silence is productive**: Allow 10-15 seconds of silence after questions; resist the urge to fill every pause
-- **Design for introverts first**: Silent writing before group sharing ensures all voices are captured, not just the loudest
-- **The real workshop happens after**: Outcomes without follow-through are theater; prioritize actionable commitments over polished deliverables
-
-### When to Apply This Skill vs. the Command
-
-| Situation | Use |
-|-----------|-----|
-| Planning and running a full workshop end-to-end | `/workshop-facilitate` command |
-| Choosing between Discovery, Strategy Alignment, or AI Strategy formats | This skill |
-| Needing stakeholder mapping with influence/interest analysis | This skill |
-| Designing analytics-enabled or hybrid-first sessions | This skill |
-| Selecting digital collaboration tooling | This skill |
+- **Energy management is facilitation.** Monitor group energy. Switch formats, take breaks, or introduce movement when energy dips. A tired group produces nothing useful.
+- **Silence is productive.** Allow 10-15 seconds of silence after questions. Resist the urge to fill every pause. The best insights often come after the obvious answers have been exhausted.
+- **Design for introverts first.** Silent writing before group sharing ensures all voices are captured, not just the loudest. "Think, write, share" is almost always better than "who wants to go first?"
+- **The real workshop happens after.** Outcomes without follow-through are theater. Prioritize actionable commitments over polished deliverables.
+- **Timebox ruthlessly.** Workshops that run over lose energy and credibility. End on time. If you're running behind, cut content — never cut the closing or decision-making.
+- **Have backup activities ready.** If an activity falls flat or finishes early, you need alternatives. Preparation separates good facilitators from great ones.
