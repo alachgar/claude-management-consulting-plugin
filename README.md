@@ -8,7 +8,27 @@ Part of [unsol.dev](https://unsol.dev)
 
 ## Why this exists
 
-Consulting runs on structured thinking. Hypothesis trees, framework applications, governance cadences: the scaffolding is the same every time. This plugin encodes that scaffolding so you can focus on the parts that actually require judgment.
+The mechanics of consulting follow the same patterns every engagement. Scoping, stakeholder alignment, analysis, strategy, delivery, commercials. This plugin encodes that harness so you can focus on the parts that actually require judgment.
+
+## Skills
+
+| Skill | What it covers |
+|---|---|
+| `strategic-analysis` | Problem structuring, hypothesis development, framework application, cross-framework synthesis |
+| `financial-modeling` | Business cases, valuation, ROI/NPV/IRR/DCF, sensitivity analysis, scenario modeling |
+| `proposal-development` | RFP analysis, proposal writing, SOW creation, pitch decks, oral defense |
+| `engagement-setup` | Kickoff design, discovery planning, stakeholder mapping, the first two weeks |
+| `engagement-pricing` | Fee structures, rate cards, engagement economics, procurement navigation |
+| `implementation-planning` | Phased plans, workstreams, business cases, program recovery |
+| `due-diligence` | Commercial, operational, strategic assessment, management interviews, valuation bridge |
+| `change-management` | Transition planning, resistance management, adoption measurement |
+| `process-excellence` | DMAIC, value stream mapping, root cause analysis, control plans |
+| `org-design` | Operating models, structure design, role frameworks, transition planning |
+| `project-governance` | Steering committees, stage gates, RACI, risk management, status reporting |
+| `client-deliverables` | Presentations, reports, storylining, slide design, PPTX generation patterns |
+| `workshop-facilitation` | Strategy workshops, facilitation design, participant dynamics |
+| `thought-leadership` | POVs, white papers, case studies, thesis development |
+| `project-closeout` | Handover, knowledge transfer, lessons learned, benefits tracking |
 
 ## Install
 
@@ -38,28 +58,6 @@ gemini skills install https://github.com/anotb/management-consulting-plugin.git
 ### Other agents
 
 Clone into `.agents/skills/` (the cross-platform standard) or the agent's native skills directory.
-
-## Skills
-
-Skills are domain knowledge the agent draws on automatically when the context calls for it.
-
-| Skill | What it covers |
-|---|---|
-| `strategic-analysis` | Problem structuring, hypothesis development, framework application, cross-framework synthesis |
-| `financial-modeling` | Business cases, valuation, ROI/NPV/IRR/DCF, sensitivity analysis, scenario modeling |
-| `proposal-development` | RFP analysis, proposal writing, SOW creation, pitch decks, oral defense |
-| `engagement-setup` | Kickoff design, discovery planning, stakeholder mapping, the first two weeks |
-| `engagement-pricing` | Fee structures, rate cards, engagement economics, procurement navigation |
-| `implementation-planning` | Phased plans, workstreams, business cases, program recovery |
-| `due-diligence` | Commercial, operational, strategic assessment, management interviews, valuation bridge |
-| `change-management` | Transition planning, resistance management, adoption measurement |
-| `process-excellence` | DMAIC, value stream mapping, root cause analysis, control plans |
-| `org-design` | Operating models, structure design, role frameworks, transition planning |
-| `project-governance` | Steering committees, stage gates, RACI, risk management, status reporting |
-| `client-deliverables` | Presentations, reports, storylining, slide design, PPTX generation patterns |
-| `workshop-facilitation` | Strategy workshops, facilitation design, participant dynamics |
-| `thought-leadership` | POVs, white papers, case studies, thesis development |
-| `project-closeout` | Handover, knowledge transfer, lessons learned, benefits tracking |
 
 ## Heads up
 
