@@ -2,7 +2,7 @@
 
 Skills for the full consulting engagement lifecycle, from problem structuring through implementation and close-out.
 
-> Built on the [Agent Skills](https://agentskills.io) open standard. Works with Claude Code, Cowork, Codex, Gemini CLI, Cursor, GitHub Copilot, and [other compatible agents](https://agentskills.io).
+> Built on the [Agent Skills](https://agentskills.io) open standard. Works with Claude Code, Cowork, Codex, Gemini CLI, and [other compatible agents](https://agentskills.io).
 
 Part of [unsol.dev](https://unsol.dev)
 
@@ -35,14 +35,6 @@ $skill-installer install https://github.com/anotb/management-consulting-plugin
 gemini skills install https://github.com/anotb/management-consulting-plugin.git
 ```
 
-### Cursor
-
-Open Settings > Rules > Add Rule > Remote Rule (GitHub), enter the repo URL. Or clone into `.cursor/skills/` or `.agents/skills/`.
-
-### GitHub Copilot
-
-Clone into `.github/skills/` in your repo. Copilot Coding Agent picks it up automatically.
-
 ### Other agents
 
 Clone into `.agents/skills/` (the cross-platform standard) or the agent's native skills directory.
@@ -68,35 +60,6 @@ Skills are domain knowledge the agent draws on automatically when the context ca
 | `workshop-facilitation` | Strategy workshops, facilitation design, participant dynamics |
 | `thought-leadership` | POVs, white papers, case studies, thesis development |
 | `project-closeout` | Handover, knowledge transfer, lessons learned, benefits tracking |
-
-## Commands
-
-The plugin also includes slash commands for explicit workflows. Each walks you through a structured process.
-
-| Phase | Commands |
-|---|---|
-| Win the work | `/rfp-analyze` `/proposal-develop` `/sow-create` `/pitch-deck` `/value-proposition` |
-| Stand up | `/kickoff` `/discovery` `/governance-setup` `/stakeholder-map` |
-| Analyze | `/framework-apply` `/market-analysis` `/financial-analysis` `/due-diligence` |
-| Build strategy | `/options-generate` `/business-case` `/roadmap-create` |
-| Execute | `/implementation-plan` `/change-plan` `/process-improve` `/org-design` |
-| Deliver | `/presentation-create` `/report-generate` `/workshop-facilitate` `/thought-leadership` |
-| Manage | `/status-report` `/risk-register` `/project-close` |
-| Price | `/pricing-model` |
-
-## Example Workflows
-
-### Strategy engagement
-
-Start with `/kickoff`, then work through discovery, framework analysis, financial modeling, options, business case, and roadmap.
-
-### Transformation program
-
-Start with `/discovery` for current state, then `/org-design`, `/process-improve`, `/implementation-plan`, `/change-plan`, with `/status-report` weekly.
-
-### Pursuit
-
-Start with `/rfp-analyze`, then `/proposal-develop`, `/sow-create`, `/pitch-deck`, `/pricing-model`.
 
 ## Heads up
 
