@@ -15,12 +15,12 @@ The mechanics of consulting follow the same patterns every engagement. Scoping, 
 | Skill | What it covers |
 |---|---|
 | `strategic-analysis` | Problem structuring, hypothesis development, framework application, cross-framework synthesis |
-| `financial-modeling` | Business cases, valuation, ROI/NPV/IRR/DCF, sensitivity analysis, scenario modeling |
+| `financial-modeling` | Business cases, cost-benefit analysis, ROI/NPV/IRR, sensitivity analysis, scenario modeling |
 | `proposal-development` | RFP analysis, proposal writing, SOW creation, pitch decks, oral defense |
 | `engagement-setup` | Kickoff design, discovery planning, stakeholder mapping, the first two weeks |
 | `engagement-pricing` | Fee structures, rate cards, engagement economics, procurement navigation |
 | `implementation-planning` | Phased plans, workstreams, business cases, program recovery |
-| `due-diligence` | Commercial, operational, strategic assessment, management interviews, valuation bridge |
+| `due-diligence` | Commercial, operational, financial, strategic, and technology assessment, integration planning |
 | `change-management` | Transition planning, resistance management, adoption measurement |
 | `process-excellence` | DMAIC, value stream mapping, root cause analysis, control plans |
 | `org-design` | Operating models, structure design, role frameworks, transition planning |
