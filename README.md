@@ -1,6 +1,6 @@
 # Management Consulting Plugin
 
-28 commands and 17 skills for the full consulting engagement lifecycle, from RFP teardown to project close-out.
+28 commands and 15 skills for the full consulting engagement lifecycle, from RFP teardown to project close-out.
 
 > Built on the [Agent Skills](https://agentskills.io) open standard. Works with Claude Code, Cursor, Windsurf, Cline, GitHub Copilot, Gemini CLI, and [20+ other agents](https://agentskills.io).
 
@@ -123,10 +123,9 @@ Skills are domain knowledge the agent draws on automatically when the conversati
 
 | Skill | What it knows |
 |---|---|
-| `problem-solving` | Hypothesis-driven MECE problem solving, issue trees, structured decomposition, analytical workplans |
-| `strategic-frameworks` | Named framework application (Five Forces, PESTLE, 7S, VRIO, SWOT, Ansoff, etc.), multi-framework synthesis |
+| `strategic-analysis` | Hypothesis-driven MECE problem solving, issue trees, named framework application (Five Forces, PESTLE, 7S, VRIO, SWOT, Ansoff, etc.), multi-framework synthesis |
 | `financial-modeling` | Business case math, ROI/NPV/IRR/DCF, sensitivity analysis, scenario modeling, valuations |
-| `executive-presentation` | Top-down structured communication, storylining, slide design, PPTX generation guidance |
+| `client-deliverables` | Written reports (SCQA framing, evidence-based argumentation) and executive presentations (top-down structure, storylining, slide design, PPTX generation) |
 | `change-management` | Transformation planning, stakeholder engagement, resistance management, communications, training design |
 | `process-excellence` | Lean Six Sigma DMAIC, value stream mapping, root cause analysis, process mining, control plans |
 | `project-governance` | RACI matrices, steering committees, stage gates, risk registers, status reporting (RAG) |
@@ -134,12 +133,11 @@ Skills are domain knowledge the agent draws on automatically when the conversati
 | `workshop-facilitation` | Strategy workshops, design thinking sessions, innovation sprints, facilitation methodology |
 | `proposal-development` | RFP analysis, proposal writing, SOW drafting, pitch decks, value propositions |
 | `engagement-setup` | Kickoff workshop design, discovery planning, stakeholder mapping, workstream standup |
+| `engagement-pricing` | Fee structures (fixed, T&M, value-based), rate cards, engagement economics, margin analysis |
 | `implementation-planning` | Option scoring, business cases, roadmap design, detailed implementation plans with workstreams |
 | `org-design` | Organizational structure, operating models, role frameworks, spans of control, transition planning |
-| `pricing-strategy` | Fee structures (fixed, T&M, value-based), rate cards, engagement economics, margin analysis |
 | `thought-leadership` | POVs, white papers, case studies, industry briefs, thesis development through publication |
 | `project-closeout` | Deliverable handover, knowledge transfer, lessons learned, financial reconciliation, follow-on opportunities |
-| `report-generation` | Strategic reports, SCQA framing, evidence-based argumentation, chart selection, quality assurance |
 
 ## Example Workflows
 
