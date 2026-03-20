@@ -1,8 +1,8 @@
 # Management Consulting Plugin
 
-28 commands and 15 skills for the full consulting engagement lifecycle, from RFP teardown to project close-out.
+Skills for the full consulting engagement lifecycle, from problem structuring through implementation and close-out.
 
-> Built on the [Agent Skills](https://agentskills.io) open standard. Works with Claude Code, Cursor, Windsurf, Cline, GitHub Copilot, Gemini CLI, and [20+ other agents](https://agentskills.io).
+> Built on the [Agent Skills](https://agentskills.io) open standard. Works with Claude Code, Cowork, Codex, Gemini CLI, Cursor, GitHub Copilot, and [other compatible agents](https://agentskills.io).
 
 Part of [unsol.dev](https://unsol.dev)
 
@@ -10,212 +10,97 @@ Part of [unsol.dev](https://unsol.dev)
 
 Consulting runs on structured thinking. Hypothesis trees, framework applications, governance cadences: the scaffolding is the same every time. This plugin encodes that scaffolding so you can focus on the parts that actually require judgment.
 
-It covers seven phases of engagement work:
-
-1. **Win the work**: RFP analysis, proposals, SOWs, pitch decks
-2. **Stand up the engagement**: kickoff, governance, stakeholder mapping
-3. **Do the analysis**: frameworks, market research, financial modeling, due diligence
-4. **Build the strategy**: options generation, business cases, roadmaps
-5. **Plan the execution**: implementation, change management, org design, process improvement
-6. **Deliver the artifacts**: presentations, reports, workshops, thought leadership
-7. **Run the project**: status reports, risk registers, project close-out
-
-Every command works standalone with web search and your own context. Connect MCP servers (Slack, Jira, Google Drive, etc.) and they get better.
-
 ## Install
-
-### Cowork
-
-1. Open the **Plugins** panel
-2. Click the dropdown and select **Add marketplace from GitHub**
-3. Enter `anotb/management-consulting-plugin`
 
 ### Claude Code
 
 ```bash
 claude plugin marketplace add anotb/management-consulting-plugin
-claude plugin install management-consulting
+claude plugin install management-consulting@anotb-management-consulting-plugin
 ```
 
-### Cursor / Windsurf / Cline / Other Agents
+### Cowork
 
-Clone into your project's skills directory:
+Download the repo as a ZIP, then in Cowork go to Customize > Browse plugins > click `+` and upload. (Organization admins can sync directly from GitHub via Settings > Plugins > Add plugin.)
+
+### Codex
 
 ```bash
-git clone https://github.com/anotb/management-consulting-plugin.git .skills/management-consulting
+$skill-installer install https://github.com/anotb/management-consulting-plugin
 ```
 
-## Commands
+### Gemini CLI
 
-Slash commands for explicit workflows. Each one walks you through a structured process and produces a deliverable at the end.
+```bash
+gemini skills install https://github.com/anotb/management-consulting-plugin.git
+```
 
-### Business Development
+### Cursor
 
-| Command | What it does |
-|---|---|
-| `/rfp-analyze` | Tear apart an RFP: requirements, evaluation criteria, win themes, competitive positioning |
-| `/proposal-develop` | Build a proposal with value prop, technical approach, team structure, pricing |
-| `/sow-create` | Draft a Statement of Work: scope, deliverables, timeline, assumptions, exclusions |
-| `/pitch-deck` | Structure a client pitch with storyline, key messages, and slide-by-slide outline |
-| `/value-proposition` | Develop differentiated positioning against competitors |
+Open Settings > Rules > Add Rule > Remote Rule (GitHub), enter the repo URL. Or clone into `.cursor/skills/` or `.agents/skills/`.
 
-### Engagement Initiation
+### GitHub Copilot
 
-| Command | What it does |
-|---|---|
-| `/kickoff` | Design a kickoff workshop: charter, objectives, ways of working, initial workplan |
-| `/discovery` | Run a discovery phase: interview guides, data requests, synthesis templates |
-| `/governance-setup` | Set up responsibility matrix, steering committee structure, decision rights, escalation paths |
-| `/stakeholder-map` | Map stakeholders by influence and interest, build engagement strategies for each |
+Clone into `.github/skills/` in your repo. Copilot Coding Agent picks it up automatically.
 
-### Research & Analysis
+### Other agents
 
-| Command | What it does |
-|---|---|
-| `/framework-apply` | Apply strategic analysis frameworks: competitive, environmental, organizational, portfolio, and more |
-| `/market-analysis` | Industry sizing, competitive landscape, trend analysis, market entry assessment |
-| `/financial-analysis` | Financial models, ROI calculations, sensitivity analysis, business case math |
-| `/due-diligence` | Commercial, operational, or strategic due diligence with red flag identification |
-
-### Strategy Development
-
-| Command | What it does |
-|---|---|
-| `/options-generate` | Generate strategic options, define evaluation criteria, score and recommend |
-| `/business-case` | Full investment business case: projections, payback, risk-adjusted scenarios |
-| `/roadmap-create` | Strategic roadmap with phases, milestones, dependencies, and resource requirements |
-
-### Implementation
-
-| Command | What it does |
-|---|---|
-| `/implementation-plan` | Detailed implementation plan: workstreams, owners, timelines, dependencies |
-| `/change-plan` | Change management strategy: stakeholder impact, communications, training, resistance |
-| `/process-improve` | Process analysis: current state mapping, root cause, future state, control plan |
-| `/org-design` | Organizational structure design: spans, layers, roles, reporting lines, transition plan |
-
-### Deliverables
-
-| Command | What it does |
-|---|---|
-| `/presentation-create` | Executive presentation: top-down structure, storyline, exhibit design |
-| `/report-generate` | Strategic report: findings, analysis, recommendations, appendices |
-| `/workshop-facilitate` | Workshop design: objectives, agenda, exercises, facilitation guide, follow-up |
-| `/thought-leadership` | POVs, white papers, case studies: research, structure, draft, and polish |
-
-### Project Management
-
-| Command | What it does |
-|---|---|
-| `/status-report` | Weekly/monthly status: progress, risks, decisions needed, next steps |
-| `/risk-register` | Identify risks, assess likelihood and impact, define mitigations and owners |
-| `/project-close` | Close-out: deliverable sign-off, lessons learned, knowledge transfer, transition |
-
-### Commercial
-
-| Command | What it does |
-|---|---|
-| `/pricing-model` | Pricing strategy: fixed fee, T&M, value-based, blended rate calculations |
+Clone into `.agents/skills/` (the cross-platform standard) or the agent's native skills directory.
 
 ## Skills
 
-Skills are domain knowledge the agent draws on automatically when the conversation calls for it.
+Skills are domain knowledge the agent draws on automatically when the context calls for it.
 
-| Skill | What it knows |
+| Skill | What it covers |
 |---|---|
-| `strategic-analysis` | Hypothesis-driven MECE problem solving, issue trees, named framework application (Five Forces, PESTLE, 7S, VRIO, SWOT, Ansoff, etc.), multi-framework synthesis |
-| `financial-modeling` | Business case math, ROI/NPV/IRR/DCF, sensitivity analysis, scenario modeling, valuations |
-| `client-deliverables` | Written reports (SCQA framing, evidence-based argumentation) and executive presentations (top-down structure, storylining, slide design, PPTX generation) |
-| `change-management` | Transformation planning, stakeholder engagement, resistance management, communications, training design |
-| `process-excellence` | Lean Six Sigma DMAIC, value stream mapping, root cause analysis, process mining, control plans |
-| `project-governance` | RACI matrices, steering committees, stage gates, risk registers, status reporting (RAG) |
-| `due-diligence` | Commercial, operational, and strategic assessment, red flag identification, integration planning |
-| `workshop-facilitation` | Strategy workshops, design thinking sessions, innovation sprints, facilitation methodology |
-| `proposal-development` | RFP analysis, proposal writing, SOW drafting, pitch decks, value propositions |
-| `engagement-setup` | Kickoff workshop design, discovery planning, stakeholder mapping, workstream standup |
-| `engagement-pricing` | Fee structures (fixed, T&M, value-based), rate cards, engagement economics, margin analysis |
-| `implementation-planning` | Option scoring, business cases, roadmap design, detailed implementation plans with workstreams |
-| `org-design` | Organizational structure, operating models, role frameworks, spans of control, transition planning |
-| `thought-leadership` | POVs, white papers, case studies, industry briefs, thesis development through publication |
-| `project-closeout` | Deliverable handover, knowledge transfer, lessons learned, financial reconciliation, follow-on opportunities |
+| `strategic-analysis` | Problem structuring, hypothesis development, framework application, cross-framework synthesis |
+| `financial-modeling` | Business cases, valuation, ROI/NPV/IRR/DCF, sensitivity analysis, scenario modeling |
+| `proposal-development` | RFP analysis, proposal writing, SOW creation, pitch decks, oral defense |
+| `engagement-setup` | Kickoff design, discovery planning, stakeholder mapping, the first two weeks |
+| `engagement-pricing` | Fee structures, rate cards, engagement economics, procurement navigation |
+| `implementation-planning` | Phased plans, workstreams, business cases, program recovery |
+| `due-diligence` | Commercial, operational, strategic assessment, management interviews, valuation bridge |
+| `change-management` | Transition planning, resistance management, adoption measurement |
+| `process-excellence` | DMAIC, value stream mapping, root cause analysis, control plans |
+| `org-design` | Operating models, structure design, role frameworks, transition planning |
+| `project-governance` | Steering committees, stage gates, RACI, risk management, status reporting |
+| `client-deliverables` | Presentations, reports, storylining, slide design, PPTX generation patterns |
+| `workshop-facilitation` | Strategy workshops, facilitation design, participant dynamics |
+| `thought-leadership` | POVs, white papers, case studies, thesis development |
+| `project-closeout` | Handover, knowledge transfer, lessons learned, benefits tracking |
+
+## Commands
+
+The plugin also includes slash commands for explicit workflows. Each walks you through a structured process.
+
+| Phase | Commands |
+|---|---|
+| Win the work | `/rfp-analyze` `/proposal-develop` `/sow-create` `/pitch-deck` `/value-proposition` |
+| Stand up | `/kickoff` `/discovery` `/governance-setup` `/stakeholder-map` |
+| Analyze | `/framework-apply` `/market-analysis` `/financial-analysis` `/due-diligence` |
+| Build strategy | `/options-generate` `/business-case` `/roadmap-create` |
+| Execute | `/implementation-plan` `/change-plan` `/process-improve` `/org-design` |
+| Deliver | `/presentation-create` `/report-generate` `/workshop-facilitate` `/thought-leadership` |
+| Manage | `/status-report` `/risk-register` `/project-close` |
+| Price | `/pricing-model` |
 
 ## Example Workflows
 
-Commands chain together. A few common sequences:
-
 ### Strategy engagement
 
-```
-/kickoff [Project Name] [Client]
-```
-
-Define the charter and governance, then work through:
-
-```
-/stakeholder-map → /discovery → /framework-apply → /market-analysis
-→ /financial-analysis → /options-generate → /business-case → /roadmap-create
-```
+Start with `/kickoff`, then work through discovery, framework analysis, financial modeling, options, business case, and roadmap.
 
 ### Transformation program
 
-```
-/discovery Current state operations assessment for [Client]
-```
+Start with `/discovery` for current state, then `/org-design`, `/process-improve`, `/implementation-plan`, `/change-plan`, with `/status-report` weekly.
 
-Assess current state, then:
+### Pursuit
 
-```
-/org-design → /process-improve → /implementation-plan → /change-plan
-→ /status-report (weekly) → /project-close
-```
-
-### Pursuit / BD
-
-```
-/rfp-analyze [paste RFP content]
-```
-
-Analyze the opportunity, then:
-
-```
-/proposal-develop → /sow-create → /pitch-deck → /pricing-model
-```
-
-## MCP Integrations
-
-Every command works out of the box with web search and whatever context you provide. Connect MCP servers to give commands access to real data.
-
-| Capability | Without MCP | With MCP |
-|---|---|---|
-| Analysis | Web search + your input | Data warehouse, BI dashboards |
-| Financial models | Describe your assumptions | Excel files, financial databases |
-| Presentations | Describe what you need | PowerPoint, Google Slides |
-| Market research | Web search | Industry databases, CRM data |
-| Project management | Paste your status | Jira, Confluence, project tools |
-
-## Settings
-
-Create `.claude/settings.local.json` in the plugin directory to set defaults:
-
-```json
-{
-  "firm": {
-    "name": "Your Firm",
-    "methodology": "hypothesis-driven",
-    "standard_frameworks": ["competitive", "environmental", "organizational"]
-  },
-  "engagement_defaults": {
-    "pricing_model": "value-based",
-    "reporting_format": "executive-summary"
-  }
-}
-```
-
-If these aren't set, commands will ask you interactively.
+Start with `/rfp-analyze`, then `/proposal-develop`, `/sow-create`, `/pitch-deck`, `/pricing-model`.
 
 ## Heads up
 
-This plugin produces structured consulting outputs: frameworks, analyses, plans, deliverables. Everything should be reviewed by someone who knows the client context before it goes anywhere near a steering committee.
+This plugin produces structured consulting outputs. Everything should be reviewed by someone who knows the client context before it goes near a client.
 
 ## License
 
