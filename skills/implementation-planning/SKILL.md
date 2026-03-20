@@ -5,7 +5,7 @@ description: Bridge strategy to execution through structured option development,
 
 # Implementation Planning
 
-Translate strategic recommendations into concrete, funded, governed plans that organizations can actually execute. This covers four connected stages: generating and evaluating options, building the business case, designing the roadmap, and developing the implementation plan.
+Translate strategic recommendations into concrete, funded, governed plans that organizations can actually execute. This covers translating strategy into executable plans across four connected stages: generating and evaluating options, building the business case, designing the roadmap, and developing the implementation plan. For the ongoing oversight structure (steering committees, status reporting, risk management), see project-governance.
 
 ---
 

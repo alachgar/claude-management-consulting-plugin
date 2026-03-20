@@ -5,7 +5,7 @@ description: Develop consulting proposals and manage the business development li
 
 # Proposal Development
 
-Manage the full business development lifecycle for consulting engagements: assess opportunities, develop proposals, draft SOWs, build pitch decks, and articulate value propositions.
+Manage the full business development lifecycle for consulting engagements: assess opportunities, develop proposals, draft SOWs, build pitch decks, and articulate value propositions. This covers the business development lifecycle from opportunity assessment through proposal submission. For creating deliverables during an engagement (steering committee decks, final reports), see client-deliverables.
 
 Determine which stage of the BD lifecycle the user needs, then execute accordingly. A full pursuit flows through these stages in order, but the user may enter at any point.
 

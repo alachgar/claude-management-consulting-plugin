@@ -1,6 +1,6 @@
 ---
 name: strategic-analysis
-description: Apply hypothesis-driven MECE problem solving and named strategic analysis frameworks (Five Forces, PESTLE, 7S, VRIO, SWOT, Ansoff, Growth-Share Matrix, Value Chain, Business Model Canvas, Strategy Canvas, and others). Use when structuring complex problems, building issue trees, developing testable hypotheses, designing analytical workplans, applying framework-based analysis, competitive positioning, market assessment, organizational alignment review, growth strategy, or portfolio decisions. Always apply at least two complementary frameworks and synthesize across them for richer insight.
+description: Apply hypothesis-driven MECE problem solving and named strategic analysis frameworks (Five Forces, PESTLE, 7S, VRIO, SWOT, Ansoff, Growth-Share Matrix, Value Chain, Business Model Canvas, Strategy Canvas, and others). Use when structuring complex problems, building issue trees, developing testable hypotheses, designing analytical workplans, applying framework-based analysis, competitive positioning, market assessment, organizational alignment review, growth strategy, or portfolio decisions. For broad or high-stakes strategic questions, apply two or more frameworks and synthesize across them. For specific, well-defined questions, one framework applied rigorously is better than two applied superficially.
 ---
 
 # Strategic Analysis
@@ -480,7 +480,7 @@ When analyzing a complex situation with multiple frameworks, structure the synth
 - Recommendations must be actionable. Vague advice helps no one
 - Quality of problem definition determines quality of solution
 - Iterate, validate, adapt. The first structure is rarely the final one
-- Always apply at least 2 frameworks to any strategic question. Single-framework analysis is incomplete
+- For broad or high-stakes strategic questions, apply at least 2 frameworks and synthesize across them. For specific, well-defined questions, one framework applied rigorously is better than two applied superficially
 - Provide substantive analysis, not empty templates. For each cell, give 2-3 sentences of reasoning with evidence
 - Quantify wherever possible. "High" is less useful than "High... represents ~$15M revenue risk."
 - Synthesize across frameworks. Call out where frameworks agree, disagree, and what none of them capture
