@@ -63,6 +63,19 @@ gemini skills install https://github.com/anotb/management-consulting-plugin.git
 
 Clone into `.agents/skills/` (the cross-platform standard) or the agent's native skills directory.
 
+## Usage
+
+Skills activate automatically when your conversation touches consulting topics. No slash commands needed. Just describe the work ("structure the due diligence for this acquisition") and the relevant skill loads.
+
+You can also invoke a skill directly in Claude Code:
+
+```
+/management-consulting:strategic-analysis
+/management-consulting:engagement-pricing
+```
+
+For best results, use [plan mode](https://code.claude.com/docs/en/common-workflows#plan-before-coding) (`shift+tab` twice in Claude Code). This makes Claude ask clarifying questions (your data, client context, constraints) before building anything, instead of assuming.
+
 ## Heads up
 
 This plugin produces structured consulting outputs. Everything should be reviewed by someone who knows the client context before it goes near a client.
