@@ -32,6 +32,10 @@ The mechanics of consulting follow the same patterns every engagement. Scoping, 
 
 ## Install
 
+### Claude Desktop
+
+Download [`dist/management-consulting.skill`](dist/management-consulting.skill), then in Claude go to your profile icon > Settings > Skills > Add skill and upload the file.
+
 ### Claude Code
 
 ```bash
