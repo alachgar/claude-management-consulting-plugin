@@ -12,7 +12,10 @@
     {
       "name": "management-consulting",
       "version": "2.0.0",
-      "source": ".",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/anotb/management-consulting-plugin.git"
+      },
       "description": "Strategic problem solving, framework analysis, and engagement delivery for management consulting"
     }
   ]
