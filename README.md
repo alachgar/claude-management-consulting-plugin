@@ -34,7 +34,7 @@ The mechanics of consulting follow the same patterns every engagement. Scoping, 
 
 ### Claude Desktop
 
-Download [`dist/management-consulting.skill`](dist/management-consulting.skill), then in Claude go to Customize (left nav) > Skills > `+` > Upload a skill.
+Download [`dist/management-consulting.skill`](dist/management-consulting.skill), then in Claude go to Customize (left nav) > Skills > `+` > Upload a skill. Requires "Code execution and file creation" enabled in Settings > Capabilities.
 
 ### Claude Code
 
