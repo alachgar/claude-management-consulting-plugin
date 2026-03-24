@@ -29,6 +29,7 @@ The mechanics of consulting follow the same patterns every engagement. Scoping, 
 | `workshop-facilitation` | Strategy workshops, facilitation design, participant dynamics |
 | `thought-leadership` | POVs, white papers, case studies, thesis development |
 | `project-closeout` | Handover, knowledge transfer, lessons learned, benefits tracking |
+| `writing-style` | Consulting tone, depth calibration, content integrity standards |
 
 ## Install
 
