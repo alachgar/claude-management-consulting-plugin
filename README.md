@@ -59,6 +59,14 @@ $skill-installer install https://github.com/anotb/management-consulting-plugin
 gemini skills install https://github.com/anotb/management-consulting-plugin.git
 ```
 
+### Skills CLI
+
+```bash
+npx skills add anotb/management-consulting-plugin
+```
+
+Works with Claude Code, Codex, Cursor, Gemini CLI, and [40+ other agents](https://skills.sh).
+
 ### Other agents
 
 Clone into `.agents/skills/` (the cross-platform standard) or the agent's native skills directory.
