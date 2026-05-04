@@ -33,6 +33,14 @@ The mechanics of consulting follow the same patterns every engagement. Scoping, 
 
 ## Install
 
+### Skills CLI (recommended, works across agents)
+
+```bash
+npx skills add anotb/management-consulting-plugin
+```
+
+One install for Claude Code, Codex, Cursor, Gemini CLI, and [40+ other agents](https://skills.sh).
+
 ### Claude Desktop
 
 Download [`dist/management-consulting.skill`](dist/management-consulting.skill), then in Claude go to Customize (left nav) > Skills > `+` > Upload a skill. Requires "Code execution and file creation" enabled in Settings > Capabilities.
@@ -73,14 +81,6 @@ $skill-installer install https://github.com/anotb/management-consulting-plugin
 ```bash
 gemini skills install https://github.com/anotb/management-consulting-plugin.git
 ```
-
-### Skills CLI
-
-```bash
-npx skills add anotb/management-consulting-plugin
-```
-
-Works with Claude Code, Codex, Cursor, Gemini CLI, and [40+ other agents](https://skills.sh).
 
 ### Other agents
 
