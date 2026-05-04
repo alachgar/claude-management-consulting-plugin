@@ -29,6 +29,7 @@ The mechanics of consulting follow the same patterns every engagement. Scoping, 
 | `workshop-facilitation` | Strategy workshops, facilitation design, participant dynamics |
 | `thought-leadership` | POVs, white papers, case studies, thesis development |
 | `project-closeout` | Handover, knowledge transfer, lessons learned, benefits tracking |
+| `writing-style` | Consulting tone, depth calibration, content integrity standards |
 
 ## Install
 
@@ -58,6 +59,14 @@ $skill-installer install https://github.com/anotb/management-consulting-plugin
 ```bash
 gemini skills install https://github.com/anotb/management-consulting-plugin.git
 ```
+
+### Skills CLI
+
+```bash
+npx skills add anotb/management-consulting-plugin
+```
+
+Works with Claude Code, Codex, Cursor, Gemini CLI, and [40+ other agents](https://skills.sh).
 
 ### Other agents
 
