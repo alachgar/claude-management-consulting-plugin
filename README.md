@@ -37,6 +37,20 @@ The mechanics of consulting follow the same patterns every engagement. Scoping, 
 
 Download [`dist/management-consulting.skill`](dist/management-consulting.skill), then in Claude go to Customize (left nav) > Skills > `+` > Upload a skill. Requires "Code execution and file creation" enabled in Settings > Capabilities.
 
+This installs as a single `management-consulting` skill that routes by topic via an internal dispatcher. To get individual slash commands per skill (`/strategic-analysis`, `/financial-modeling`, etc.), install directly into the skills directory instead:
+
+```bash
+# Option A: clone (updates via git pull)
+git clone https://github.com/anotb/management-consulting-plugin.git ~/.claude/skills/management-consulting
+
+# Option B: download a snapshot
+curl -L https://github.com/anotb/management-consulting-plugin/archive/refs/heads/main.tar.gz | \
+  tar -xz -C ~/.claude/skills/ && \
+  mv ~/.claude/skills/management-consulting-plugin-main ~/.claude/skills/management-consulting
+```
+
+Restart Claude Desktop after either method.
+
 ### Claude Code
 
 ```bash

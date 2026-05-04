@@ -1,56 +1,73 @@
 #!/usr/bin/env bash
 # Build dist/management-consulting.skill for Claude Desktop install.
 #
-# Format: a plugin-style multi-skill bundle. The ZIP contains a single
-# `management-consulting/` folder at root with the plugin manifest and
-# `skills/<name>/SKILL.md` for each skill. Claude Desktop unpacks it into
-# `~/.claude/skills/management-consulting/` and registers each SKILL.md as
-# its own invokable skill (giving you /strategic-analysis, /financial-modeling,
-# etc. as individual slash commands), the same way the bundled
-# `~/.claude/skills/anthropic-skills/` works.
+# Format: single-skill dispatcher bundle. Claude Desktop's "Upload skill" UI
+# rejects ZIPs containing more than one SKILL.md, so we consolidate the 15
+# consulting skills into one skill called `management-consulting`. Its
+# top-level SKILL.md is a hand-curated dispatcher that lists per-topic
+# reference files; references/<name>.md contains each skill's body.
 #
-# This replaces the older single-skill dispatcher pattern (one consolidated
-# SKILL.md plus references/) which only exposed `/management-consulting` as a
-# slash command.
+# After upload, Desktop registers one skill (/management-consulting). To get
+# individual slash commands per skill, use the alternative Desktop install
+# documented in the README (clone or unzip directly into ~/.claude/skills/).
 #
 # Other install paths (Claude Code, Cowork, Codex, Gemini CLI, npx skills add)
-# read this same source layout directly from the repo and don't need a build.
+# read skills/<name>/SKILL.md from the repo directly and don't need this.
 
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
+SRC="$ROOT/skills"
+DISPATCHER="$ROOT/dist/dispatcher/SKILL.md"
+STAGE="$ROOT/dist/build/management-consulting"
+REFS="$STAGE/references"
 ZIP="$ROOT/dist/management-consulting.skill"
-STAGE="$(mktemp -d)"
-BUNDLE="$STAGE/management-consulting"
 
-# Files copied from repo root into the bundle. Anything not here is excluded
-# (build script, dist/, .git, etc.).
-INCLUDE_FILES=(README.md LICENSE CLAUDE.md)
-INCLUDE_DIRS=(.claude-plugin skills)
+# writing-style is shipped as a standalone skill for npx installs but its content
+# is already inlined in the dispatcher SKILL.md, so we don't duplicate it here.
+SKIP=(writing-style)
 
-trap 'rm -rf "$STAGE"' EXIT
+if [[ ! -f "$DISPATCHER" ]]; then
+  echo "missing dispatcher source at $DISPATCHER" >&2
+  exit 1
+fi
 
-mkdir -p "$BUNDLE"
+rm -rf "$STAGE"
+mkdir -p "$REFS"
+cp "$DISPATCHER" "$STAGE/SKILL.md"
 
-for f in "${INCLUDE_FILES[@]}"; do
-  if [[ -f "$ROOT/$f" ]]; then
-    cp "$ROOT/$f" "$BUNDLE/$f"
+generated=()
+copied=()
+skipped=()
+
+for dir in "$SRC"/*/; do
+  name="$(basename "$dir")"
+  if printf '%s\n' "${SKIP[@]}" | grep -qx "$name"; then
+    skipped+=("$name")
+    continue
+  fi
+  src="$dir/SKILL.md"
+  if [[ ! -f "$src" ]]; then
+    echo "skip: $name has no SKILL.md" >&2
+    continue
+  fi
+  # Strip only the first frontmatter block (between the first two --- lines).
+  # Preserves --- section separators inside the body.
+  awk 'n<2 { if(/^---$/) n++; next } 1' "$src" > "$REFS/$name.md"
+  generated+=("$name")
+  if [[ -d "$dir/references" ]]; then
+    for sub in "$dir/references"/*.md; do
+      [[ -e "$sub" ]] || continue
+      cp "$sub" "$REFS/"
+      copied+=("$(basename "$sub")")
+    done
   fi
 done
 
-for d in "${INCLUDE_DIRS[@]}"; do
-  if [[ -d "$ROOT/$d" ]]; then
-    cp -R "$ROOT/$d" "$BUNDLE/"
-  fi
-done
-
-mkdir -p "$ROOT/dist"
 rm -f "$ZIP"
-( cd "$STAGE" && zip -qr "$ZIP" management-consulting/ )
+( cd "$ROOT/dist/build" && zip -qr "$ZIP" management-consulting/ )
 
-skill_count=$(find "$BUNDLE/skills" -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')
-echo "bundled $skill_count skills"
+echo "generated references (${#generated[@]}): ${generated[*]}"
+echo "copied sub-references (${#copied[@]}): ${copied[*]}"
+echo "skipped (${#skipped[@]}): ${skipped[*]}"
 echo "wrote $ZIP ($(wc -c < "$ZIP") bytes)"
-echo ""
-echo "structure:"
-( cd "$STAGE" && find management-consulting -maxdepth 3 -not -path '*/.*' | sort | head -30 )
