@@ -1,105 +1,21 @@
 ---
 name: engagement-setup
-description: Guide the first weeks of a consulting engagement from contract signature through a running project. Covers sales-to-delivery transition, kickoff workshop design, discovery phase planning, stakeholder mapping, and standing up workstreams and cadences. Use when launching a new engagement, onboarding a new client, or resetting a stalled project.
+description: Guide the first weeks of a consulting engagement from contract signature through a running project. Covers kickoff workshop design, discovery phase planning, stakeholder mapping, and standing up workstreams and cadences. Use when launching a new engagement, onboarding a new client, or resetting a stalled project.
 ---
 
 # Engagement Setup
 
-Take a consulting engagement from "we just won this work" to "the engagement is running." This covers the first weeks of a consulting engagement: transitioning from sales to delivery, planning the kickoff, mapping stakeholders, designing discovery, and establishing the operating rhythm. For designing standalone facilitated sessions later in the engagement (strategy offsites, innovation sprints), see workshop-facilitation.
+Take a consulting engagement from "we just won this work" to "the engagement is running." This covers the first weeks of a consulting engagement: planning the kickoff, mapping stakeholders, designing discovery, and establishing the operating rhythm. For designing standalone facilitated sessions later in the engagement (strategy offsites, innovation sprints), see workshop-facilitation.
 
 The goal is shared understanding and momentum, not a stack of templates. Every artifact here should earn its place by driving alignment or unblocking work.
 
-## Before You Begin
+## Phase 1: Pre-Kickoff Preparation
 
-This skill naturally prompts for information at each phase, but confirm these basics early:
-- What was the scope sold (SOW or proposal available)?
-- Who is the client sponsor and key stakeholders?
-- What is the timeline and team composition?
-- Don't generate stakeholder names, political dynamics, or engagement history. Ask the user for these details rather than guessing.
-
-## Phase 0: Sales-to-Delivery Transition
-
-The gap between "we won" and "we start" is where engagements get scoped wrong. Before you do anything else, understand what was sold.
-
-### What Did the Partner Promise?
-
-Interview the sales lead (partner, BD lead, whoever ran the pursuit). Ask:
-
-1. What did the client hear that isn't in the SOW? (There is always something.)
-2. What concerns did the client raise during the sales process that we need to address early?
-3. Who was the real champion? Who was skeptical?
-4. Were there scope items the client wanted that we pushed out? They'll bring them back.
-5. Is there a political dynamic we should know about? (Reorgs, competing initiatives, executive changes.)
-6. What's the client's emotional state? Excited, nervous, resigned, skeptical?
-
-### SOW Reality Check
-
-Read the SOW. Read the proposal. Compare them. Common gaps:
-
-- Proposal describes a broader vision; SOW scopes a narrower engagement. Client may expect the vision.
-- Timeline in the SOW assumes immediate start and full client availability. Neither is guaranteed.
-- Team composition in the proposal may not match who's actually available for staffing.
-- Deliverables described at different levels of specificity in each document.
-
-Flag any gaps and resolve with the partner before kickoff. Do not discover these gaps in front of the client.
-
-### Day 1 Checklist
-
-The 10 things you do on literal Day 1 after winning the work. Day 1 is chaotic and things get missed.
-
-1. Confirm the project sponsor and get their direct contact info
-2. Set up the engagement code, billing structure, and time tracking
-3. Create the shared drive / workspace with a folder structure
-4. Draft the data request (don't wait until after kickoff)
-5. Schedule the kickoff (aim for within 5-7 business days of contract signature)
-6. Pull all prior work your firm has done with this client
-7. Review the SOW and proposal side-by-side (see above)
-8. Identify and brief your core team
-9. Draft the stakeholder list from what you know; plan to complete it
-10. Send the client a "we're excited to get started" note with kickoff logistics and pre-read materials
-
-### Practical Logistics
-
-The stuff that feels administrative but will block real work if you don't handle it early. Start all of this on Day 1; some items take weeks to come through.
-
-**Physical and system access:**
-
-| Item | Who to Ask | Typical Lead Time | Workaround if Delayed |
-|------|-----------|-------------------|----------------------|
-| Building badges / site access | Client facilities or security office | 1-5 days | Have your client lead escort you; get a visitor badge process established |
-| Laptops / client devices | Client IT | 1-4 weeks (this is the killer) | Bring your own equipment; work from your firm's systems until client devices arrive |
-| VPN / remote access | Client IT | 1-2 weeks | Work on-site; request temporary guest Wi-Fi access |
-| System credentials (ERP, BI tools, data warehouses) | Client IT + data owner approval | 1-3 weeks per system | Ask the data owner to pull exports for you while access is pending |
-| Email / distribution lists | Client IT | 1-2 weeks | Use your firm email; ask your client lead to forward relevant threads |
-
-**IT access blocking is extremely common.** Client IT departments have their own priorities and your consulting engagement is not one of them. Assume it will take 2-3x longer than anyone promises. Mitigations:
-
-- Submit all access requests on Day 1, even before you know exactly what you need. It's easier to cancel a request than to start one late.
-- Get your client sponsor to send the IT request (or cc them). A request from a VP moves faster than one from an unknown contractor.
-- Identify one person in client IT who actually processes requests and build a relationship with them directly.
-- Have a "no-access" plan for the first two weeks. What can the team accomplish using only exported data, interviews, and your own tools?
-
-**Client document management:**
-
-Every client has a different system (SharePoint, Google Drive, Box, Confluence, shared drives on a server from 2008). Find out:
-- Where do they store project documents? (Not where they say they do... where do they actually look for things?)
-- What's the naming convention? (Match theirs, don't impose yours.)
-- Who controls permissions? (This person is your new best friend.)
-- Is there a document that everyone references but nobody can find? (There always is. Find it early.)
-
-**Figuring out who actually answers emails:**
-
-The org chart tells you who has authority. You need to know who has responsiveness. In the first week, identify:
-- The EA or admin who controls the sponsor's calendar
-- The client project lead's preferred communication channel (some people live in Teams, some in email, some need a phone call)
-- Who on the client side actually follows up on action items (this is rarely the most senior person)
-- Which client stakeholders are reliably unavailable and need to be worked around
-
-## Phase 1: Stakeholder Mapping
-
-Build the stakeholder picture before the kickoff. You need it for invitation lists, interview scheduling, and knowing who can actually make decisions.
+Before anyone gets in a room, do the homework.
 
 ### Stakeholder Identification
+
+Build the stakeholder inventory early. You need it for kickoff invitation lists, interview scheduling, and knowing who can actually make decisions.
 
 **Internal stakeholders** (client side):
 
@@ -107,11 +23,17 @@ Build the stakeholder picture before the kickoff. You need it for invitation lis
 |-----------|----------|---------------------------|----------------|
 | | C-suite / VP / Director / Manager | Sponsor / Decision-maker / Contributor / Affected | Champion / Supporter / Neutral / Skeptic / Opponent |
 
-**External stakeholders** (partners, regulators, vendors — only if relevant to the engagement):
+**External stakeholders** (partners, regulators, vendors):
 
-| Name/Role | Organization | Relationship | Priority |
-|-----------|-------------|--------------|----------|
-| | | Client / Regulator / Partner / Vendor | High/Med/Low |
+| Name/Role | Organization | Relationship | Current Stance |
+|-----------|-------------|--------------|----------------|
+| | | Client / Regulator / Partner / Vendor | |
+
+**Stakeholder groups** (when individuals are too many to track):
+
+| Group | Size | Influence | Impact on Them | Priority |
+|-------|------|-----------|----------------|----------|
+| | | High/Med/Low | High/Med/Low | 1-5 |
 
 ### Influence-Interest Analysis
 
@@ -147,18 +69,23 @@ Score each stakeholder:
 
 ### Alignment and Resistance Assessment
 
-Before kickoff, get a read on where people actually stand versus where you need them. Consolidate stance, resistance type, and influence into one view:
+Before kickoff, get a read on where people actually stand versus where you need them.
 
-| Stakeholder | Current Position | Desired Position | Resistance Type | Root Cause | Influenced By | Mitigation |
-|-------------|-----------------|------------------|----------------|------------|---------------|------------|
-| | Opponent / Skeptic / Neutral / Supporter / Champion | | Rational / Emotional / Political / None | Why they resist | Who sways them | Approach |
+| Stakeholder | Current Position | Desired Position | Gap | Difficulty |
+|-------------|-----------------|------------------|-----|------------|
+| | Opponent / Skeptic / Neutral / Supporter / Champion | | Size of shift needed | High/Med/Low |
 
-Resistance types matter because they require different responses:
-- **Rational**: They have a logical objection. Address it with data and evidence.
-- **Emotional**: They fear change, loss of status, or uncertainty. Address with empathy, involvement, and early wins.
-- **Political**: The initiative threatens their power base or allies. Address through coalition building and sponsor engagement.
+For anyone showing resistance, diagnose the type:
 
-Map influence networks. Who listens to whom? Where are the informal power centers? The org chart lies about this.
+| Stakeholder | Resistance Type | Root Cause | Severity | Mitigation |
+|-------------|----------------|------------|----------|------------|
+| | Rational / Emotional / Political / Cultural | Why they resist | High/Med/Low | Approach |
+
+Map influence networks. Who listens to whom? Where are the informal power centers?
+
+| Stakeholder | Influences | Influenced By | Coalition Opportunity |
+|-------------|-----------|---------------|----------------------|
+| | Who they sway | Who sways them | Potential alliance |
 
 ### Kickoff Materials
 
@@ -213,8 +140,6 @@ Part 6: Next Steps (10 min)
 - Open questions parking lot
 ```
 
-**For virtual or hybrid kickoffs:** Plan 25% more time. Use breakout rooms for the Problem and Scope discussion (small groups surface more honest input). Schedule informal 1:1 video calls with key stakeholders in the days following. And for the love of all that is holy, do not run a 2-hour kickoff as a one-way slide presentation over Zoom.
-
 ### Facilitation Principles
 
 - Set a collaborative tone from the start. You're working with them, not presenting to them.
@@ -225,18 +150,6 @@ Part 6: Next Steps (10 min)
 - Build personal connections. Engagement success tracks relationship quality more than methodology quality.
 - Surface risks early. The kickoff is the safest time to name uncomfortable truths.
 - Ensure all decision-makers are present or represented. If the sponsor doesn't show up, you have a problem.
-
-### Handling Kickoff Misalignment
-
-Sometimes the kickoff reveals that stakeholders have fundamentally different expectations. The sponsor thinks this is a cost-cutting exercise; the VP of Operations thinks it's a technology modernization. The SOW says one thing; the room says another.
-
-This is a blocker, not a risk. Do not proceed past Part 2 of the kickoff agenda until alignment exists. Options:
-
-1. **Pause and align in the room** if the sponsor has authority and willingness to resolve it live
-2. **Park it and schedule a resolution meeting** within 48 hours with only the disagreeing parties and the sponsor
-3. **Escalate to the partner** if the misalignment implies the SOW needs rework
-
-The worst thing you can do is proceed as if alignment exists when it doesn't. You'll build the wrong thing and discover it in Week 6.
 
 ### Project Charter
 
@@ -327,21 +240,6 @@ Dependencies:
 
 Discovery starts immediately after kickoff (often in the same week). The goal is understanding the current state deeply enough to form hypotheses worth testing.
 
-### Hypothesis-Driven Discovery
-
-Don't go into discovery with a blank slate. Enter with 2-3 initial hypotheses about what you'll find and what the answer might be. These come from the proposal, the sales process, industry pattern matching, and your experience.
-
-```
-Hypothesis 1: [Statement of what you believe is true]
-Confidence: [Low / Medium / High]
-Key test: [What evidence would confirm or disconfirm this?]
-If wrong: [How does this change the engagement direction?]
-
-Hypothesis 2: [...]
-```
-
-The point is NOT to confirm your hypotheses. It's to have a structure for listening. Hypotheses give you a framework to be surprised against. If every interview confirms what you already thought, you weren't listening — you were auditing.
-
 ### Discovery Plan
 
 Design the approach based on what you need to learn:
@@ -417,34 +315,6 @@ Structure your ask clearly. Vague data requests produce vague data.
 
 If client data is messy or incomplete, provide templates. Don't assume they'll know what format you need.
 
-### Red Flags During Discovery
-
-Signs that something is wrong at the structural level, not just the analytical level. These require escalation, not just documentation.
-
-**Signs the engagement is scoped wrong:**
-- Every interviewee describes a different problem than what's in the SOW
-- The real problem is upstream or downstream of what you've been asked to look at
-- The scope is either far too broad (no way to deliver in the timeline) or too narrow (solving a symptom, not a cause)
-
-**Signs the real problem isn't what the client thinks:**
-- Interviewees at the working level describe a completely different reality than leadership
-- The stated problem is actually a solution ("we need a new CRM") masking the real issue ("we have no idea why we're losing customers")
-- Data contradicts the narrative. The problem everyone talks about accounts for 5% of the impact
-
-**Signs the client isn't ready for recommendations:**
-- Leadership hasn't agreed on what success looks like
-- There's an active reorg or leadership transition that will reset priorities
-- The sponsor is leaving, retiring, or being moved to a different role
-- Previous consulting engagements produced recommendations that were never implemented
-
-**Signs discovery is being blocked:**
-- Data requests go unfulfilled for more than two weeks
-- Key stakeholders are "unavailable" for interviews
-- You're being steered away from certain topics or people
-- Your client lead is filtering all access
-
-When you see these, escalate to the engagement manager and partner. These aren't things you fix by working harder.
-
 ### Synthesizing Discovery
 
 After interviews and data collection, synthesize into findings that drive the next phase:
@@ -478,11 +348,12 @@ QUANTITATIVE HIGHLIGHTS
 |--------|---------|-----------|-----|
 | | | | |
 
-HYPOTHESIS CHECK
+INITIAL HYPOTHESES
 
-| Hypothesis | Status | Evidence | Implication |
-|-----------|--------|----------|-------------|
-| [H1 from pre-discovery] | Confirmed / Partially confirmed / Disconfirmed | [What we found] | [How this changes direction] |
+Based on discovery:
+1. [Hypothesis to test in analysis phase]
+2. [Hypothesis]
+3. [Hypothesis]
 
 RISKS IDENTIFIED
 
@@ -493,30 +364,6 @@ RISKS IDENTIFIED
 RECOMMENDATIONS FOR NEXT PHASE
 [Where to focus analysis and why]
 ```
-
-**Triangulation discipline:** One person's perspective is an anecdote. Two is interesting. Three perspectives on the same theme is a finding. Note the evidence strength for each finding.
-
-### Discovery Readout
-
-The discovery readout is the first major client-facing moment after kickoff. It's where you present what you found, test your hypotheses with the client, and set direction for the next phase.
-
-**Structure (aim for 45-60 minutes, not 90):**
-
-```
-1. Recap: What we set out to learn (5 min)
-2. What we found: Key findings, organized by theme (20 min)
-3. What the data says: Quantitative highlights (10 min)
-4. What this means: Implications and initial hypotheses (10 min)
-5. Where we go next: Recommended focus areas for analysis (5 min)
-6. Discussion (10+ min)
-```
-
-**Handling findings the client won't want to hear:**
-- Lead with findings they'll agree with. Build credibility before delivering hard news
-- Use data and direct quotes (anonymized). "We heard from multiple stakeholders that..." is harder to dismiss than "we think..."
-- Frame problems as opportunities. "The current process creates a $2M annual rework cost" is more useful than "your process is broken"
-- Separate findings from recommendations. Let the findings land before jumping to "here's what you should do"
-- If the sponsor previews the readout (which they should), there should be no surprises in the room. Walk the sponsor through difficult findings 24-48 hours before the group readout
 
 ## Phase 4: Standing Up the Engagement
 
@@ -541,8 +388,6 @@ Set up recurring rhythms immediately. Don't wait for "things to settle."
 | Client status | Progress, decisions needed | Weekly or bi-weekly | Core team + client lead | 45 min | Engagement manager |
 | Steering committee | Strategic decisions, escalations | Monthly or milestone-based | Sponsors, partners | 60 min | Partner |
 | Team retrospective | Working effectiveness | Bi-weekly or end of phase | Consulting team | 30 min | Team lead |
-
-**For virtual/hybrid engagements:** Add informal 1:1 check-ins (15 min, weekly) with your key client counterpart. Relationships that build naturally in an office require deliberate effort when remote. Also: agree on camera-on norms, default meeting platform, and "core hours" for real-time collaboration across time zones.
 
 ### Working Arrangements
 
@@ -604,17 +449,10 @@ Define what signals trouble and what to do about it:
 | Client sponsor cancels two status meetings | Engagement losing priority | Request 1:1 with sponsor | Partner |
 | Data requests unfulfilled after two weeks | Access or willingness problem | Escalate through client lead | Engagement manager |
 | Stakeholder actively undermining in meetings | Political resistance | 1:1 conversation to understand concerns | Partner |
-| Team members reassigned without notice | Client organization shifting priorities | Assess impact on deliverables; raise in steering committee | Partner |
-| Scope discussions in every status meeting | SOW ambiguity or client expectations misaligned | Document scope interpretation; trigger change control if needed | Engagement manager |
 
 ## Principles
 
 These aren't platitudes. They're the things that separate engagements that work from ones that don't.
-
-**On the sales-to-delivery transition:**
-- Read the SOW before you do anything else. Then read the proposal. Then talk to whoever sold it. In that order.
-- The client heard things during the sales process that aren't in any document. Find out what they are before kickoff.
-- If the SOW and the client's expectations don't match, fix it now. Week 6 is too late.
 
 **On kickoffs:**
 - Kickoff is about alignment, not information transfer. If you're presenting for 90 minutes, you're doing it wrong.
@@ -622,16 +460,14 @@ These aren't platitudes. They're the things that separate engagements that work 
 - Confirm your expectations of the client explicitly. Access, decision timelines, team availability. Don't be polite about this.
 - Document assumptions. Every undocumented assumption is a future scope dispute.
 - Schedule the next meeting before closing. Momentum dies in the gap.
-- If the kickoff reveals fundamental disagreement on scope, stop. This is a blocker, not a risk. Resolve it before proceeding.
 
 **On discovery:**
-- Enter with hypotheses. Test them, don't confirm them. If your findings perfectly match your initial hypothesis, you weren't listening.
+- Discovery is about understanding, not validating what you already think. If your findings perfectly match your initial hypothesis, you weren't listening.
 - Interview more people than you think you need to. Breadth catches what depth misses.
 - Cross-validate everything. One person's perspective is an anecdote. Three perspectives with the same theme is a finding.
 - Follow up, don't rapid-fire. One thoughtful question followed by genuine listening beats ten questions read from a guide.
 - Focus on root causes. Ask "why" until you get past symptoms. Pain points without root causes produce recommendations that don't stick.
 - Flag data gaps early. Don't wait until analysis to discover you're missing critical information.
-- When discovery is blocked, that's a finding in itself. Escalate it.
 
 **On stakeholders:**
 - Informal influence often matters more than formal authority. The org chart lies.
@@ -646,5 +482,3 @@ These aren't platitudes. They're the things that separate engagements that work 
 - Set cadences immediately. "We'll figure out the rhythm as we go" means no rhythm.
 - Working arrangements feel bureaucratic until the first miscommunication. Then they feel essential.
 - Quick wins in the first two weeks buy goodwill that carries you through the hard middle of the engagement.
-- For hybrid engagements, relationships require deliberate effort. Schedule the informal conversations that would happen naturally in person.
-

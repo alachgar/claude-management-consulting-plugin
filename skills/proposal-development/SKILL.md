@@ -1,19 +1,11 @@
 ---
 name: proposal-development
-description: Develop consulting proposals and manage the business development lifecycle. Use when analyzing RFPs, writing proposals, creating Statements of Work, building pitch decks, or articulating value propositions for client pursuits. Covers everything from initial opportunity assessment through proposal submission, oral defense, and post-pursuit debrief.
+description: Develop consulting proposals and manage the business development lifecycle. Use when analyzing RFPs, writing proposals, creating Statements of Work, building pitch decks, or articulating value propositions for client pursuits. Covers everything from initial opportunity assessment through proposal submission and oral presentation.
 ---
 
 # Proposal Development
 
-Manage the full business development lifecycle for consulting engagements: assess opportunities, develop proposals, draft SOWs, build pitch decks, prepare oral defenses, and articulate value propositions. This covers the business development lifecycle from opportunity assessment through proposal submission. For creating deliverables during an engagement (steering committee decks, final reports), see client-deliverables.
-
-## Before You Begin
-
-Proposals built on guesses lose deals. Ask for the inputs that shape the response:
-- What is the opportunity (RFP, inbound request, or proactive pursuit)? Is the source document available?
-- What is the firm's relevant experience and which case studies can be referenced?
-- What is the competitive landscape (who else is bidding, what's the client's selection process)?
-- Don't fabricate case study results, client names, or team credentials. Use placeholders where the user needs to supply firm-specific content: "[Insert relevant case study with quantified results]."
+Manage the full business development lifecycle for consulting engagements: assess opportunities, develop proposals, draft SOWs, build pitch decks, and articulate value propositions. This covers the business development lifecycle from opportunity assessment through proposal submission. For creating deliverables during an engagement (steering committee decks, final reports), see client-deliverables.
 
 Determine which stage of the BD lifecycle the user needs, then execute accordingly. A full pursuit flows through these stages in order, but the user may enter at any point.
 
@@ -69,11 +61,8 @@ Key questions:
 - What matters most? (highest weight)
 - What is differentiated vs. table stakes?
 - What are they explicitly vs. implicitly evaluating?
-- What does the weight distribution signal about the client? (heavy methodology weight often means they've been burned by "winging it"; heavy price weight means procurement is driving the process)
 
 Note whether weightings are explicit or inferred. For informal pursuits, identify the implicit evaluation criteria from client conversations and context.
-
-**Evaluation-driven response strategy:** Let the weights dictate where you invest effort. If methodology is 40% and price is 20%, your methodology section should be 3x more developed than your pricing section. Don't allocate proposal effort equally across unequally weighted criteria.
 
 #### 1d. Assess Competitive Position
 
@@ -85,12 +74,6 @@ Map the competitive landscape:
 - **Gaps**: What do we need to address?
 
 If multiple stakeholders are involved, note different evaluation perspectives (technical vs. commercial vs. strategic).
-
-**Losing position recovery:** If you're not the frontrunner (no existing relationship, weak references, competitor is incumbent):
-- Reframe evaluation criteria to favor your strengths through how you structure the response
-- Consider proposing alternative scope that changes the competitive dynamic
-- Use pricing structure (performance-based, phased with off-ramps) to de-risk the client's decision
-- Plan to use the oral presentation to overcome a weaker written score
 
 #### 1e. Identify Win Themes
 
@@ -111,7 +94,7 @@ Articulate the differentiated value that underpins the pursuit. This work feeds 
 
 #### 2a. Define Value Drivers
 
-Structure value:
+Structure value using this framework:
 
 **What value do we create?**
 - Primary value: cost reduction, revenue growth, risk mitigation, capability building
@@ -127,8 +110,6 @@ Structure value:
 - Relevant experience with named outcomes
 - Credentials, certifications, or third-party validation
 
-Evidence hierarchy (strongest to weakest): quantified case study with named client > quantified case study (anonymized) > named reference willing to take a call > methodology certification or award > team credentials and tenure > assertion without evidence. Never rely on the bottom of this hierarchy when you can reach higher.
-
 **What makes us different?**
 - Differentiators that only we can claim
 - Why those differentiators are sustainable
@@ -139,7 +120,35 @@ Evidence hierarchy (strongest to weakest): quantified case study with named clie
 - Track record with quantified results from similar engagements
 - How we de-risk the engagement for the client
 
-#### 2b. Validate the Messaging
+#### 2b. Develop Messaging Hierarchy
+
+Layer messaging for different audiences and contexts:
+
+**Headline Value Proposition**
+One sentence: For [target client] who [need], our [offering] delivers [primary benefit] unlike [alternative] because [key differentiator].
+
+**Elevator Pitch (30 seconds)**
+3-4 sentences a partner could deliver naturally:
+- Hook: the client problem
+- Solution: what we do differently
+- Proof: one compelling result
+- Action: what happens next
+
+**Stakeholder-Level Messages**
+
+| Audience | Focus | Proof |
+|----------|-------|-------|
+| C-Suite | Enterprise value, competitive advantage, shareholder impact | Board-level metrics |
+| Functional Leaders | Capability improvement, team effectiveness, operational metrics | Operational KPIs |
+| Practitioners | Methodology, tools, skill development, daily improvement | Practical examples, peer references |
+
+**Competitive Positioning**
+
+| Dimension | Our Position | Competitor A | Competitor B |
+|-----------|-------------|-------------|-------------|
+| [Key dimension] | [Our stance] | [Their stance] | [Their stance] |
+
+#### 2c. Validate the Messaging
 
 Run the value proposition through four tests:
 
@@ -151,84 +160,12 @@ Run the value proposition through four tests:
 If any test fails:
 - Clarity fails: simplify, remove jargon, cut to one core benefit
 - Relevance fails: you may be solving the wrong problem — re-examine client needs
-- Differentiation fails: dig into methodology, team, or IP. Examine potential differentiators: proprietary tools, team composition, delivery model, commercial structure, geographic depth, industry track record. Replace generic claims with specifics only you can claim
-- Belief fails: move up the evidence hierarchy. Quantified case studies beat assertions. Named references beat anonymous ones. If you can't find strong evidence, the claim probably isn't true enough to make
-
-#### 2c. Develop Stakeholder-Level Messages
-
-Tailor messaging for different decision-makers when the pursuit involves a complex buying group:
-
-| Audience | Care About | Lead With | Prove With |
-|----------|-----------|-----------|-----------|
-| C-Suite | Enterprise value, competitive advantage | Strategic impact | Board-level metrics |
-| Functional Leaders | Capability, team effectiveness | Operational improvement | KPIs, benchmarks |
-| Practitioners | Methodology, tools, daily work | How their work improves | Practical examples, peer references |
-| Procurement | Compliance, value for money, risk | Competitive positioning | References, certifications |
-
-This is supplementary to the core value proposition, not a replacement. Only develop stakeholder-level messages when the pursuit has multiple distinct audiences evaluating the response.
-
-### Stage 2d: Consortium and Joint-Venture Proposals
-
-Increasingly common for large public sector work, multi-capability programs, or when the client requires coverage you can't provide alone. Partnering changes the pursuit dynamics fundamentally.
-
-**When to consider a consortium bid:**
-- The RFP requires capabilities your firm doesn't have (e.g., technology implementation + management consulting)
-- Geographic coverage requirements exceed your footprint
-- The client explicitly encourages or requires consortium bids
-- The contract is too large for one firm to resource or too risky to bear alone
-
-**Partner selection criteria:**
-
-| Factor | What to Assess |
-|--------|---------------|
-| Complementarity | Do they fill a genuine gap, or are they a competitor you're sharing margin with? |
-| Track record together | Have you worked with them before? Cold partnerships rarely survive the stress of delivery |
-| Cultural compatibility | Compatible working styles, quality standards, and client management approaches |
-| Commercial alignment | Agreement on rate cards, margin sharing, and who bills what |
-| Reputation risk | Would their brand strengthen or weaken your proposal? What's their delivery track record? |
-
-**Structuring the consortium:**
-
-- **Lead partner**: One firm must lead. This firm owns the client relationship, manages the contract, and bears primary delivery risk. Decide this first. If you can't agree on who leads, don't bid together.
-- **Teaming agreement**: Formal agreement covering scope split, pricing, IP, liability, exclusivity, and what happens if you win and one partner underperforms. Get this signed before you start writing.
-- **Unified proposal voice**: The proposal must read as one team, not two firms stapled together. Assign one editor with authority to rewrite any section. Evaluators can always tell when Section 3 was written by a different firm than Section 5.
-- **Single governance model**: Present one project governance structure to the client, not "our governance + their governance." Joint steering, single escalation path.
-
-**Common consortium pitfalls:**
-- Spending more time negotiating with your partner than writing the proposal
-- Misaligned pricing (one firm's day rates are 40% higher than the other's)
-- "We'll figure out the scope split during delivery" (you won't; figure it out now)
-- Unclear IP ownership for jointly developed deliverables
-
-### Stage 2e: Timeline-Driven Proposal Strategy
-
-How much time you have to respond changes what you can do. Most proposal guidance assumes you have ample time. In practice, you often don't.
-
-**2 weeks or less (emergency response):**
-- Skip the full opportunity assessment. Make a rapid go/no-go call in the first 2 hours based on fit, availability, and win probability
-- Assign a single proposal lead with decision authority (no committee reviews)
-- Reuse aggressively: pull the closest prior proposal and adapt. Customize only the executive summary, Understanding Your Challenges, team, and pricing
-- Skip the red team. Instead, have one senior person (partner or director) do a single critical read 24 hours before submission
-- Allocate effort by evaluation weight. If methodology is 40%, spend 40% of your time there
-- Accept that the result will be imperfect. A good-enough proposal submitted on time beats a perfect one submitted late
-
-**3-4 weeks (standard response):**
-- Full process as described in Stages 1-3, but compress: opportunity assessment and win themes in Week 1, drafting in Week 2, internal review and revision in Week 3, final polish and submission in Week 4
-- One red team review (not two). Schedule it at end of Week 2 so there's time to act on findings
-- Develop 2-3 case studies maximum. Don't spend time finding the perfect six
-
-**6+ weeks (full pursuit):**
-- Full process with time for client engagement: Q&A submissions, clarification meetings, reference calls
-- Multiple red team reviews (after first draft, after revision)
-- Time to develop custom case studies or conduct preliminary analysis that demonstrates insight
-- Potential for a pre-submission meeting or draft review with the client (if the process allows)
-- Use the extra time for differentiation, not padding. The risk with long timelines is producing a bloated, committee-written proposal instead of a sharp one
-
-**Regardless of timeline:** decide early what you're NOT going to do. The biggest time sink is trying to do everything and doing nothing well.
+- Differentiation fails: dig into methodology, team, or IP — replace generic claims with specifics only you can claim
+- Belief fails: strengthen proof points with quantified case studies, named references, third-party validation
 
 ### Stage 3: Proposal Development
 
-Write the full proposal document. Carry forward win themes and value proposition work from earlier stages. If entering at this stage without earlier work, develop win themes and value drivers first.
+Write the full proposal document. Carry forward win themes and value proposition work from earlier stages.
 
 #### 3a. Gather Context
 
@@ -256,19 +193,6 @@ Lead with their challenges, not your credentials:
 ```
 
 For RFP responses, restructure to match the required format while preserving this narrative flow within each section.
-
-**Customization vs. reuse:** Every proposal has a mix. Know which is which.
-
-Must be customized every time:
-- Executive summary, Understanding Your Challenges, Team (roles on this engagement), Investment, Next Steps
-
-Can be adapted from prior proposals:
-- Methodology descriptions, firm credentials, case study write-ups
-
-Should never be boilerplate:
-- Anything referencing the client's specific situation, any claim about "understanding your needs"
-
-Common tells that scream boilerplate to an evaluator: wrong client name (obviously), generic industry language that doesn't match the client's terminology, methodology descriptions that don't connect to the stated problem, team bios that don't explain relevance to this engagement.
 
 #### 3c. Develop Each Section
 
@@ -350,64 +274,7 @@ Include what's covered, what's excluded, and key assumptions. Make payment terms
 
 One clear, low-friction action. Not a menu of options.
 
-#### 3d. Pricing Strategy
-
-How you price is as strategic as what you propose. Match the pricing model to the engagement type and evaluation context.
-
-**Pricing models and when to use them:**
-
-| Model | Best For | Risk Profile | Client Perception |
-|-------|----------|-------------|-------------------|
-| Fixed fee | Well-defined scope, clear deliverables | Firm bears scope risk | Client prefers budget certainty |
-| Time & Materials (T&M) | Ambiguous scope, discovery-heavy work | Client bears scope risk | Flexibility, but less cost certainty |
-| Blended / Capped T&M | Moderate scope clarity with some unknowns | Shared risk | Balances certainty with flexibility |
-| Performance-based | Measurable outcomes, confident in results | Firm bears delivery risk | Strong differentiator; demonstrates confidence |
-| Phased with gates | Large or uncertain programs | Decision points reduce commitment | Lowers initial commitment barrier |
-
-**Evaluation-weight-driven pricing strategy:**
-- Price weight < 25%: optimize for value, not cost. Justify the investment with ROI. A higher fee with superior methodology wins
-- Price weight 25-35%: be competitive but not cheapest. Emphasize value per dollar
-- Price weight > 35%: procurement is driving. You need to be within 10-15% of the lowest credible bid or have a compelling value story
-- Price weight > 50%: this is a commodity procurement. Either win on cost or propose an alternative scope that changes the evaluation
-
-**When budget is not disclosed:**
-- Ask directly in the Q&A period (if allowed)
-- Size the engagement based on comparable work and propose a range
-- Offer a phased approach where Phase 1 is a smaller commitment with a defined decision point
-- Include an "investment options" section showing two or three scope/price combinations
-- Never submit a proposal without some price indication; "to be discussed" signals that you're either expensive or unserious
-
-**Rate card construction:**
-- Blended day rate = weighted average across team composition
-- Show per-phase economics if team mix varies across phases
-- For T&M, specify rate card by role level and any volume or duration discounts
-- Include expense policy: what's included in fees, what's billed separately, caps if applicable
-
-#### 3e. Red Team Review
-
-Before submission, score your own proposal. Real pursuit teams do this; it catches problems that the writing team is too close to see.
-
-**Compliance check:**
-- Did you answer every required question?
-- Does the format match submission requirements (page limits, font, section numbering)?
-- Are all required attachments included?
-
-**Strength assessment against evaluation criteria:**
-
-| Criterion | Weight | Our Section Strength (1-5) | Gap | Action |
-|-----------|--------|--------------------------|-----|--------|
-| [Criterion] | X% | [Score] | [Weakness] | [How to fix before submission] |
-
-**Cross-section consistency:**
-- Does the team described in the methodology section match the team section?
-- Do the deliverables in the approach match the deliverables in pricing?
-- Is the timeline consistent across all sections?
-
-**Executive summary standalone test:** Give the executive summary to someone who hasn't read the full proposal. Can they explain what you're proposing, why you're the right firm, and what it costs? If not, rewrite it.
-
-**Evaluator experience test:** Read the proposal as if you're the evaluator with 5 other proposals on your desk. Where would you lose interest? Where would you get confused? Where would you question a claim?
-
-#### 3f. Persuasion Principles
+#### 3d. Persuasion Principles
 
 Throughout the proposal:
 - Lead with outcomes in every section (what this delivers for them)
@@ -438,11 +305,10 @@ Gather or confirm:
 5. Deliverables
 6. Timeline & Milestones
 7. Team & Roles
-8. Client Responsibilities
-9. Governance
-10. Assumptions & Dependencies
-11. Commercial Terms
-12. Acceptance Criteria
+8. Governance
+9. Assumptions & Dependencies
+10. Commercial Terms
+11. Acceptance Criteria
 ```
 
 #### 4c. Critical SOW Sections
@@ -484,20 +350,6 @@ Measurable, not aspirational:
 |---|-----------|-------------|--------|
 | 1 | [Criterion] | [How measured] | [Target] |
 
-**Client Responsibilities**
-
-This section prevents the most common source of engagement failure: unmet client obligations. Be explicit.
-
-| Responsibility | Description | Timeline / SLA | Consequence if Not Met |
-|---------------|-------------|----------------|----------------------|
-| Data access | Provide access to [systems/data] per data request | Within 5 business days of request | Timeline extension of equivalent duration |
-| Decision authority | Designated decision-maker available for approval of [deliverables/phase gates] | Within 3 business days of submission | Timeline extension; fees for rework if direction changes after delay |
-| Resource commitment | [Named roles] available at [X]% dedication for working sessions and reviews | Per project schedule | Scope may need to be adjusted; change control process applies |
-| Workspace/access | Physical workspace, VPN access, system credentials for team of [X] | Prior to engagement start | Engagement start date shifts |
-| Subject matter experts | SMEs available for [X] hours per week of interviews and working sessions | Per discovery/analysis schedule | Findings limited to available input; risk flagged in deliverables |
-
-Don't be polite about this section. Engagements fail when client obligations are assumed rather than documented. The consequence column is what gives the section teeth.
-
 **Governance**
 
 Match the governance structure to the engagement's complexity and the client's organization:
@@ -532,7 +384,7 @@ Define specific, measurable acceptance criteria for each deliverable. Include:
 
 **Team & Roles**
 
-Both sides. Consulting team with role, name, level, and commitment percentage. Client team with role and responsibilities.
+Both sides. Consulting team with role, name, level, and commitment percentage. Client team with role and responsibilities. Client responsibilities are critical — engagements fail when client obligations aren't spelled out.
 
 #### 4d. Change Control
 
@@ -624,125 +476,39 @@ Adjust length for context. A 30-minute slot with discussion gets 10-12 slides. A
 7. **Answer first** — lead with recommendations, support with analysis
 8. **Design for the room** — white space, clarity over density, visuals over text walls
 
-### Stage 6: Oral Presentation and Defense
+## Response Strategy Framework
 
-For RFPs with an oral defense stage, or any client presentation of the proposal. The written proposal gets you to the shortlist; the oral presentation wins the work.
+When developing an RFP response, layer the strategy in tiers:
 
-#### 6a. Presentation Design by Time Slot
+**Tier 1: Compliance and Responsiveness**
+- Must-pass requirements (non-negotiable criteria)
+- Scored requirements (weighted criteria to address well)
 
-| Time Slot | Presentation | Q&A | Slide Count | Depth |
-|-----------|-------------|-----|-------------|-------|
-| 30 min | 15-18 min | 12-15 min | 8-10 | Hit the 3 win themes only |
-| 45 min | 25-28 min | 17-20 min | 12-15 | Win themes + methodology detail |
-| 60 min | 35-40 min | 20-25 min | 15-20 | Full proposal narrative |
-| 90 min | 50-55 min | 35-40 min | 20-25 | Deep methodology + case studies + team intros |
+**Tier 2: Strength-Based Win Themes**
+- Primary win themes aligned to highest-weighted criteria
+- Differentiators that set us apart from competitors
 
-Never fill the full time with presentation. Evaluators learn more from Q&A than from your slides, and so do you.
+**Tier 3: Persuasion and Evidence**
+- Case studies with quantifiable results
+- Methodology credentials and track record
 
-#### 6b. Who Presents What
+**Tier 4: Credibility and Trust**
+- Relevant certifications and team credentials
+- Client references and testimonials
 
-| Section | Presenter | Why |
-|---------|-----------|-----|
-| Opening / relationship | Partner / Principal | Sets seniority and commitment |
-| Understanding the challenge | Manager / engagement lead | Demonstrates the working team's grasp |
-| Methodology | Subject matter expert | Credibility on approach |
-| Case studies | Person who did the work | Authenticity over polish |
-| Team | Each person, briefly | Let them see who they'll work with |
-| Commercial / next steps | Partner | Decision-level conversation |
-
-Don't let the partner present everything. Evaluators want to see the team that will actually do the work.
-
-#### 6c. Q&A Preparation
-
-Prepare for the questions you'll get. Most fall into predictable categories:
-
-- **Risk / mitigation**: "What happens if this doesn't work?" "What's the biggest risk?"
-- **Team commitment**: "Will the people presenting be the ones doing the work?" "What's the partner's time commitment?"
-- **Methodology depth**: "Walk us through exactly how you'd handle [specific scenario]"
-- **References**: "Can we speak to a client where this didn't go as planned?"
-- **Pricing**: "Can you do this for less?" "What's the value per dollar?"
-- **Scope**: "Can you include [thing that's out of scope]?"
-
-**Q&A team roles:**
-- One person fields each question (don't have three people answer the same question)
-- Designated person captures questions that need follow-up ("parking lot")
-- If you don't know, say so and commit to a follow-up timeline
-
-#### 6d. Rehearsal
-
-Rehearse at least once with someone playing the evaluator. Focus on:
-- Transitions between presenters (these are where presentations fall apart)
-- Timing (cut content rather than rush)
-- Q&A simulation with adversarial questions
-- The first 90 seconds (if the opening is weak, you're fighting uphill)
-
-### Stage 6e: Best and Final Offer (BAFO)
-
-Some procurements (especially public sector and large enterprise) include a BAFO round after shortlisting. You've submitted your proposal, possibly presented orally, and now you're asked to submit a "best and final offer." This is a negotiation, not a revision.
-
-**What BAFO actually means:**
-- The client has shortlisted 2-3 firms and wants to drive final competition on price, scope, or both
-- Your original proposal is the baseline. BAFO is your chance to sharpen the offer, not rewrite it
-- The client may share feedback on your proposal (weaknesses to address) or simply ask you to "submit your best terms"
-
-**BAFO strategy:**
-
-*When the client gives feedback:*
-- Address every piece of feedback explicitly. Map your BAFO response to their concerns point by point
-- Strengthen weak areas without undermining strong ones. Don't cut the methodology section to fund a price reduction
-- If they flagged a team concern, consider upgrading a team member or adding a subject matter expert
-
-*When the client just says "submit your best and final":*
-- Don't assume "best and final" means "lowest price." It means your most competitive overall offer
-- Consider what you can add (value) rather than only what you can cut (price). An additional deliverable, accelerated timeline, or performance guarantee may differentiate more than a 5% discount
-- If you reduce price, tie it to something: reduced scope, longer timeline, volume commitment, or multi-phase relationship. Never reduce price without a stated reason; it signals your original price had margin to burn
-
-**Tactical moves:**
-- **Sharpen, don't slash.** A 5-10% price adjustment signals competitiveness. A 25% cut signals you were overpriced originally or you're about to cut corners
-- **Restructure, don't just discount.** Move from fixed-fee to phased with gates, or offer a performance-based component. This changes the comparison framework
-- **Add a conditional sweetener.** "If awarded by [date], we can guarantee [named partner] will lead the engagement" or "We will include a complimentary [half-day workshop / diagnostic] during Phase 1"
-- **Hold your floor.** Know your walk-away price before the BAFO round starts. Calculate the minimum engagement economics (cost to deliver + acceptable margin) and don't go below it
-
-**What not to do in BAFO:**
-- Don't change your core approach. The client shortlisted you based on your methodology. Swapping it now signals desperation
-- Don't remove team members who were highlighted in the oral defense
-- Don't submit a BAFO that contradicts your original proposal without explanation
-- Don't treat it as optional. If you're asked for a BAFO and don't submit one, you've withdrawn
-
-### Stage 7: Post-Pursuit
-
-Whether you win or lose, close the loop.
-
-#### 7a. Win
-
-- Send confirmation and transition plan within 24 hours
-- Introduce delivery team to client team
-- Cross-reference the engagement-setup skill for kickoff planning
-- Archive proposal materials for reuse on future pursuits
-
-#### 7b. Loss
-
-- Request a debrief from the client (most will agree if asked promptly)
-- Ask specific questions: What was the deciding factor? Where did we score well/poorly? What would have changed the outcome?
-- Document learnings: pricing feedback, methodology gaps, team perception, competitive intelligence
-- Update win/loss records for pipeline analytics
-- Thank the client and keep the relationship warm. Today's loss is next year's opportunity
-
-#### 7c. Debrief (Win or Lose)
-
-Internal debrief with the pursuit team:
-- What worked in our process?
-- What would we do differently?
-- What did we learn about the client, the market, or our competitors?
-- What content or materials should be templated for reuse?
+**Response principles:**
+- Lead with their priorities, not your history
+- Open with solution, not capabilities
+- Use data visualization to demonstrate impact
+- Client-focused, outcome-oriented, specific tone throughout
 
 ## Output Format
 
 Output depends on the stage requested. Each stage generates its primary artifact:
 
-**Opportunity Assessment** → Analysis document with fit score, evaluation breakdown, competitive landscape, win themes, and go/no-go recommendation
+**Opportunity Assessment** → Analysis document with fit score, evaluation breakdown, competitive landscape, win themes, response strategy, and go/no-go recommendation
 
-**Value Proposition** → Core value proposition, stakeholder-level messages (if needed), validation results
+**Value Proposition** → Master value proposition, elevator pitch, stakeholder-level messages, competitive positioning table, validation results
 
 **Proposal** → Complete proposal document with cover page, executive summary, all sections, and appendices
 
@@ -750,14 +516,11 @@ Output depends on the stage requested. Each stage generates its primary artifact
 
 **Pitch Deck** → Slide-by-slide content with titles, bullets, visual suggestions, and optional speaker notes
 
-**Oral Presentation** → Presentation plan with timing, presenter assignments, Q&A preparation, and rehearsal notes
-
 After generating any artifact, offer relevant next steps:
 - Move to the next stage in the lifecycle
 - Adjust tone, emphasis, or scope
 - Add specific case studies or credentials
 - Create alternative versions (e.g., shorter deck, T&M vs. fixed-fee SOW)
-- Red team review the output against evaluation criteria
 
 ## Notes
 
@@ -767,9 +530,8 @@ After generating any artifact, offer relevant next steps:
 - Out-of-scope lists prevent more disputes than in-scope lists
 - Payment terms should align with deliverable milestones
 - Design decks for the audience. C-suite gets strategic framing; working teams get operational detail
-- Test value propositions against the validation criteria before committing to positioning
+- Test value propositions against the four validation criteria before committing to positioning
 - For complex RFPs, recommend breaking response development into sections with review gates
 - Always note if evaluation criteria weightings are explicit or inferred
-- If budget is not disclosed, flag it as a risk factor and use the pricing strategy guidance to address it
+- If budget is not disclosed, flag it as a risk factor
 - Flag any unusual requirements that may indicate a preferred vendor
-- Cross-reference the engagement-setup skill when transitioning from proposal win to delivery
