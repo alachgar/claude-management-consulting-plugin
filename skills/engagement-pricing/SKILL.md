@@ -1,272 +1,266 @@
 ---
 name: engagement-pricing
-description: Develop consulting pricing models and commercial strategy for engagements. Use when structuring fees (fixed, T&M, value-based, retainer, outcome-based), building rate cards, modeling engagement economics, setting payment terms, analyzing margins, planning discount strategy, or preparing commercial terms for proposals and SOWs.
+description: Builds consulting pricing models, rate cards, engagement economics, and commercial terms. Use when structuring fees (fixed, time and materials, value-based, retainer, outcome-based, or hybrid), building or defending a rate card, modeling margins and team leverage, setting payment schedules and liability caps, planning discount and negotiation strategy, or drafting the commercial sections of a proposal or SOW. Covers model-selection logic, fully loaded cost buildup, realization, and value-case construction.
+license: MIT
+metadata:
+  category: business-development
+  version: "2.1.0"
+  author: Anot
 ---
 
 # Engagement Pricing
 
-Structure pricing models, rate cards, engagement economics, and commercial terms for consulting engagements. Balance the firm's margin requirements with competitive positioning and client value delivery.
+Structure pricing models, rate cards, engagement economics, and commercial terms for consulting engagements. Every pricing decision balances three forces: the firm's margin floor, the client's willingness to pay, and the competitive alternative. Price too far below value and you leave money on the table. Price without modeling the economics and you win work that loses money.
+
+**Before pricing anything, get real inputs.** Ask for the actual scope, the team's fully loaded costs, the firm's target margins, and what the client's budget and alternatives are. Do not invent rates, benchmarks, or cost figures. The ranges in this skill are directional starting points for structuring the conversation, not authoritative market data. Label any illustrative number as an example and flag it for validation against real firm data.
 
 ---
 
 ## The Pricing Process
 
-### Step 1: Assess Engagement Characteristics
+### Step 1: Pick the Model From the Engagement, Not From Preference
 
-The right pricing model depends on the engagement, not on preference. Understand what you're pricing before deciding how to price it.
+This is where the judgment lives. The wrong model on the right work destroys margin quietly, over weeks, before anyone notices. Diagnose the engagement first, then match it.
 
-**Engagement factors that drive model selection:**
+**Six factors drive model selection. Score the engagement on each before you choose:**
 
 | Factor | Assessment Range | Pricing Implication |
 |---|---|---|
-| Scope clarity | Defined / Fuzzy / Evolving | Clear scope enables fixed fee; fuzzy scope needs T&M or retainer |
-| Duration | Weeks / Months / Ongoing | Longer engagements favor retainers or phased fixed fees |
-| Deliverables | Tangible / Advisory / Implementation | Tangible deliverables support fixed fee; advisory work suits retainer |
-| Risk level | Low / Medium / High | Higher risk warrants premium or risk-sharing model |
-| Client relationship | New / Existing / Strategic | Strategic accounts may warrant investment pricing |
-| Outcome measurability | Measurable / Partially / Not measurable | Measurable outcomes enable value-based or outcome-based pricing |
+| Scope clarity | Defined / Fuzzy / Evolving | Clear scope enables fixed fee. Fuzzy or evolving scope needs T&M or retainer. |
+| Duration | Weeks / Months / Ongoing | Longer engagements favor retainers or phased fixed fees over one lump sum. |
+| Deliverables | Tangible / Advisory / Implementation | Tangible deliverables support fixed fee. Advisory work suits a retainer. |
+| Risk level | Low / Medium / High | Higher execution risk warrants a premium or a risk-sharing structure. |
+| Client relationship | New / Existing / Strategic | Strategic accounts may justify investment pricing. New clients rarely do. |
+| Outcome measurability | Measurable / Partial / Not measurable | Measurable, attributable outcomes unlock value-based or outcome-based pricing. |
 
-**Pricing model options:**
+**The model menu:**
 
-| Model | How It Works | Best When | Risk Profile |
+| Model | How It Works | Best When | Who Carries Risk |
 |---|---|---|---|
-| Time & Materials (T&M) | Bill hours/days at agreed rates | Scope is undefined or evolving; discovery phases; staff augmentation | Low risk to consultant, high to client |
-| Fixed Fee | Agreed price for defined scope | Scope is clear and stable; deliverables are concrete; you've done similar work before | High risk to consultant (scope creep), low to client |
-| Retainer | Monthly fee for access and availability | Ongoing advisory relationships; predictable recurring needs; strategic accounts | Medium to both sides |
-| Value-Based | Fee linked to value delivered | Client outcomes are quantifiable; ROI is clear and large; you can credibly claim attribution | Low risk to consultant if structured well |
-| Outcome-Based | Fee tied to achieving specific results | Clear metrics exist; you have significant control over outcomes; client trusts measurement | Shared risk; high upside potential |
-| Risk/Reward | Base fee plus performance bonus | Client wants skin in the game; results are measurable; relationship supports transparency | Shared risk; aligns incentives |
-| Hybrid | Combine models (e.g., T&M with a cap, fixed fee + success bonus) | Complex engagements with both defined and undefined components | Tailored risk sharing |
+| Time & Materials | Bill hours or days at agreed rates | Scope is undefined or evolving. Discovery phases. Staff augmentation. | Client carries scope risk; consultant is protected |
+| Fixed Fee | Agreed price for a defined scope | Scope is clear and stable, deliverables concrete, and you have done comparable work | Consultant carries scope-creep risk; client has cost certainty |
+| Retainer | Monthly fee for access and availability | Ongoing advisory, predictable recurring need, strategic account | Shared; both sides commit |
+| Value-Based | Fee linked to quantified value delivered | Outcomes are large, measurable, and credibly attributable to you | Low for consultant if the baseline is defined tightly |
+| Outcome-Based | Fee tied to hitting specific results | Clear metrics exist and you control the outcome | Shared, with real upside |
+| Risk/Reward | Base fee plus performance bonus | Client wants skin in the game and results are measurable | Shared; aligns incentives |
+| Hybrid | Combine models (T&M with a cap, fixed fee plus success bonus) | Engagements with both defined and undefined components | Tailored |
 
-**Model selection logic:**
+**Selection logic, in order:**
 
-Can you define the scope precisely? If yes, lean toward fixed fee. If no, lean toward T&M or retainer.
+Can you define the scope precisely enough to bet a fee on it? If yes, lean fixed fee. If no, T&M or retainer until the scope firms up. Pricing fixed on fuzzy scope is the most common way consultants lose money.
 
-Can you measure the value you'll create? If yes, consider value-based or outcome-based pricing, especially if the value is large relative to fees.
+Can you measure the value and defend the attribution? If yes, and the value dwarfs the fee, price on value. A $400K fee against $8M in documented savings is an easy conversation. The same fee framed as "800 hours at $500" invites line-item haggling.
 
-Is this an ongoing relationship? If yes, retainer or hybrid models create stability for both sides.
+Is this a continuing relationship? If yes, a retainer or hybrid gives both sides stability and shifts the conversation from cost to partnership.
 
-### Step 2: Develop the Rate Structure
+One rule with no exceptions: do not propose value-based or outcome-based pricing on outcomes you cannot influence or cannot measure against a clean baseline. You will be blamed for results you never controlled.
 
-Rates are the foundation of every pricing model, even when you don't show them to the client.
+### Step 2: Set the Rate Structure
 
-**Rate card development:**
+Rates are the foundation of every model, including the ones where the client never sees an hourly number. Build the rate card, then use it to back into fixed and value-based fees.
 
-| Level | Typical Daily Rate Range | What Drives the Rate |
+**Rate card by level.** Populate the daily rates from the firm's actual card. The right column is what justifies each rate to a skeptical procurement team.
+
+| Level | Daily Rate | What Justifies It |
 |---|---|---|
-| Partner/Director | Top of range | Client relationship, deal origination, quality assurance, experience premium |
-| Principal/Associate Director | Upper-mid range | Workstream leadership, client management, senior problem-solving |
-| Manager/Engagement Manager | Mid range | Day-to-day delivery, team management, analysis oversight |
-| Senior Consultant | Lower-mid range | Core analytical work, deliverable production, client interaction |
-| Consultant | Lower range | Analytical support, research, deliverable drafting |
-| Analyst | Entry range | Data gathering, modeling support, research |
+| Partner / Director | Top | Relationship, origination, quality assurance, experience premium |
+| Principal / Associate Director | Upper-mid | Workstream leadership, client management, senior problem-solving |
+| Manager / Engagement Manager | Mid | Delivery, team management, analysis oversight |
+| Senior Consultant | Lower-mid | Core analysis, deliverable production, client interaction |
+| Consultant | Lower | Analytical support, research, drafting |
+| Analyst | Entry | Data gathering, modeling support, research |
 
-**Rate determination factors:**
+**What moves a rate up or down:**
 
 | Factor | Direction | Rationale |
 |---|---|---|
-| Market rates | Benchmark | What competitors charge for comparable work |
-| Specialization premium | Up | Scarce expertise commands higher rates |
-| Relationship/volume | Down | Strategic accounts and large commitments earn discounts |
-| Scope certainty | Up for uncertain | Risk premium for poorly defined work |
-| Urgency | Up | Timeline pressure warrants premium |
-| Location/delivery model | Variable | On-site typically higher than remote; offshore lower |
-| Competitive pressure | Down | If the client has alternatives, rates may flex |
+| Market rate for comparable work | Anchor | The reference point, gathered from real quotes and wins |
+| Scarce specialization | Up | Rare expertise commands a premium |
+| Volume or strategic commitment | Down | Large or repeat commitments earn a discount |
+| Scope uncertainty | Up | Risk premium for poorly defined work |
+| Urgency | Up | Timeline pressure warrants a premium |
+| Delivery model | Variable | On-site above remote; offshore below |
+| Credible client alternatives | Down | Real competition flexes the rate |
 
-**Team composition and leverage:**
+**Team leverage drives both cost and signal.** A partner-heavy team costs more and reassures the client on seniority. An analyst-heavy team is cheaper and can spook a client worried about junior staffing. The ratios below are typical shapes by engagement type, not firm-specific targets. Validate against how your firm actually staffs.
 
-The team mix drives both cost and perceived value. Higher partner/principal involvement signals seniority but raises fees. Higher analyst/consultant leverage reduces fees but may concern clients about junior staffing.
-
-Typical leverage ratios by engagement type:
-
-| Engagement Type | Partner:Manager:Consultant Ratio | Rationale |
+| Engagement Type | Partner : Manager : Consultant | Why |
 |---|---|---|
-| Strategy | 1:1:2 | High-judgment work, senior-heavy |
-| Operations improvement | 1:2:4 | Process work, more execution-heavy |
-| Implementation | 1:3:6 | Execution-intensive, more junior resource |
-| Due diligence | 1:1:3 | Time-pressured, analytical |
-| Advisory retainer | 1:1:1 | Senior-focused, relationship-driven |
+| Strategy | 1 : 1 : 2 | High-judgment, senior-heavy |
+| Operations improvement | 1 : 2 : 4 | Process work, execution-heavy |
+| Implementation | 1 : 3 : 6 | Execution-intensive, more junior resource |
+| Due diligence | 1 : 1 : 3 | Time-pressured and analytical |
+| Advisory retainer | 1 : 1 : 1 | Senior-focused, relationship-driven |
 
-### Step 3: Model Engagement Economics
+### Step 3: Model the Economics Before You Quote
 
-Build the cost model to understand your margins before you price.
+This is the second place judgment lives. A fee you cannot defend on margin is a guess. Build the cost stack, then read the margin.
 
-**Direct costs:**
+**Direct costs (what the engagement consumes):**
 
-| Category | What to Include |
+| Category | Include |
 |---|---|
-| Personnel | Fully loaded cost of team time (salary + benefits + overhead, not billing rate) |
-| Travel | Flights, hotels, meals, ground transport (if on-site) |
-| Third-party costs | Licensed data, specialist subcontractors, tools, software |
-| Materials | Printing, production costs for deliverables |
+| Personnel | Fully loaded cost of team time: salary plus benefits plus overhead. Not the billing rate. |
+| Travel | Flights, hotels, meals, ground transport, if on-site |
+| Third-party | Licensed data, subcontractors, tools, software |
+| Materials | Production costs for deliverables |
 
-**Indirect costs and overhead:**
+The single most common costing error is pricing personnel at the billing rate instead of the loaded cost. The billing rate is revenue. Your margin lives in the gap between the two.
 
-| Category | Typical Range |
-|---|---|
-| Firm overhead allocation | 15-30% of direct personnel cost |
-| Business development cost | 5-10% (the cost of winning the work) |
-| Risk contingency | 5-15% depending on scope certainty |
+**Indirect costs and overhead.** These ranges are directional. Replace them with the firm's actual allocation percentages before you commit to a fee.
 
-**Margin analysis:**
+| Category | Directional Range | Note |
+|---|---|---|
+| Firm overhead allocation | 15-30% of direct personnel cost | Confirm the firm's real allocation |
+| Business development cost | 5-10% | The cost of winning the work |
+| Risk contingency | 5-15% | Scale with scope uncertainty; thin scope, thicker contingency |
+
+**Read four margin metrics, not one:**
 
 | Metric | What It Tells You |
 |---|---|
-| Gross margin (fee minus direct cost) | Whether the engagement covers its direct costs with room to spare |
-| Contribution margin (fee minus all allocated costs) | Whether the engagement contributes to firm profitability |
-| Realization rate (actual fee / standard rate card value) | How much of your rate card you're actually capturing |
-| Effective daily rate (total fee / total days worked) | What you're actually earning per day across the team |
+| Gross margin (fee minus direct cost) | Whether the work covers its direct costs with room to spare |
+| Contribution margin (fee minus all allocated costs) | Whether the work adds to firm profit after overhead |
+| Realization (actual fee / rate-card value) | How much of the card you are actually capturing |
+| Effective daily rate (total fee / total days) | What the team truly earns per day, blended |
 
-Target margins vary by firm size and market position, but as a general guide:
-- Gross margin below 40% is a warning sign
-- Gross margin of 50-65% is healthy for most consulting firms
-- Gross margin above 70% suggests you may be underinvesting in the engagement
+**Margin thresholds are directional and vary by firm size and positioning.** As a rough read for a typical firm: gross margin under 40% is a warning to reprice or rescope, 50-65% is healthy, and above 70% may mean you are underinvesting in delivery and risking quality. Treat these as conversation starters, not the firm's actual targets. Ask for the real hurdle rate.
 
-### Step 4: Structure Commercial Terms
+Model realization deliberately. A headline fee that looks strong at rate-card value can realize at 60% once you strip out discounts, scope creep, and unbilled hours. The effective daily rate is the number that tells you what the engagement actually pays.
 
-Commercial terms are where pricing meets contracting. Get these wrong and a well-priced engagement still loses money.
+### Step 4: Structure the Commercial Terms
 
-**Payment structure options:**
+Terms are where a well-priced engagement can still lose money. This part is more standard than the pricing itself, so move efficiently and protect the few clauses that matter.
 
-| Structure | When to Use |
+**Match the payment structure to the model:**
+
+| Structure | Use For |
 |---|---|
-| Monthly invoicing | T&M engagements; straightforward, predictable |
-| Milestone-based | Fixed fee engagements; ties payment to deliverable acceptance |
-| Upfront + milestones | New clients or large engagements; reduces payment risk |
-| Monthly retainer | Retainer models; predictable for both sides |
-| Outcome-triggered | Value/outcome-based; payment when results are achieved |
+| Monthly invoicing | T&M; simple and predictable |
+| Milestone-based | Fixed fee; ties payment to deliverable acceptance |
+| Upfront plus milestones | New clients or large engagements; reduces payment risk |
+| Monthly retainer | Retainer models |
+| Outcome-triggered | Value and outcome-based; pays when results land |
 
-**Payment schedule design:**
+**Front-load the schedule to your cost curve.** You incur most cost early: ramp-up, research, analysis. The payment schedule should mirror that. A common fixed-fee shape:
 
-For fixed-fee or milestone-based engagements, front-load payments to match your cost profile. You incur most costs early (team ramp-up, research, analysis); your payment schedule should reflect that.
+- 20-30% at signature or kickoff
+- 30-40% across one or two interim milestones
+- 30-40% on final acceptance
 
-A typical schedule:
-- 20-30% at contract signature or kickoff
-- 30-40% at interim milestones (spread across 1-2 milestones)
-- 30-40% at final deliverable acceptance
+Never put more than 40% on final acceptance. If the client stalls acceptance, you are financing the engagement out of your own margin.
 
-Never put more than 40% of the fee on final acceptance. If the client delays acceptance, you're financing the engagement.
+**Standard terms and where to hold the line:**
 
-**Standard commercial terms:**
-
-| Term | Standard Position | Negotiation Notes |
+| Term | Standard Position | Where to Fight |
 |---|---|---|
-| Payment terms | Net 30 | Push back on Net 60+; it's a financing cost you're absorbing |
-| Expense policy | Reimbursed at cost, pre-approved | Cap expenses as a % of fees if the client insists |
-| Intellectual property | Client owns client-specific work product; firm retains methodologies and tools | Non-negotiable on methodology; flexible on work product |
-| Confidentiality | Mutual NDA | Standard; rarely contentious |
-| Liability cap | 1-2x total fees | Don't accept unlimited liability |
-| Termination | 30-day notice; payment for work completed | Protect against sudden termination; include kill fee for fixed-fee work |
-| Scope changes | Written change order process with pricing | Essential for fixed-fee; protects against scope creep |
+| Payment terms | Net 30 | Push back on Net 60 or worse. It is a financing cost you absorb. |
+| Expenses | At cost, pre-approved | Cap as a % of fees only if the client insists |
+| IP | Client owns client-specific work product; firm keeps methodologies and tools | Non-negotiable on methodology. Flexible on the work product. |
+| Confidentiality | Mutual NDA | Rarely contentious |
+| Liability cap | 1-2x total fees | Never accept unlimited liability |
+| Termination | 30-day notice, payment for work done | Add a kill fee for fixed-fee work |
+| Scope changes | Written change order with pricing | Essential on fixed fee. Without it, the fee is a blank check. |
 
-**IP and licensing considerations:**
+**On IP and licensing:** license your tools, do not transfer them. Define whether the client can use deliverables internally only or share with affiliates. Clarify who owns improvements built on your methodology. These three lines protect assets worth more than any single engagement.
 
-For engagements involving proprietary tools, models, or software:
-- License vs. transfer: License your tools for use; don't transfer ownership
-- Usage rights: Define whether the client can use deliverables internally only or share with affiliates
-- Derivative works: Clarify who owns improvements built on your methodology
+### Step 5: Plan the Discount and Negotiation Strategy
 
-### Step 5: Discount and Negotiation Strategy
+Deals are won and lost here, so this section earns depth. Walk in with a strategy, a floor, and a set of trades. Improvising on price is how margin evaporates in the room.
 
-Every engagement involves negotiation. Have a strategy before you enter the room.
-
-**Discount types and when to use them:**
+**Discount types.** The ranges below are typical, not fixed. Set actual bands against the firm's margin floor.
 
 | Discount Type | Typical Range | Justification |
 |---|---|---|
-| Volume | 5-15% | Multiple engagements or large scope commitment |
-| Relationship/strategic | 5-10% | Long-term partnership, reference client, marquee logo |
-| Early payment | 2-5% | Payment within 10-15 days (a genuine financing benefit to you) |
-| Competitive | 5-10% | When you need to win and the client has credible alternatives |
-| Pilot/land-and-expand | 10-20% | First engagement priced to win, with expansion opportunity |
+| Volume | 5-15% | Multiple engagements or a large scope commitment |
+| Relationship / strategic | 5-10% | Long-term partnership, reference client, marquee logo |
+| Early payment | 2-5% | Payment inside 10-15 days, a genuine financing benefit to you |
+| Competitive | 5-10% | You need the win and the client has a credible alternative |
+| Pilot / land-and-expand | 10-20% | First engagement priced to win, with a real expansion path |
 
-**Negotiation principles:**
+**Five negotiation principles that hold under pressure:**
 
-- **Know your walk-away point** before you start. Calculate the minimum fee that delivers acceptable margin. Below that, you're buying the work, not winning it.
-- **Never discount without getting something back.** Longer commitment, faster payment, case study rights, reference-ability, expanded scope.
-- **Discount the total, not the rates.** Cutting your rate card devalues your people. Instead, reduce hours, adjust team composition, narrow scope, or provide a lump-sum discount. Protect the rate card.
-- **Show value first, price second.** If the client is focused on fee before they understand value, you're in a cost negotiation, not a value conversation.
-- **Use anchoring.** Present your recommended option alongside a higher-priced premium option and a stripped-down economy option. The middle option looks reasonable by comparison.
+Know your walk-away number before you start. Calculate the minimum fee that clears an acceptable margin. Below it you are buying the work, not winning it, and bought work rarely turns into good work.
 
-**Pricing sensitivity analysis:**
+Never discount without a trade. Longer commitment, faster payment, case-study rights, a reference, a broader scope. A concession given free trains the client to ask again.
 
-Model three scenarios before presenting:
+Discount the deal, not the rate card. Cutting rates devalues your people and the cut rarely reverses. Instead, reduce hours, adjust the team mix, narrow the scope, or offer a lump-sum reduction. Protect the card.
+
+Show value before price. If the client fixates on fee before understanding value, you are in a cost negotiation and you will lose it. Reset to value first.
+
+Anchor with three options. Present the recommended option flanked by a premium tier and a stripped-down economy tier. The middle reads as reasonable by comparison, and the premium tier reframes what the client considers expensive.
+
+**Run three scenarios before you present.** Fill each fee and margin cell from the actual cost model, not from a placeholder. Each row should carry the assumptions that produced its number.
 
 | Scenario | Assumptions | Fee | Margin |
 |---|---|---|---|
-| Base case | Scope as defined, standard team, no complications | Target fee | Target margin |
-| Upside | Scope expands, additional phases, premium positioning | Higher fee | Higher margin |
-| Downside | Scope narrows, competitive pressure, discount applied | Floor fee | Minimum acceptable margin |
+| Base | Scope as defined, standard team, no complications | Target fee | Target margin |
+| Upside | Scope expands, added phases, premium positioning | Higher fee | Higher margin |
+| Downside | Scope narrows, competitive pressure, discount applied | Floor fee | Minimum acceptable |
 
 ### Step 6: Build the Value Case
 
-For any engagement above commodity rates, you need a value story. Clients buy outcomes, not inputs.
+Above commodity rates, you need a value story, because clients buy outcomes and not inputs. This is the third place real judgment shows: quantifying benefit honestly and defending the attribution.
 
-**Value quantification framework:**
+**Quantify the value drivers.** Populate examples with the client's real numbers where available. Where you must illustrate, label the figure as an example and flag it for validation. Frame benefits conditionally ("organizations that tighten this process tend to see X") unless the client or firm supplies actual data. Never present a fabricated dollar figure as fact.
 
-| Value Driver | How to Measure | Example |
+| Value Driver | How to Measure | Illustrative Example (validate) |
 |---|---|---|
-| Cost reduction | Current cost minus future cost | Process improvement saves $2M/year in labor |
-| Revenue increase | Incremental revenue attributable to engagement | Pricing optimization adds $5M in annual revenue |
-| Risk reduction | Expected loss avoided or probability reduced | Compliance program reduces expected regulatory fines |
-| Speed to market | Value of time saved | Launching 3 months earlier captures $3M in first-mover revenue |
-| Capability building | Cost of alternative capability development | Building internal team would cost $4M and take 18 months |
+| Cost reduction | Current cost minus future cost | A process fix saves an estimated $2M/year in labor |
+| Revenue increase | Incremental revenue attributable to the work | Pricing optimization adds an estimated $5M in annual revenue |
+| Risk reduction | Expected loss avoided or probability reduced | A compliance program lowers expected regulatory exposure |
+| Speed to market | Value of time saved | Launching three months earlier captures first-mover revenue |
+| Capability building | Cost of building the capability another way | An internal team would cost an estimated $4M and take 18 months |
 
-**Value-sharing models:**
+**Value-sharing structures:**
 
-| Approach | Structure | When It Works |
+| Approach | Structure | Works When |
 |---|---|---|
 | Percentage of value | Fee = X% of quantified benefit | Value is large, measurable, and clearly attributable |
-| Tiered sharing | Lower % on first tranche, higher on upside | Aligns incentives as value grows |
-| Base + bonus | Fixed base fee plus bonus for exceeding targets | Client wants cost certainty with performance alignment |
-| Gainsharing | Fee funded from realized savings | Cost reduction engagements with measurable baseline |
+| Tiered sharing | Lower % on the first tranche, higher on upside | Aligns incentives as value grows |
+| Base plus bonus | Fixed base plus a bonus for exceeding targets | Client wants cost certainty with performance alignment |
+| Gainsharing | Fee funded from realized savings | Cost-reduction work with a clean, measurable baseline |
 
-**ROI presentation:**
-
-Present the client's investment case clearly:
-- Their investment (your fee)
-- Expected return (quantified benefits)
-- ROI ratio (benefits / fee)
-- Payback period (when benefits exceed fees)
-- Confidence level (how certain are the estimates)
+**Present the client's investment case in five lines:** their investment (your fee), the expected return (quantified benefit), the ROI ratio (benefit divided by fee), the payback period (when benefit overtakes fee), and the confidence level (how firm the estimates are). State the confidence level plainly. A defensible case with 60% confidence beats an inflated one that collapses under a CFO's questions.
 
 ---
 
-## Retainer Structures
+## Retainers
 
-Retainers deserve specific attention because they're the most relationship-dependent model.
+Retainers get their own section because they are the most trust-dependent model and the easiest to structure badly.
 
-**Retainer design:**
+**Design the retainer around seven decisions:**
 
-| Element | What to Define |
+| Element | Define |
 |---|---|
-| Monthly fee | Fixed amount, usually based on expected hours x blended rate |
-| Hours included | Specify a range or minimum/maximum |
-| Rollover policy | Do unused hours carry forward? (Usually no, or capped) |
-| Overage rate | Rate for hours beyond the included amount |
-| Scope boundaries | What's in-scope vs. what triggers a separate engagement |
-| Review period | When to reassess the retainer level (quarterly is typical) |
+| Monthly fee | Fixed amount, usually expected hours times a blended rate |
+| Hours included | A range or a min and max |
+| Rollover | Whether unused hours carry forward (usually no, or capped) |
+| Overage rate | Rate for hours beyond the included band |
+| Scope boundaries | What is in-scope versus what triggers a separate engagement |
+| Review period | When to reassess the level (quarterly is common) |
 | Termination notice | Usually 30-60 days |
 
-**Tier structures:**
+**Tier the offer:**
 
-| Tier | Positioning | Typical Includes |
+| Tier | Positioning | Typically Includes |
 |---|---|---|
-| Advisory | Senior access, strategic guidance | Partner/principal hours, limited deliverables |
+| Advisory | Senior access, strategic guidance | Partner and principal hours, limited deliverables |
 | Standard | Ongoing project support | Mixed team, regular deliverables, monthly check-ins |
 | Embedded | Team augmentation, continuous delivery | Dedicated resources, sprint-based delivery, daily interaction |
+
+Do not propose a retainer to a client who has never seen your work. Retainers price trust, and a new client has none to price yet. Earn it on a defined engagement first.
 
 ---
 
 ## Key Principles
 
-- Price for value, not for cost. Your cost structure informs your floor, not your ceiling.
-- Protect your rate card. Discount the deal, not the rates. Once rates drop, they rarely recover.
-- Understand the client's buying process. Know who approves, what budget exists, what alternatives they're considering, and what procurement will challenge.
+- Price for value. Cost sets your floor, never your ceiling.
+- Protect the rate card. Discount the deal, not the rates. Cut rates rarely recover.
+- Learn the client's buying process: who approves, what budget exists, what alternatives are in play, and what procurement will challenge.
 - Every pricing decision is a margin decision. Model the economics before you quote.
-- Document all assumptions. Pricing disputes almost always trace back to unstated assumptions about scope, effort, or deliverables.
-- Build in scope change mechanisms. Fixed-fee engagements without change order processes are blank checks.
-- Know your walk-away point. Not every engagement is worth winning. Unprofitable work is worse than no work.
-- Align payment timing with cost timing. Don't finance the engagement for the client.
-- The best pricing strategy is one the client feels good about. If they feel squeezed, the relationship suffers even if you win the deal.
-- Retainers only work with trust. Don't propose retainers to new clients who haven't seen your work yet.
+- Document every assumption. Pricing disputes trace back to unstated assumptions about scope, effort, or deliverables almost every time.
+- Build a change-order mechanism into fixed-fee work. Without one, the fee is a blank check.
+- Know your walk-away number. Unprofitable work is worse than no work.
+- Align payment timing with cost timing. Do not finance the engagement for the client.
+- The best price is one the client feels good about. A squeezed client damages the relationship even when you win.

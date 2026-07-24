@@ -1,163 +1,172 @@
 ---
 name: process-excellence
-description: Apply Lean Six Sigma methodology for process improvement and operational excellence. Covers the full DMAIC cycle (Define, Measure, Analyze, Improve, Control), value stream mapping, process mining, waste identification, root cause analysis, and sustained performance control. Use when analyzing business processes, identifying inefficiencies, or designing improved workflows.
+description: Applies Lean Six Sigma to diagnose, redesign, and control business processes using the full DMAIC cycle (Define, Measure, Analyze, Improve, Control). Use when a process runs too slow, too costly, or too error-prone and someone needs a defensible root-cause analysis and improvement plan. Covers value stream mapping, SIPOC scoping, process mining from event logs, TIMWOODS waste identification, root cause analysis (5 Whys, fishbone, Pareto), statistical process control, and the financial case for change. Triggers on operational efficiency, cycle-time reduction, defect reduction, throughput, bottlenecks, and process standardization work.
+license: MIT
+metadata:
+  category: engagement-delivery
+  version: "2.1.0"
+  author: Anot
 ---
 
 # Process Excellence
 
-Apply Lean Six Sigma methodology to analyze, improve, and control business processes. Lean eliminates waste and improves flow. Six Sigma reduces variation and defects. Together they drive both efficiency and effectiveness.
+Apply Lean Six Sigma to analyze, improve, and control business processes. Lean kills waste and improves flow. Six Sigma reduces variation and defects. Run them together: Lean makes the process faster, Six Sigma makes it reliable. One without the other leaves money on the table.
+
+Before you produce anything, get real inputs. Ask for the process boundaries, baseline metrics, and event data. If the user cannot supply numbers, say so and mark every figure you use as an illustrative example that needs validation. A process analysis built on invented baselines is worse than no analysis, because it looks credible and points the team in the wrong direction.
 
 ## DMAIC Methodology
 
-DMAIC (Define, Measure, Analyze, Improve, Control) is the structured approach for improving existing processes. Each phase has specific deliverables and gate criteria before moving to the next.
+DMAIC (Define, Measure, Analyze, Improve, Control) is the structured path for improving an existing process. Each phase has a deliverable and a gate. Do not advance until the gate is cleared. The two phases where engagements live or die are Measure (bad baselines poison everything downstream) and Analyze (skipping to solutions is the single most common failure). Spend your judgment there. The rest is disciplined execution.
 
 ### Define
 
-Clearly articulate the improvement opportunity before jumping to solutions.
+Articulate the opportunity before anyone proposes a fix.
 
-**Problem statement**: Quantify the current problem in terms of cycle time, cost, quality, or customer satisfaction. A vague problem statement produces vague solutions.
+**Problem statement**: Quantify the current problem in cycle time, cost, quality, or customer satisfaction. "Invoice approval is slow" is not a problem statement. "Invoice approval averages 6.2 days against a 2-day SLA, and 18% breach it" is. A vague problem produces a vague solution.
 
-**Scope**: Define what's in scope and what's not. Process improvement projects that try to fix everything fix nothing.
+**Scope**: State what is in and what is out. Projects that try to fix the whole value chain fix nothing. Pick a start point and an end point and defend them.
 
-**Success criteria**: Establish measurable targets for each key metric. Include current state, target state, and the percentage improvement expected.
+**Success criteria**: Set measurable targets per metric. Record current state, target state, and the percentage improvement expected. If you cannot name the metric, you cannot claim the win.
 
-**Project charter elements**:
+**Project charter**:
 - Problem statement with quantified impact
-- Process boundaries (start point, end point)
+- Process boundaries (explicit start and end points)
 - Success metrics with baselines and targets
-- Timeline for each DMAIC phase
-- Team: process owner, sponsor, project lead, team members
+- Timeline per DMAIC phase
+- Team: process owner, sponsor, project lead, working members
 
-**Digital context**: Assess automation potential, current level of process digitization, data availability, and RPA opportunity. This shapes the analysis approach and solution space.
+**Digital context**: Assess automation potential, current digitization level, data availability, and RPA opportunity. This shapes both the analysis approach and the solution space. A process with clean event logs invites process mining. A paper-and-email process does not.
 
 ### Measure
 
-Collect baseline data and map the process as it actually operates (not as documentation says it should).
+Collect baseline data and map the process as it actually runs, not as the SOP claims it runs. These are two different processes. The gap between them is often the finding.
 
-**Process mapping**: Create a SIPOC diagram (Suppliers, Inputs, Process, Outputs, Customers) to establish boundaries, then map the detailed process flow with decision points and handoffs.
+**Process mapping**: Build a SIPOC diagram first to fix boundaries, then map the detailed flow with every decision point and handoff. Handoffs are where time and quality leak, so mark each one.
 
-**Baseline metrics**: For each key metric, document the measurement method, sample size, current baseline, and sigma level.
+**Baseline metrics**: For each key metric record the measurement method, sample size, current baseline, and sigma level. State the sample size out loud. A baseline drawn from 8 cases is a guess wearing a number.
 
-**Data collection plan**: Specify each data point, its operational definition, collection method, frequency, and responsible person. Ambiguous definitions produce unreliable data.
+**Data collection plan**: Specify each data point, its operational definition, collection method, frequency, and owner. Ambiguous definitions produce unreliable data. "Cycle time" means nothing until you say whether the clock includes queue time.
 
-**Process capability analysis**:
-- Cp/Cpk indices (process capability relative to specifications)
-- Process stability assessment (in control vs. out of control)
+**Process capability**:
+- Cp / Cpk (capability relative to specification limits)
+- Stability assessment (in control vs. out of control)
 - Common cause vs. special cause variation
+
+Distinguish the two before you touch anything. Chasing special-cause events with process-wide changes makes the process worse.
 
 ### Analyze
 
-Identify and validate root causes of process variation and waste. This is where discipline matters most. Don't skip to solutions.
+Identify and validate the root causes of variation and waste. This is where discipline pays. The pressure to jump to solutions is strongest here and it is wrong every time. Prove the cause before you design the fix.
 
 **Waste identification (TIMWOODS)**:
 
 | Waste Type | What to Look For |
 |------------|-----------------|
 | Transportation | Unnecessary movement of materials or information between steps |
-| Inventory | Work piling up between process steps, excess WIP |
+| Inventory | Work piling up between steps, excess WIP |
 | Motion | Unnecessary movement of people (extra clicks, walking, searching) |
 | Waiting | People or work idle, waiting for approvals, inputs, or capacity |
 | Overproduction | Producing more, sooner, or faster than the next step requires |
-| Overprocessing | Doing more work than the customer requires or values |
-| Defects | Errors requiring rework, correction, or scrapping |
-| Skills (underutilized) | People doing work below their capability, untapped expertise |
+| Overprocessing | Doing more work than the customer values |
+| Defects | Errors requiring rework, correction, or scrap |
+| Skills (underused) | People doing work below their capability, untapped expertise |
+
+Walk the actual process against this list. In service processes, Waiting and Overprocessing usually dominate. Name the specific step where each waste shows up, not the category in the abstract.
 
 **Root cause tools**:
 
-5 Whys: Start with the problem statement and ask "why" iteratively until you reach a root cause you can act on. Typically 3-5 iterations. The root cause should be something the team can influence.
+5 Whys: Start from the problem statement and ask "why" until you reach a cause the team can actually act on. Three to five iterations is typical. If the answer is "human error" or "the market," you stopped too early. Push to a cause inside the team's control.
 
-Fishbone (Ishikawa) diagram: Organize potential causes into categories (People, Process, Machine, Material, Environment, Measurement). Useful for brainstorming with the team and ensuring you haven't missed a category.
+Fishbone (Ishikawa): Sort candidate causes into People, Process, Machine, Material, Environment, Measurement. Use it to force breadth so the team does not fixate on the first plausible story.
 
-**Hypothesis testing**: For each suspected root cause, define a hypothesis, test method, and acceptance criteria. Validate with data, not intuition.
+**Hypothesis testing**: For each suspected cause, write a hypothesis, a test method, and an acceptance criterion. Validate with data. Intuition names suspects. Data convicts them.
 
-**Pareto analysis**: Rank root causes by their contribution to the problem. Typically 20% of causes drive 80% of the impact. Address the vital few, not the trivial many.
+**Pareto analysis**: Rank causes by contribution to the problem. Roughly 20% of causes tend to drive 80% of the impact, though the split varies by process and you should verify it rather than assume it. Fix the vital few. Ignore the trivial many until the vital few are gone.
 
 ### Improve
 
-Design and deploy optimized process solutions.
+Design and deploy the fix.
 
-**Solution evaluation matrix**: Score each potential solution on impact, effort, cost, and risk. Separate high-impact/low-effort wins from longer-term structural changes.
+**Solution evaluation matrix**: Score each candidate on impact, effort, cost, and risk. Separate the high-impact, low-effort wins (do these now) from the structural changes (plan these). A matrix full of medium scores means you have not thought hard enough about the differences.
 
-**Pilot before rollout**: Test improvements in a controlled setting before full implementation. Measure pilot results against baseline and target. A solution that works in theory but fails in practice isn't a solution.
+**Pilot before rollout**: Test in a controlled setting first. Measure pilot results against baseline and target. A solution that works on the slide and fails on the floor is not a solution. The pilot is where you find out which it is.
 
-**Implementation planning**: Phase the rollout with clear activities, owners, timelines, and dependencies. Include training and communication alongside the technical changes.
+**Implementation planning**: Phase the rollout with activities, owners, timelines, and dependencies. Budget for training and communication alongside the technical change. Most process improvements fail on adoption, not on design.
 
-**Full rollout plan**:
-- Training for all affected staff
+**Full rollout**:
+- Training for every affected role
 - Communication to stakeholders
-- Phased schedule with go/no-go checkpoints
-- Support model during transition
+- Phased schedule with go / no-go checkpoints
+- Support model through the transition
 
 ### Control
 
-Ensure improvements are sustained. Without control mechanisms, processes revert to their pre-improvement state within months.
+Sustain the gain. Without control mechanisms, processes drift back toward their old state within months. Organizations that skip the Control phase tend to lose most of the improvement inside a year, which is why the phase exists at all.
 
-**Control plan**: For each critical process output, define the measurement, control method (control chart, checklist, automated alert), monitoring frequency, and response plan for out-of-control conditions.
+**Control plan**: For each critical output define the measurement, the control method (control chart, checklist, automated alert), the monitoring frequency, and the response when the process goes out of control.
 
-**Control charts**: Select the appropriate chart type based on data characteristics:
+**Control charts**: Match the chart to the data:
 - X-bar R / X-bar S: variable data, subgroups
 - I-MR: variable data, individual measurements
 - P-chart: proportion defective
 - C-chart: count of defects
 
-Define Upper Control Limit (UCL), Lower Control Limit (LCL), and Center Line (CL).
+Define the Upper Control Limit (UCL), Lower Control Limit (LCL), and Center Line (CL) from the data, not from the spec. Control limits describe what the process does. Spec limits describe what the customer wants. Confusing the two is a classic error.
 
-**Standard work documentation**: Update process flows, work instructions, SOPs, and training materials to reflect the improved process. If it's not documented, it will drift.
+**Standard work documentation**: Update flows, work instructions, SOPs, and training to reflect the improved process. If it is not documented, it drifts.
 
-**Response protocol**: Define specific triggers and their required responses. When metric X exceeds threshold Y, person Z takes action A within timeframe T.
+**Response protocol**: Write specific triggers and responses. When metric X crosses threshold Y, person Z takes action A within time T. Vague ownership means no response.
 
 **Handover checklist**:
 - Control charts deployed and understood
 - Response plan documented and tested
 - Process owner trained on monitoring
 - SOPs updated and accessible
-- Training completed for all operators
+- Training complete for all operators
 - Dashboard live and accurate
-- Lessons learned documented
+- Lessons learned captured
 
 ## Value Stream Mapping
 
-### Building a Value Stream Map
+Value stream mapping shows the end-to-end flow of materials and information required to deliver a product or service. Its power is in one ratio: value-added time against total lead time.
 
-Value stream mapping visualizes the end-to-end flow of materials and information required to deliver a product or service.
-
-**Steps to map current state**:
-1. Walk the process from customer back to supplier
+**Map the current state**:
+1. Walk the process from the customer backward to the supplier
 2. Record cycle time, changeover time, and WIP at each step
-3. Separate value-added from non-value-added time
-4. Identify bottlenecks (highest cycle time relative to takt time)
+3. Split value-added from non-value-added time
+4. Find bottlenecks (highest cycle time relative to takt time)
 5. Mark inventory accumulation points
-6. Calculate total lead time vs. value-added time ratio
+6. Compute total lead time vs. value-added time
 
-**Key metrics per step**: Cycle time (C/T), work in progress (WIP), changeover time, uptime, batch size.
+**Per-step metrics**: cycle time (C/T), WIP, changeover time, uptime, batch size.
 
-**Summary metrics**: Total lead time, total value-added time, percentage value-added. In most service processes, value-added time is less than 5% of total lead time. The gap is the improvement opportunity.
+**Summary metrics**: total lead time, total value-added time, percentage value-added. In many service processes, value-added time runs under 5% of total lead time. Treat that 5% figure as a directional benchmark, not a target: verify it against the client's own map. The other 95% is the opportunity.
 
-**Future state design**: Design for continuous flow where possible. Eliminate steps that don't add value. Pull work through the system rather than pushing it. The future state should show reduced lead time, lower WIP, and higher value-added percentage.
+**Future state**: Design for continuous flow. Cut steps that add no value. Pull work through the system instead of pushing it. The future-state map should show shorter lead time, lower WIP, and a higher value-added percentage than the current state, with the delta quantified.
 
 ## Process Mining
 
-Process mining uses event log data from IT systems to discover, monitor, and improve actual processes.
+Process mining reads event log data from IT systems to discover, monitor, and improve the process as it actually executes. It is the fastest way to expose the gap between documented and real behavior at scale.
 
-### When to Use Process Mining
+### When to Use It
 
-- Large-scale processes with many variants and exceptions
-- ERP or workflow system logs available for extraction
-- Need to discover actual process behavior vs. documented process
+- Large processes with many variants and exceptions
+- ERP or workflow logs available for extraction
+- Need to see actual behavior vs. the documented flow
 - Conformance checking against regulatory or policy requirements
-- Identifying automation candidates from high-volume, low-variation paths
+- Hunting automation candidates in high-volume, low-variation paths
 
-### Process Mining Analysis
+### What to Report
 
-**Discovery metrics**: Number of process path variants discovered, average case duration, deviation points where the process diverges from the intended flow.
+**Discovery**: number of path variants, average case duration, and the deviation points where cases leave the intended flow. A process meant to have 3 paths that shows 340 variants is telling you something.
 
-**Conformance analysis**: Compliance rate, number and percentage of deviating cases, root causes of deviation (are deviations intentional workarounds or genuine errors?).
+**Conformance**: compliance rate, count and percentage of deviating cases, and the root cause of deviation. Ask the key question: are these deviations deliberate workarounds (the real process is smarter than the SOP) or genuine errors (the process is broken)? The answer changes the recommendation entirely.
 
-**Process intelligence findings**: Identify bottlenecks (where cases spend the most time), rework loops (where cases go backwards), and excessive wait times (where cases sit idle).
+**Process intelligence**: bottlenecks (where cases wait longest), rework loops (where cases move backward), and idle time (where cases sit).
 
 ## SIPOC Analysis
 
-SIPOC establishes process boundaries before detailed mapping. It answers: Who supplies what, through which high-level steps, producing what outputs, for whom?
+SIPOC sets process boundaries before detailed mapping. It answers: who supplies what, through which high-level steps, producing what outputs, for whom?
 
 | Element | Question |
 |---------|----------|
@@ -167,38 +176,38 @@ SIPOC establishes process boundaries before detailed mapping. It answers: Who su
 | **O**utputs | What does the process produce? |
 | **C**ustomers | Who receives the outputs? |
 
-Use SIPOC in the Define phase to align the team on process scope. It prevents scope creep and ensures you're mapping the right process.
+Use SIPOC in Define to align the team on scope. It prevents scope creep and confirms you are mapping the right process before anyone invests in a detailed map.
 
 ## Standard Work
 
-Standard work documents the current best method for performing a process. It is the baseline for improvement, not the ceiling.
+Standard work documents the current best method. It is the floor for improvement, not the ceiling.
 
-**Standard work elements**:
+**Elements**:
 - Takt time: customer demand rate (available time / customer demand)
-- Cycle time: time to complete one unit (must be less than or equal to takt time)
+- Cycle time: time to complete one unit (must be at or below takt time)
 - WIP limit: maximum work in progress allowed
-- Work sequence: steps in order with time and quality checks at each step
+- Work sequence: ordered steps with time and quality checks at each
 
 **Principles**:
-- Takt time sets the pace. If cycle time exceeds takt time at any station, that station is a bottleneck
-- WIP limits prevent overburden and expose bottlenecks. If you limit WIP and work piles up, you've found the constraint
-- Document the current best method, then improve from there. You can only improve what is standardized
+- Takt time sets the pace. If cycle time at any station exceeds takt time, that station is the bottleneck.
+- WIP limits expose constraints. Cap the WIP, and wherever work still piles up is the constraint.
+- Standardize, then improve. You can only improve what is standardized, because without a standard you have nothing to measure change against.
 
 ## Process Performance Dashboard
 
-Track three categories of metrics to monitor process health.
+Track three metric categories to read process health.
 
-**Efficiency metrics**: Cycle time, throughput, utilization. These tell you how fast and how productively the process operates.
+**Efficiency**: cycle time, throughput, utilization. How fast and how productively the process runs.
 
-**Quality metrics**: Defect rate, first pass yield (FPY), customer complaints. These tell you whether the process produces acceptable output.
+**Quality**: defect rate, first pass yield (FPY), customer complaints. Whether the output is acceptable.
 
-**Cost metrics**: Cost per unit, scrap cost, rework cost. These translate process performance into financial impact.
+**Cost**: cost per unit, scrap cost, rework cost. What the performance means in money.
 
-Use RAG status (Green = on target, Yellow = at risk, Red = off target) and track baseline, current, and target values to show direction of travel.
+Use RAG status (Green = on target, Yellow = at risk, Red = off target). Show baseline, current, and target for each metric so the direction of travel is visible, not just the current position. A red metric moving toward target is a different story from a red metric holding still, and the dashboard should tell them apart.
 
 ## Financial Impact
 
-Every process improvement should be translated into financial terms.
+Translate every improvement into money. A process win with no dollar figure will not survive the next budget cycle. Build the number from the client's actual labor rates, volumes, and costs. When you must illustrate the method with example figures, label them as illustrative and flag them for validation before anything reaches a steering committee.
 
 | Category | How to Calculate |
 |----------|-----------------|
@@ -208,14 +217,20 @@ Every process improvement should be translated into financial terms.
 | ROI | (Annual savings - Implementation cost) / Implementation cost |
 | Payback period | Implementation cost / Monthly savings |
 
+State assumptions next to every number. A savings figure without its assumptions is a number nobody can defend in the room.
+
+## Filling In the Deliverable
+
+When you produce any table above (charter, waste analysis, solution matrix, control plan, financial model), write 2-3 sentences of reasoning and evidence in each cell. Do not leave one-word placeholders. "Waiting: high" is not analysis. "Waiting: cases sit an average of 3.1 days in the credit-check queue against 4 hours of actual work, driven by a single reviewer covering three regions" is. Every cell should carry the reasoning a reviewer needs to trust the conclusion.
+
 ## Principles
 
-- Start with data. Never assume. Measure current state before proposing improvements
-- Value is defined by the customer, not by internal convenience
-- Eliminate waste first, then optimize what remains
-- Standardize before improving. You can only improve what is standardized
-- Changes in one part of a process affect other parts. Think systemically
-- Engage the people doing the work. They know the process best and they'll be implementing the changes
-- Pilot before rollout. Test improvements before full implementation
-- Control to sustain. Improvements without control mechanisms revert within months
-- If you're not measuring, you're not improving. And if your measurements are wrong, you're improving the wrong thing
+- Start with data. Never assume. Measure the current state before proposing anything.
+- Value is defined by the customer, not by internal convenience.
+- Eliminate waste first, then optimize what remains.
+- Standardize before improving. You can only improve what is standardized.
+- Think systemically. A change in one step moves the load somewhere else.
+- Engage the people doing the work. They know the process, and they will run the change.
+- Pilot before rollout. Prove it small before you scale it.
+- Control to sustain. Improvements without control revert within months.
+- If you are not measuring, you are not improving. And if your measurements are wrong, you are improving the wrong thing.
