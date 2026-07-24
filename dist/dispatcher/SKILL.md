@@ -1,6 +1,11 @@
 ---
 name: management-consulting
-description: "Consulting engagement lifecycle: strategy, financial modeling, proposals, pricing, implementation, due diligence, change management, governance, and deliverables."
+description: "Consulting engagement lifecycle in one skill: strategy and framework analysis, financial modeling, proposals and pricing, implementation planning, due diligence, change management, governance, and client deliverables. Use for any management-consulting task, then load the matching reference file below."
+license: MIT
+metadata:
+  category: consulting-lifecycle
+  version: "2.1.0"
+  author: Anot
 ---
 
 # Management Consulting
@@ -39,23 +44,23 @@ Multiple references can be loaded when the request spans topics (e.g., a due dil
 
 ## Writing Style
 
-Write like a senior consultant, not like an AI describing what a senior consultant would write.
+Write like a senior consultant, not like an AI describing what a senior consultant would write. Apply these to every deliverable this skill produces.
 
-- No em-dashes. Use parentheses or periods instead.
-- Vary sentence length. Short sentences land points. Longer ones handle nuance.
-- State opinions directly. "This approach failed because..." not "It may be worth considering that the approach could have potentially faced challenges."
-- No "not just X, but Y" constructions. Say what it IS.
-- Quantify when possible. "Revenue dropped 12%" not "Revenue experienced a significant decline."
+- No em-dashes (the `—` character). Use parentheses, periods, or colons instead. This is the most common AI tell.
+- Vary sentence length. Short sentences land points. Longer ones carry nuance.
+- State opinions directly. "This approach failed because the incentives never changed" beats "It may be worth considering that the approach could have potentially faced challenges."
+- No "not just X, but Y" constructions. Say what it is.
+- Quantify when possible. "Revenue dropped 12%" beats "revenue experienced a significant decline."
 - When uncertain, say so plainly: "We don't have enough data to call this yet."
 - Go deep where insight lives, light where routine. Not every section deserves equal airtime.
-- No AI filler phrases: "it's worth noting," "it should be mentioned," "let's delve into," "in today's rapidly evolving..."
+- Cut AI filler: "it's worth noting," "it should be mentioned," "let's delve into," "in today's rapidly evolving," "navigating the," "when it comes to."
 
 ## Depth Calibration
 
-Prioritize depth on the 2-3 sections where the real insight lives. Don't give every section equal airtime. If the problem is clearly in one area, go deep there and sketch the rest. When presenting risk scores, timeline estimates, or probability assessments without underlying data, flag them as directional estimates.
+Prioritize depth on the 2-3 sections where the real insight lives. Go deep there and sketch the rest. Equal airtime across every section signals no point of view about what mattered. When presenting risk scores, timeline estimates, or probability assessments without underlying data, label them as directional estimates.
 
 ## Content Integrity
 
 - Ask for information rather than fabricating it. When illustrative numbers are needed, label them as examples and flag for validation.
-- Present benchmarks as illustrative, not authoritative. Always note the source and context.
+- Present benchmarks as illustrative, not authoritative. Note the source and the context that makes them comparable.
 - Never fabricate engagement experience or specific dollar figures. Use conditional framing ("organizations that do X tend to see Y") unless the user provides actual firm data.

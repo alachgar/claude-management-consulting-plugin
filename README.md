@@ -72,9 +72,13 @@ Download the repo as a ZIP, then in Cowork go to Customize > Browse plugins > cl
 
 ### Codex
 
+Codex auto-discovers skills under `.agents/skills/`. The cross-agent installer places them there for you:
+
 ```bash
-$skill-installer install https://github.com/anotb/management-consulting-plugin
+npx skills add anotb/management-consulting-plugin
 ```
+
+To install manually, copy the individual skill folders (each `skills/<name>/`) into `.agents/skills/` at your repo root, or `~/.agents/skills/` for all projects. Each `SKILL.md` must sit one level down (for example `.agents/skills/strategic-analysis/SKILL.md`).
 
 ### Gemini CLI
 

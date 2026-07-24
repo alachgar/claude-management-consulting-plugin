@@ -1,6 +1,6 @@
 # Consulting PPTX Generation Guide
 
-Reference for generating consulting-grade .pptx files with pptxgenjs. Principles and adaptable code patterns — not fixed styles. Choose colors, fonts, and density based on client, firm, and purpose.
+Reference for generating consulting-grade .pptx files with pptxgenjs. Principles and adaptable code patterns, not fixed styles. Choose colors, fonts, and density based on client, firm, and purpose.
 
 ---
 
@@ -18,7 +18,7 @@ Every content slide has three zones:
 | Zone | Height | Purpose |
 |------|--------|---------|
 | Action title | ~1.0" | Sentence stating the slide's takeaway |
-| Body | ~5.0" | Exhibit(s) — charts, tables, frameworks |
+| Body | ~5.0" | Exhibit(s): charts, tables, frameworks |
 | Footer | ~0.5" | Source attribution + page number |
 
 Choose margins and density based on purpose: dense analytical slides get tighter margins, big-idea slides get generous white space.
@@ -29,11 +29,11 @@ Choose margins and density based on purpose: dense analytical slides get tighter
 
 The pattern that distinguishes consulting slides from everything else:
 
-1. **Action title** — A complete sentence stating the takeaway. "Revenue declined 12% driven by customer churn" not "Revenue Overview." This is the most important rule.
+1. **Action title**: A complete sentence stating the takeaway. "Revenue declined 12% driven by customer churn" not "Revenue Overview." This is the most important rule.
 
-2. **Exhibit-driven body** — Visual exhibits (charts, tables, frameworks) dominate, not paragraphs or bullets. One focused exhibit is ideal. Two related exhibits side-by-side (e.g. market size + growth rate) works when they jointly support the action title. The exhibit tells the story; text annotates it.
+2. **Exhibit-driven body**: Visual exhibits (charts, tables, frameworks) dominate, not paragraphs or bullets. One focused exhibit is ideal. Two related exhibits side-by-side (e.g. market size + growth rate) works when they jointly support the action title. The exhibit tells the story; text annotates it.
 
-3. **Source line** — Bottom of slide, small font. Data source, date, caveats.
+3. **Source line**: Bottom of slide, small font. Data source, date, caveats.
 
 Apply this to every content slide. Title slides, section dividers, and appendix slides are exceptions.
 
@@ -41,7 +41,7 @@ Apply this to every content slide. Title slides, section dividers, and appendix 
 
 ## Slide Masters
 
-Three masters as factory functions. `palette` and `fonts` are parameters — the agent picks values per engagement.
+Three masters as factory functions. `palette` and `fonts` are parameters: the agent picks values per engagement.
 
 ### TITLE_SLIDE
 
@@ -145,7 +145,7 @@ function addSectionDivider(pptx, { sectionNumber, sectionTitle, palette, fonts }
 
 ## Common Consulting Slide Patterns
 
-Each function accepts content + style parameters. No hardcoded colors. All follow the action-title + exhibit anatomy — call `addContentSlide()` first, then add the exhibit to the returned slide.
+Each function accepts content + style parameters. No hardcoded colors. All follow the action-title + exhibit anatomy: call `addContentSlide()` first, then add the exhibit to the returned slide.
 
 ### Executive Summary
 
@@ -345,7 +345,7 @@ function addRoadmap(slide, { phases, palette, fonts }) {
 
 ```js
 function addBigNumber(slide, { metrics, palette, fonts }) {
-  // metrics: [{ value, label, sublabel? }] — 1 to 3 items
+  // metrics: [{ value, label, sublabel? }]: 1 to 3 items
   const count = metrics.length;
   const cellW = 11.7 / count;
   const startX = 0.8;
@@ -426,9 +426,9 @@ Capability or maturity assessment using filled circles. Common for "current stat
 
 ```js
 function addHarveyBallAssessment(slide, { dimensions, entities, ratings, palette, fonts }) {
-  // dimensions: string[] — row labels (e.g. ["Data Quality", "Governance", "Analytics"])
-  // entities: string[] — column headers (e.g. ["Current", "Target"] or ["Vendor A", "Vendor B"])
-  // ratings: number[][] — values 0-4 per dimension per entity (0=empty, 1=quarter, 2=half, 3=three-quarter, 4=full)
+  // dimensions: string[]: row labels (e.g. ["Data Quality", "Governance", "Analytics"])
+  // entities: string[]: column headers (e.g. ["Current", "Target"] or ["Vendor A", "Vendor B"])
+  // ratings: number[][]: values 0-4 per dimension per entity (0=empty, 1=quarter, 2=half, 3=three-quarter, 4=full)
   const harveyBalls = ["○", "◔", "◐", "◕", "●"];
   const colCount = 1 + entities.length;
   const dimColW = 3.5;
@@ -501,9 +501,9 @@ Responsibility assignment matrix. Bold "A" (Accountable) draws the eye to single
 
 ```js
 function addRACIMatrix(slide, { activities, roles, assignments, palette, fonts }) {
-  // activities: string[] — row labels (e.g. ["Budget approval", "Vendor selection"])
-  // roles: string[] — column headers (e.g. ["CFO", "VP Ops", "PM", "Legal"])
-  // assignments: string[][] — "R", "A", "C", "I", or "" per activity per role
+  // activities: string[]: row labels (e.g. ["Budget approval", "Vendor selection"])
+  // roles: string[]: column headers (e.g. ["CFO", "VP Ops", "PM", "Legal"])
+  // assignments: string[][]: "R", "A", "C", "I", or "" per activity per role
   const raciColors = {
     A: palette.accent,
     R: palette.dark,
@@ -586,10 +586,10 @@ Red/Amber/Green traffic light dashboard for steering committee decks. Shows stat
 
 ```js
 function addRAGDashboard(slide, { workstreams, dimensions, statuses, comments, palette, fonts }) {
-  // workstreams: string[] — row labels (e.g. ["Data Migration", "Integration", "Testing"])
-  // dimensions: string[] — status dimensions (e.g. ["Schedule", "Budget", "Scope", "Quality"])
-  // statuses: string[][] — "R", "A", "G" per workstream per dimension
-  // comments: string[] — one comment per workstream (optional, pass [] to omit)
+  // workstreams: string[]: row labels (e.g. ["Data Migration", "Integration", "Testing"])
+  // dimensions: string[]: status dimensions (e.g. ["Schedule", "Budget", "Scope", "Quality"])
+  // statuses: string[][]: "R", "A", "G" per workstream per dimension
+  // comments: string[]: one comment per workstream (optional, pass [] to omit)
   const ragFills = {
     R: "CC3333",
     A: "F5A623",
@@ -690,13 +690,13 @@ function addRAGDashboard(slide, { workstreams, dimensions, statuses, comments, p
 
 ### Gantt Timeline
 
-Phased implementation timeline with workstreams, bars, milestones, and dependency arrows. The standard planning slide in consulting. Builds a grid-based Gantt using shapes — no chart API needed.
+Phased implementation timeline with workstreams, bars, milestones, and dependency arrows. The standard planning slide in consulting. Builds a grid-based Gantt using shapes: no chart API needed.
 
 ```js
 function addGanttTimeline(slide, { periods, workstreams, milestones, palette, fonts }) {
-  // periods: string[] — column headers (e.g. ["Q1 '25", "Q2 '25", "Q3 '25", "Q4 '25", "Q1 '26"])
-  // workstreams: [{ label, startIdx, endIdx, color? }] — bar spans across period indices (0-based)
-  // milestones: [{ label, periodIdx, y? }] — diamond markers at specific periods
+  // periods: string[]: column headers (e.g. ["Q1 '25", "Q2 '25", "Q3 '25", "Q4 '25", "Q1 '26"])
+  // workstreams: [{ label, startIdx, endIdx, color? }]: bar spans across period indices (0-based)
+  // milestones: [{ label, periodIdx, y? }]: diamond markers at specific periods
   const gridX = 3.0;
   const gridY = 1.5;
   const gridW = 9.5;
@@ -794,7 +794,7 @@ function addGanttTimeline(slide, { periods, workstreams, milestones, palette, fo
 
 ## Chart Styling Principles
 
-Not specific colors — principles for professional appearance:
+Principles for professional appearance, not specific color values:
 
 - **Clean backgrounds**: Remove default chart borders and backgrounds. White or transparent.
 - **Subtle gridlines**: Horizontal only (`valAxisMajorGridlines: { color: "E0E0E0" }`). Hide vertical gridlines.
