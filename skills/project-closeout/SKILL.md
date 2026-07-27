@@ -1,25 +1,32 @@
 ---
 name: project-closeout
-description: Execute consulting engagement closure including deliverable handover, knowledge transfer, lessons learned, and administrative wrap-up. Use when completing consulting engagements, concluding transformation initiatives, transitioning from project to business-as-usual, or formalizing project wrap-up. Covers closure readiness assessment, client acceptance, knowledge transfer planning, retrospectives, financial reconciliation, and follow-on opportunity identification.
+description: Executes consulting engagement closeout: deliverable handover, client acceptance sign-off, knowledge transfer, benefits tracking handover, lessons learned, financial reconciliation, and administrative wrap-up. Use when completing or terminating a consulting engagement, transitioning a project into business-as-usual, running a closure retrospective, handing benefits measurement to the client, or planning stakeholder transition before the team departs. Covers successful completion, early termination, and regulated-industry closeout requirements.
+license: MIT
+metadata:
+  category: engagement-delivery
+  version: "2.1.0"
+  author: Anot
 ---
 
 # Project Closeout
 
-Manage the full consulting engagement closeout process: ensuring deliverables are handed over, knowledge is transferred, lessons are captured, and the client is equipped to operate independently. Treat closure as a structured workstream, not an afterthought.
+Run engagement closeout as a workstream, not an afterthought. The goal is a client that can operate, maintain, and evolve what was built after the team leaves, plus a clean internal record. Closeout that gets backloaded into the final week gets skipped, and the parts that get skipped (benefits ownership, lessons learned, relationship transition) are the ones that decide whether the client comes back.
 
 ## Before You Begin
 
-Closeout depends on what was delivered and what remains. Confirm before proceeding:
-- What is the engagement size and duration (to calibrate closeout effort)?
-- What deliverables were produced and what is their acceptance status?
-- Is this a successful completion, early termination, or transition to BAU?
-- Don't generate deliverable lists, financial reconciliation figures, or benefits data. Ask what exists and work from what the user provides.
+Closeout effort scales with what was delivered and how the engagement is ending. Confirm three things before proceeding:
+
+- Engagement size and duration, to calibrate closeout effort against the table below.
+- What deliverables were produced and their current acceptance status.
+- Whether this is successful completion, early termination, or a roll into BAU. The playbook diverges sharply for early termination.
+
+Do not generate deliverable lists, reconciliation figures, benefits numbers, or stakeholder names. Ask what exists and build from what the user gives you. When you show an illustrative figure to explain a method, label it as an example and flag it for the user to replace with real data.
 
 ---
 
 ## Closeout Effort Estimation
 
-Allocate closeout effort explicitly. Teams consistently underestimate this.
+Allocate closeout effort explicitly and build it into the plan at kickoff. Teams underestimate this every time.
 
 | Engagement Size | Typical Closeout Effort | Duration |
 |---|---|---|
@@ -28,13 +35,13 @@ Allocate closeout effort explicitly. Teams consistently underestimate this.
 | Large ($2M+, 12+ months, 30+ people) | 8-12% of total engagement cost | 6-10 weeks |
 | Multi-workstream transformation | 10-15% of total engagement cost | 8-12 weeks |
 
-Build closeout into the project plan from the start. Backloading it into the last week guarantees it gets rushed or skipped.
+These percentages are directional planning defaults, not benchmarks. Adjust for engagement specifics (regulated industry, contested delivery, heavy KT load all push higher).
 
 ---
 
 ## RACI for Closeout Activities
 
-Assign clear ownership before closeout begins. Ambiguity here is how things fall through cracks.
+Assign ownership before closeout starts. Ambiguity here is exactly how items fall through the cracks.
 
 | Activity | Engagement Manager | Workstream Leads | Client Sponsor | PMO |
 |---|---|---|---|---|
@@ -49,78 +56,54 @@ Assign clear ownership before closeout begins. Ambiguity here is how things fall
 | Documentation archive | I | R | I | A |
 | Resource release | A | R | I | R |
 
-R = Responsible, A = Accountable, C = Consulted, I = Informed
+R = Responsible, A = Accountable, C = Consulted, I = Informed.
 
 ---
 
 ## Step 1: Assess Closure Readiness
 
-Before initiating closure, verify that completion criteria are actually met.
-
-### Closure Type
-
-Determine which type of closure applies:
+Verify completion criteria are actually met before initiating closure. Identify the closure type first, because it changes what "done" requires.
 
 | Type | Description | Requirements |
 |---|---|---|
 | Successful Completion | All objectives met | Full closure process |
-| Early Termination | Project cancelled | Document rationale, partial handover |
+| Early Termination | Project cancelled | Document rationale, partial handover (see playbook) |
 | On Hold | Suspended temporarily | Document conditions for restart |
 | Rolled into BAU | Integrated into operations | Full handover, no formal end |
 
-### Completion Criteria
+Walk each completion criterion and mark it met, unmet, or in progress:
 
-Walk through each criterion systematically:
-
-- All deliverables complete and accepted
-- Engagement objectives achieved (with evidence)
+- Deliverables complete and accepted
+- Objectives achieved, with evidence (not assertion)
 - Budget reconciled
 - Stakeholder sign-off obtained
 - Resources released or redeployed
 - Contracts closed or transitioned
 - Final status report approved
-- All project issues resolved or documented
-- Change requests documented and closed
-- Vendors/contractors notified
-- Equipment/assets returned
-- Access credentials revoked
+- Issues and change requests resolved or documented and closed
+- Vendors and contractors notified
+- Equipment and assets returned, access credentials revoked
 - Team feedback collected
 
-If any criterion is unmet, determine whether it blocks closure or can be resolved as part of the closeout process.
+For each unmet criterion, decide whether it blocks closure or gets resolved as a closeout task. State which, and name the owner and date.
 
 ---
 
 ## Step 2: Handover Deliverables
 
-Transfer all project outputs to the client with proper documentation.
+Transfer every output with documentation the client can use without you in the room.
 
-### Deliverables Inventory
+For each deliverable, record: final version number, storage location, handover status (complete or pending), and client acceptance status.
 
-For each deliverable, document:
-- Final version number
-- Storage location
-- Handover status (complete/pending)
-- Client acceptance status
+Prepare two packages.
 
-### Handover Packages
+**User handover package:** user guide, quick start, FAQ, training materials.
 
-Prepare two packages:
-
-**User Handover Package**
-- User guide (how to use deliverables)
-- Quick start guide
-- FAQ document
-- Training materials
-
-**Technical Handover Package**
-- Technical documentation and system specs
-- Architecture diagrams
-- API documentation (if applicable)
-- Support contacts and escalation paths
+**Technical handover package:** technical documentation and system specs, architecture diagrams, API documentation where applicable, support contacts and escalation paths.
 
 ### Client Acceptance
 
-Formalize acceptance with a clear record. Keep it concise: the goal is an unambiguous "yes, we accept."
+Formalize acceptance with a record that produces one unambiguous "yes, we accept." Keep it short.
 
 ```
 Project Closure: [Project Name] | Client: [Client Organization] | Date: [Date]
@@ -136,13 +119,13 @@ Client Representative: _________________ Date: __________
 Consulting Representative: _________________ Date: __________
 ```
 
+Ambiguity about whether the engagement is "done" causes disputes months later. Get the signature.
+
 ---
 
 ## Step 3: Conduct Knowledge Transfer
 
-The goal is client independence. When the consulting team leaves, the client should be able to operate, maintain, and evolve what was built.
-
-### Knowledge Transfer Methods
+Client independence is the target. Match the method to the knowledge, and confirm transfer happened rather than assuming a document got read.
 
 | Method | Best For |
 |---|---|
@@ -152,366 +135,226 @@ The goal is client independence. When the consulting team leaves, the client sho
 | Interactive guides | Step-by-step tasks in software |
 | Async Q&A | Distributed teams, follow-up questions |
 
-### Knowledge Transfer Plan
+Build a KT plan. For each knowledge area define topic and scope, method, named recipient and role, scheduled date, and completion status. For each session, capture duration, presenter, attendees, key points, questions answered, and whether follow-up is required.
 
-For each knowledge area, define:
-- Topic and scope
-- Transfer method
-- Recipient (by name and role)
-- Scheduled date
-- Completion status
+Confirm these operations documents exist and are handed over: run book (day-to-day procedures), support guide (troubleshooting), escalation matrix (who to contact for what), contact list (key contacts and roles).
 
-### Session Documentation
+Define the post-project support model explicitly:
 
-For each knowledge transfer session, capture:
-- Duration and presenter
-- Attendees
-- Key points covered
-- Questions addressed (with answers)
-- Whether follow-up is required
-
-### Operations Documentation
-
-Ensure these documents exist and are handed over:
-
-| Document | Purpose |
-|---|---|
-| Run Book | Day-to-day operations procedures |
-| Support Guide | Troubleshooting common issues |
-| Escalation Matrix | Who to contact for what |
-| Contact List | Key contacts with roles |
-
-### Support Transition
-
-Define the post-project support model:
-- **Transition period**: Start and end dates
-- **Hypercare support**: Duration and scope (typically 2-4 weeks)
-- **BAU support**: Ongoing contact details
-- **Escalation path**: How to raise issues after the team has left
+- **Transition period:** start and end dates.
+- **Hypercare support:** duration and scope. Two to four weeks is a common range; set it against actual system complexity and user readiness, not a default.
+- **BAU support:** ongoing contact details and ownership.
+- **Escalation path:** how the client raises issues after the team has gone.
 
 ---
 
 ## Step 4: Benefits Tracking Handover
 
-Benefits don't stop being measured when the consulting team leaves. This is where most engagements fail: the team departs, and nobody owns measurement.
+This is where engagements quietly fail. The team leaves, nobody owns measurement, and the business case becomes a document nobody revisits. Fix ownership before you go.
 
-### Benefits Ownership Transfer
-
-For each benefit identified in the business case, document:
+For each benefit in the business case, transfer ownership on the record. Fill every cell with the client's real figures. Where you show an example to demonstrate the format, label it and flag it for replacement.
 
 | Benefit | Baseline | Target | Current | Owner (Post-Departure) | Measurement Method | Frequency |
 |---|---|---|---|---|---|---|
-| e.g., Process cycle time | 14 days | 5 days | 7 days | VP Operations | System report #X | Monthly |
-| e.g., Cost savings | $0 | $8M/yr | $3M (annualized) | CFO | P&L line item | Quarterly |
+| e.g. Process cycle time (illustrative) | 14 days | 5 days | 7 days | VP Operations | System report #X | Monthly |
+| e.g. Cost savings (illustrative) | $0 | $8M/yr | $3M annualized | CFO | P&L line item | Quarterly |
 
-### What to Hand Over
+Hand over five things per benefit:
 
-- **Measurement methodology**: How each benefit is calculated, including data sources and formulas
-- **Tracking tools/dashboards**: Access, ownership, and maintenance responsibility
-- **Reporting cadence**: Who reports to whom, how often, in what format
-- **Escalation triggers**: At what point does underperformance require intervention (e.g., benefit realization < 70% of target at 6 months)
-- **Sustainability risks**: What could erode benefits over time (staff turnover, process drift, system changes)
+- **Measurement methodology:** how each benefit is calculated, including data sources and formulas.
+- **Tracking tools and dashboards:** access, ownership, maintenance responsibility.
+- **Reporting cadence:** who reports to whom, how often, in what format.
+- **Escalation triggers:** the threshold that forces intervention (for example, realization below 70% of target at six months). Set the number with the client, do not impose one.
+- **Sustainability risks:** what erodes benefits over time (staff turnover, process drift, system changes) and the early signal for each.
 
-### Benefits Realization Timeline
+Map realization against a timeline so the client knows what "on track" looks like after you leave:
 
-Map expected benefit realization against milestones:
-- **0-3 months post-departure**: Quick wins should be fully realized
-- **3-6 months**: Process improvements showing measurable impact
-- **6-12 months**: Full run-rate benefits expected
-- **12+ months**: Strategic/transformational benefits maturing
+- **0-3 months:** quick wins fully realized.
+- **3-6 months:** process improvements showing measurable impact.
+- **6-12 months:** full run-rate benefits.
+- **12+ months:** strategic and transformational benefits maturing.
 
-Include a scheduled check-in at 3 and 6 months post-departure to review realization against plan.
+Schedule check-ins at 3 and 6 months post-departure to review realization against plan. Name who attends and put it in a calendar before the team disbands.
 
 ---
 
 ## Step 5: Stakeholder Relationship Transition
 
-Consulting teams build relationships that the client organization needs to sustain. Plan the transition explicitly.
+The team built relationships the client organization now has to sustain. Transition them deliberately, on a timeline, not on the last day.
 
-### Relationship Mapping
-
-For each key stakeholder relationship:
-- **Stakeholder**: Name and role
-- **Current consulting contact**: Who has the relationship
-- **Transition to**: Client-side person who will own the relationship going forward
-- **Handover actions**: Introduction meeting, context briefing, shared history notes
-- **Timing**: When the handover conversation happens (not on the last day)
-
-### Stakeholder Communication Plan
+For each key relationship, document the stakeholder and role, the current consulting contact who holds it, the client-side person who will own it going forward, the handover actions (introduction meeting, context briefing, shared-history notes), and the timing of the handover conversation.
 
 | Stakeholder Group | Message | Channel | Timing | Owner |
 |---|---|---|---|---|
 | Executive sponsor | Engagement complete, benefits summary, ongoing support model | 1:1 meeting | 2 weeks before departure | Engagement Manager |
 | Steering committee | Final status, transition plan, open items | Formal presentation | 3-4 weeks before departure | Engagement Manager |
 | Working team leads | KT completion, support contacts, escalation paths | Working session | 1-2 weeks before departure | Workstream Leads |
-| End users | What's changing, where to get help, training resources | Email + town hall | 1 week before departure | Client Change Lead |
+| End users | What is changing, where to get help, training resources | Email plus town hall | 1 week before departure | Client Change Lead |
 | IT / Operations | Support handover, system access, monitoring | Technical meeting | 2 weeks before departure | Technical Lead |
-| Vendors / Partners | Contract transitions, new contact points | Formal letter + call | 3-4 weeks before departure | PMO |
+| Vendors / Partners | Contract transitions, new contact points | Formal letter plus call | 3-4 weeks before departure | PMO |
 
-### Transition Principles
+Four principles govern the transition:
 
-- Start stakeholder communications 4-6 weeks before departure, not the week of
-- The client sponsor should hear the closeout narrative from you first, not discover it in a meeting
-- Introduce client-side successors to key relationships before the consulting team leaves
-- Document informal knowledge: "When you need X, talk to Y" guidance that lives in people's heads
+- Start communications 4-6 weeks out, not the week of departure.
+- The sponsor hears the closeout narrative from you first. They should never learn it in a meeting they did not expect.
+- Introduce client-side successors to key relationships while the team is still present to make the introduction credible.
+- Document the informal knowledge. "When you need X, talk to Y" guidance lives in people's heads and leaves with them.
 
 ---
 
 ## Step 6: Document Lessons Learned
 
-Lessons learned are the most commonly skipped and most valuable part of project closure. Run a proper retrospective.
+Lessons learned are the most skipped and most valuable part of closure. A document nobody reads is theater. Run a real retrospective and route the output to where it changes future work.
 
-### Retrospective Formats
+Pick a format that fits the team:
 
-Choose a format that fits the team:
+- **Start / Stop / Continue:** practices to begin, discontinue, keep.
+- **4Ls:** Liked, Learned, Lacked, Longed For.
+- **Sailboat:** Wind (what propelled us), Anchor (what slowed us), Rocks (risks hit or narrowly avoided), Island (the destination).
 
-**Start / Stop / Continue**
-- Start: Practices to begin on future engagements
-- Stop: Practices to discontinue
-- Continue: Practices that worked well
+Capture in two buckets, and force specificity in both.
 
-**4Ls (Liked, Learned, Lacked, Longed For)**
-- Liked: What worked well and should be repeated
-- Learned: New knowledge gained during the engagement
-- Lacked: What was missing (tools, skills, information)
-- Longed For: What we wish we had
+**What went well:** for each success factor, name the area, what specifically worked, and the concrete evidence. A named example beats a vague impression.
 
-**Sailboat Method**
-- Wind (what propelled us forward)
-- Anchor (what slowed us down)
-- Rocks (risks we hit or narrowly avoided)
-- Island (the destination we were aiming for)
+**What could be improved:** for each challenge, name what failed and one specific recommendation. "Communication could be better" is useless. "Weekly status calls should include the IT lead, not only the business sponsor" is actionable.
 
-### Capture Structure
+Translate lessons into prioritized recommendations, each with priority (high/medium/low), expected benefit, and implementation effort.
 
-Document lessons in two categories:
-
-**What Went Well**
-
-For each success factor, capture the area, what specifically worked, and the evidence (a concrete example, not a vague impression).
-
-**What Could Be Improved**
-
-For each challenge, capture what didn't work and a specific recommendation for improvement. "Communication could be better" is not useful. "Weekly status calls should include the IT lead, not just the business sponsor" is.
-
-### Process Improvement Recommendations
-
-Translate lessons into prioritized recommendations:
-- The recommendation itself
-- Priority (high/medium/low)
-- Expected benefit
-- Implementation effort
-
-### Retrospective Session
-
-Run the session with:
-- All team members (consulting and client-side where appropriate)
-- A neutral facilitator if possible
-- Documented key insights with attribution
-- Specific quotes that capture important observations
-- Action items for the practice or firm, not just the project
+Run the session with the full team (client-side where appropriate), a neutral facilitator if you can get one, and documented insights with attribution and direct quotes. Write action items for the practice or firm, not only the project. A lesson that never reaches the next engagement manager was not learned.
 
 ---
 
 ## Step 7: Finalize Administrative Closure
 
-### Financial Closure
+The routine mechanics. Do them cleanly and move on. The judgment in this step lives in team performance reviews, so spend the time there.
 
-Reconcile all financial obligations:
+Reconcile finances: total budget, actual spend, variance (amount and percentage with a one-line explanation), final invoice and payment status, final expenses submission status. Use the client's real figures only.
 
-| Item | Details |
-|---|---|
-| Total Budget | Original approved amount |
-| Actual Spend | What was actually spent |
-| Variance | Amount and percentage |
-| Final Invoice | Amount and payment status |
-| Final Expenses | Submission status |
+Release resources: for each team member confirm assignment end date, release status, next assignment or availability, and that performance feedback is complete.
 
-### Resource Release
+Close contracts: for each vendor or subcontractor, record final payment amount and status and confirm formal closure.
 
-For each team member, confirm:
-- Assignment end date
-- Release status
-- Next assignment or availability
-- Performance feedback completed
+Archive documentation with retention periods applied (see the regulated-industry reference for retention rules). At minimum: charter, governance docs, final deliverables, lessons learned, financial records, contracts.
 
-### Contract Closure
-
-For each vendor or subcontractor:
-- Final payment amount and status
-- Contract formally closed
-
-### Documentation Archive
-
-Archive all project documentation with appropriate retention periods. At minimum: project charter, governance docs, final deliverables, lessons learned, financial records, and contracts.
-
-### Team Recognition
-
-Acknowledge individual contributions. This is not a formality. People remember how engagements ended.
+Recognize the team. This is not a formality. People remember how engagements ended, and the ending colors how they remember the whole thing.
 
 ### Team Performance Reviews
 
-Distinct from annual performance reviews and more valuable because they capture performance in context. Conduct these before the team disbands, not weeks later when memory fades.
-
-**For each team member, assess**:
+More valuable than the annual cycle because they capture performance in context, while it is fresh. Conduct them before the team disbands, not weeks later when memory fades. Fill each row with 2-3 sentences of specific evidence, not a bare rating.
 
 | Dimension | Rating (1-5) | Evidence | Development Recommendation |
 |---|---|---|---|
 | Technical quality of work | _ | Specific deliverables or analyses | What to build on or improve |
 | Client relationship management | _ | Interactions observed, client feedback | Growth areas |
 | Team contribution | _ | Collaboration, mentoring, initiative | Next engagement fit |
-| Problem-solving under pressure | _ | How they handled ambiguity, setbacks, tight deadlines | Stretch opportunities |
-| Communication (written and verbal) | _ | Deliverable quality, presentation skill, stakeholder updates | Development suggestions |
+| Problem-solving under pressure | _ | How they handled ambiguity and tight deadlines | Stretch opportunities |
+| Communication (written and verbal) | _ | Deliverable quality, presentation, stakeholder updates | Development suggestions |
 
-**Process**:
-- EM writes the review within one week of engagement end (not three months later as part of an annual cycle)
-- Share the review in a 30-minute 1:1 conversation, not just in writing
-- Include specific examples, not just ratings. "Your analysis of the customer cohort data in Week 4 changed the direction of the engagement" is useful. "Good analytical skills" is not.
-- Ask the team member for their self-assessment first. Divergence between self-assessment and your assessment is the most productive conversation topic.
-- Feed findings into the firm's staffing and development systems so the next engagement manager benefits
+Process:
 
-**Why this matters**: Consulting team members are evaluated on engagement performance. If you don't do this, they either get no feedback (bad) or get feedback from someone who wasn't there (worse).
+- The EM writes each review within one week of engagement end, not three months later inside an annual cycle.
+- Deliver it in a 30-minute 1:1, not only in writing.
+- Anchor every point to an example. "Your analysis of the customer cohort data in Week 4 changed the direction of the engagement" is feedback. "Good analytical skills" is noise.
+- Ask for the person's self-assessment first. The gap between their view and yours is the most productive conversation you will have.
+- Feed findings into the firm's staffing and development systems so the next EM inherits the context.
+
+If you skip this, the person gets no feedback or gets it later from someone who was not there. Both are worse than doing it now.
 
 ---
 
 ## Step 8: Final Project Report
 
-Produce a closure report that serves as the definitive record of the engagement.
-
-### Report Structure
+Produce the definitive record of the engagement. Fill each section with substance from real project data, not headings over blank space.
 
 ```
 Project Closure Report: [Project Name]
 
 Executive Summary
-  [Overview: objectives, outcomes, key metrics, overall assessment]
+  Objectives, outcomes, key metrics, overall assessment.
 
 1. Project Overview
-   - Original objectives
-   - Scope (included and excluded)
-   - Timeline by phase
+   Original objectives; scope (included and excluded); timeline by phase.
 
 2. Deliverables
-   - Completed deliverables with status and location
-   - Handover confirmation
+   Completed deliverables with status and location; handover confirmation.
 
 3. Financial Summary
-   - Budget vs. actual (total and by category)
-   - Variance explanation
+   Budget vs actual (total and by category); variance explanation.
 
 4. Benefits
-   - Benefits achieved to date (quantified)
-   - Expected future benefits (with measurement plan)
-   - Benefits tracking ownership (who measures what, post-departure)
+   Benefits achieved to date (quantified); expected future benefits with
+   measurement plan; tracking ownership post-departure (who measures what).
 
 5. Lessons Learned
-   - Success factors
-   - Improvement areas
-   - Specific recommendations for future engagements
+   Success factors; improvement areas; recommendations for future engagements.
 
 6. Team Recognition
-   - Key contributions
+   Key contributions.
 
 7. Appendices
-   - Deliverable inventory
-   - Change log
-   - Final risk register
-   - Stakeholder list
+   Deliverable inventory; change log; final risk register; stakeholder list.
 ```
 
 ---
 
 ## Regulated Industry Considerations
 
-Certain industries impose specific closeout requirements beyond standard practice. Failing to address these creates compliance risk that outlasts the engagement.
-
-### Financial Services
-
-- **Regulatory documentation**: Ensure all compliance-related deliverables meet regulatory standards (OCC, FCA, APRA, etc.) and are archived per retention requirements (typically 7+ years)
-- **Audit trail**: Document all decisions, approvals, and changes with timestamps. Regulators may review these years later
-- **Model risk management**: If the engagement produced quantitative models, ensure SR 11-7 / SS1/23 compliance documentation is complete (model inventory, validation reports, limitation disclosures)
-- **Data handling**: Confirm all client data is returned or destroyed per data handling agreements. Obtain written confirmation
-
-### Healthcare
-
-- **HIPAA / PHI**: Verify all protected health information has been returned or securely destroyed. Document the chain of custody
-- **Clinical documentation**: Any deliverables affecting clinical workflows must be validated against relevant standards (Joint Commission, CMS)
-- **BAA closure**: If a Business Associate Agreement was in place, formally close it and confirm data disposition
-
-### Government / Public Sector
-
-- **Contract closeout requirements**: Follow FAR Part 4.804 (US federal) or equivalent procurement regulations. Government contracts have specific closeout timelines and documentation requirements
-- **Security clearance**: Ensure facility and personnel clearances are properly deactivated or transferred
-- **FOIA considerations**: Assume project documentation may be subject to freedom of information requests. Flag anything that should be marked as proprietary or exempt
-- **Audit readiness**: Government auditors (GAO, IG) may review engagement files years after completion. Archive accordingly
-
-### Cross-Industry
-
-- **Data retention**: Know the retention period before archiving. Financial services and healthcare often require 7-10 years; government contracts may require longer
-- **Third-party attestations**: If the engagement involved SOC 2, ISO 27001, or similar certifications, ensure findings are properly documented and handed to the relevant compliance team
+Financial services, healthcare, and government impose closeout requirements beyond standard practice. Skipping them creates compliance exposure that outlasts the engagement by years. For sector-specific requirements (regulatory documentation, PHI and BAA closure, FAR contract closeout, retention periods, third-party attestations), see `references/regulated-industry-closeout.md`. Check it before archiving anything in a regulated engagement.
 
 ---
 
 ## Early Termination / Bad Ending Playbook
 
-Not every engagement ends well. Client dissatisfaction, budget cuts, leadership changes, strategy pivots, or genuine delivery failures can all terminate an engagement early. How you handle the ending determines whether the client relationship (and your reputation) survives.
-
-### Termination Types and Responses
+Not every engagement ends well. Budget cuts, leadership changes, strategy pivots, dissatisfaction, or genuine delivery failure can end one early. How you handle the ending decides whether the relationship and your reputation survive it.
 
 | Scenario | Your Priority | Key Actions |
 |---|---|---|
-| Client pulls budget (external pressure, not dissatisfaction) | Preserve relationship, close cleanly | Express understanding. Deliver whatever is complete in usable form. Offer to resume if funding returns. Don't fight it. |
-| Client is dissatisfied with delivery quality | Damage control, relationship salvage | Acknowledge the concern without being defensive. Offer a concrete remediation plan (at reduced or no cost). Involve your leadership. |
-| Leadership change kills the project | Protect team, maintain firm reputation | Document what was delivered and its value. Brief the new leadership if they'll take the meeting. Accept the decision gracefully. |
-| Scope was wrong from the start | Honest reckoning | Acknowledge the misscoping. Deliver what's useful from work completed. Offer a re-scoped approach if the underlying need still exists. |
-| Mutual agreement to stop | Clean handover | Treat as normal closeout but on compressed timeline. No hard feelings, but document everything. |
+| Client pulls budget (external pressure, not dissatisfaction) | Preserve relationship, close cleanly | Express understanding. Deliver whatever is complete in usable form. Offer to resume if funding returns. Do not fight it. |
+| Client dissatisfied with delivery quality | Damage control, salvage relationship | Acknowledge the concern without defensiveness. Offer a concrete remediation plan at reduced or no cost. Involve your leadership. |
+| Leadership change kills the project | Protect team, protect firm reputation | Document what was delivered and its value. Brief new leadership if they will take the meeting. Accept the decision gracefully. |
+| Scope was wrong from the start | Honest reckoning | Acknowledge the misscoping. Deliver what is useful from completed work. Offer a re-scoped approach if the need still exists. |
+| Mutual agreement to stop | Clean handover | Treat as normal closeout on a compressed timeline. No hard feelings, but document everything. |
 
-### The Early Termination Checklist
+Regardless of cause, six actions are non-negotiable:
 
-Regardless of cause, these actions are non-negotiable:
-
-1. **Agree on the narrative.** Align with the client sponsor on how this will be described internally and externally. "Mutually agreed to pause pending strategic review" is better than conflicting stories.
-2. **Deliver what you have.** Even if incomplete, package current work products in usable form. Don't hold deliverables hostage over unpaid fees (that's what the contract and legal team are for).
-3. **Settle the finances promptly.** Agree on final billing quickly. Protracted fee disputes after a bad ending make everything worse. If there's genuine disagreement, propose a reasonable compromise and move on.
-4. **Conduct an internal post-mortem.** What went wrong? Was it avoidable? Was there a red flag at proposal stage? Feed this back into your qualification process. The most expensive lesson is one you don't learn from.
-5. **Handle the team.** Early termination is demoralizing. Debrief with the team honestly. Reassign people quickly. Don't let them sit on the bench wondering what they did wrong (especially if they didn't do anything wrong).
-6. **Don't burn the bridge.** The person who terminated the engagement may hire you again in a different role, at a different company, five years from now. Leave them with the impression that you handled a difficult situation with professionalism.
+1. **Agree on the narrative.** Align with the sponsor on how this is described internally and externally. "Mutually agreed to pause pending strategic review" beats two conflicting stories.
+2. **Deliver what you have.** Package current work products in usable form even if incomplete. Do not hold deliverables hostage over unpaid fees. That is what the contract and legal team handle.
+3. **Settle finances promptly.** Agree final billing quickly. Protracted fee disputes after a bad ending poison everything. If disagreement is genuine, propose a reasonable compromise and move on.
+4. **Run an internal post-mortem.** What went wrong, was it avoidable, was there a red flag at proposal stage? Feed it back into qualification. The most expensive lesson is the one you refuse to learn.
+5. **Handle the team.** Early termination is demoralizing. Debrief honestly and reassign people fast. Do not let them sit on the bench wondering what they did wrong, especially when they did nothing wrong.
+6. **Do not burn the bridge.** The person who terminated this may hire you again in five years at a different company. Leave them the impression that you handled a hard situation with professionalism.
 
 ### When to Walk Away First
 
-Rarely discussed but sometimes necessary. Situations where the firm should initiate termination:
+Rarely discussed, occasionally necessary. The firm should initiate termination when:
 
-- Client asks you to produce misleading findings or suppress unfavorable results
-- Client environment is abusive to your team (sustained hostility, unreasonable demands, personal attacks)
-- Scope has expanded beyond contractual terms and the client refuses to adjust
-- You discover information during the engagement that creates a conflict of interest
-- Continued association poses reputational risk to the firm
+- The client asks you to produce misleading findings or suppress unfavorable results.
+- The client environment is abusive to your team (sustained hostility, personal attacks, unreasonable demands).
+- Scope has expanded past contractual terms and the client refuses to adjust.
+- You discover information that creates a conflict of interest.
+- Continued association poses reputational risk to the firm.
 
-In these cases, raise the concern with your firm's leadership, document the issue, and follow your firm's protocol for disengagement. Do it promptly and professionally.
+In these cases, raise it with firm leadership, document the issue, and follow your firm's disengagement protocol. Do it promptly and professionally.
+
+---
 
 ## Follow-On Opportunity Identification
 
-While closing the engagement, identify potential follow-on work. This is not about selling; it's about recognizing where the client still has unresolved needs that surfaced during the engagement.
+While closing, note where the client still has unresolved needs. This is not selling. It is recognizing gaps that surfaced during the work.
 
-Look for:
-- Problems identified but out of scope for this engagement
-- Capabilities the client still lacks
-- Adjacent areas where similar methodology would apply
-- Implementation support for recommendations not yet actioned
-- Periodic health checks or maturity assessments
+Look for problems identified but out of scope, capabilities the client still lacks, adjacent areas where the same methodology applies, implementation support for recommendations not yet actioned, and periodic health checks or maturity assessments.
 
-Document these with enough context that a business development conversation can happen naturally, not as a sales pitch embedded in a closure meeting.
+Document each with enough context that a business development conversation can happen naturally later. Do not embed a sales pitch in the closure meeting.
 
 ---
 
 ## Key Principles
 
-- Don't skip lessons learned. They're the primary mechanism for organizational learning.
-- Ensure handover is complete before reducing support. Premature withdrawal creates client frustration and damages the relationship.
-- Get formal sign-off on acceptance. Ambiguity about whether the engagement is "done" causes problems months later.
+- Do not skip lessons learned. It is the primary mechanism for organizational learning.
+- Complete handover before reducing support. Premature withdrawal frustrates the client and damages the relationship.
+- Get formal sign-off on acceptance. Ambiguity about "done" causes problems months later.
 - Release resources promptly. Holding people on a closed project wastes their time and the firm's money.
-- Follow up on post-project commitments. Nothing erodes trust faster than broken promises after the team leaves.
-- Celebrate team success before closing. The ending colors how people remember the entire engagement.
-- Assign benefits tracking ownership before you leave. Unowned metrics stop being measured.
+- Follow up on post-project commitments. Nothing erodes trust faster than a broken promise after the team leaves.
+- Assign benefits tracking ownership before you go. Unowned metrics stop being measured.
 - Start stakeholder communications weeks before departure, not days.
-- Conduct a proper retrospective, not just paperwork. A lessons learned document nobody reads is theater.
+- Celebrate the team before closing. The ending colors how people remember the entire engagement.

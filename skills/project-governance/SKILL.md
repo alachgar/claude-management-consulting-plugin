@@ -1,77 +1,77 @@
 ---
 name: project-governance
-description: Establish and manage project governance for consulting engagements. Covers governance structure selection, RACI matrices, decision rights, steering committees, stage gates, status reporting (RAG), risk registers, issue management, and project closure. Use when setting up engagement governance, defining accountability, tracking project health, or managing risks.
+description: Set up and run the oversight structure for a consulting engagement: governance tiering, RACI and decision rights, steering committee cadence, stage gates, RAG status reporting, risk and issue registers, and closure handback. Use when standing up engagement governance, defining who decides what, right-sizing a PMO, building a risk register, writing a steering committee status report, or scoring and tracking project health. Covers the management lifecycle from charter sign-off through closure. For the delivery plan itself (workstreams, phasing, business case), see implementation-planning.
+license: MIT
+metadata:
+  category: engagement-delivery
+  version: "2.1.0"
+  author: Anot
 ---
 
 # Project Governance
 
-Establish and operate the oversight structure for consulting engagements, ensuring clear decision-making, accountability, and stakeholder alignment throughout. For building the implementation plan itself (workstreams, phasing, business cases), see implementation-planning. This covers the full project management lifecycle: from initial governance setup through ongoing status reporting, risk management, and project closure.
+Stand up and operate the oversight structure for a consulting engagement: clear decision-making, one accountable owner per call, and stakeholder alignment that holds when the work gets hard. This covers the management lifecycle from charter sign-off through status reporting, risk, issues, and closure handback. For the delivery plan itself (workstreams, phasing, business case), see implementation-planning.
+
+Governance is a means, not a deliverable. Every artifact here earns its place by changing a decision or catching a problem early. If a report, meeting, or matrix does neither, cut it.
+
+## Before you build anything
+
+Ask the client for the real inputs first. You need the sponsor's name and appetite for involvement, the actual team roster, the contracted scope and budget, the client's existing PMO standards (many large clients mandate a template you must adopt), and any regulatory or audit requirements. Do not invent stakeholders, dollar figures, or milestone dates to fill a template. Where you show a number the client has not confirmed, label it as an example and flag it for validation. Governance built on fabricated inputs collapses the first time someone checks it against reality.
 
 ## Governance Structure Selection
 
-Right-size governance to project complexity. A 3-person engagement doesn't need the same governance as a 50-person transformation.
+Right-size to complexity. A 3-person advisory piece and a 50-person transformation need different machinery, and forcing heavy governance onto a small job is the most common way to make governance feel like overhead.
 
-### Light Governance (small project, trusted relationship)
-- Project sponsor + engagement manager
-- Weekly check-ins
-- Minimal formal documentation
-- Suitable for: focused advisory work, small team, established client relationship
+Three tiers cover most engagements. Pick the lightest one that still gives the sponsor real control.
 
-### Standard Governance (most projects)
-- Steering committee + working team
-- Monthly steering committee meetings
-- Bi-weekly working sessions
-- Written status reports
-- Suitable for: typical consulting engagements with clear scope and moderate complexity
+| Tier | Structure | Cadence | Fits |
+|------|-----------|---------|------|
+| Light | Sponsor plus engagement manager | Weekly check-in, minimal formal docs | Focused advisory, small team, established relationship |
+| Standard | Steering committee plus working team | Monthly steerco, bi-weekly working sessions, written status | Typical engagement, clear scope, moderate complexity |
+| Complex | Executive sponsor, program director, steerco, workstream boards | Weekly program review, defined workstream interfaces | Enterprise transformation, multi-year program, high-risk initiative |
 
-### Complex Governance (large transformation, multiple workstreams)
-- Executive sponsor + program director
-- Steering committee + project boards per workstream
-- Weekly program review
-- Multiple workstream leads with defined interfaces
-- Suitable for: enterprise transformations, multi-year programs, high-risk initiatives
-
-**Selection factors**: project size, number of stakeholders, risk level, organizational culture, regulatory requirements.
+Selection factors: team size, stakeholder count, risk level, organizational culture, and regulatory requirements. Culture matters more than size. A 10-person engagement inside a heavily governed bank often needs Standard tier because the client's own controls demand it, while a 30-person job at a fast-moving founder-led firm may run fine on Light. Read the client, not just the headcount.
 
 ## Project Charter
 
-The charter is the foundational document. Get sign-off before substantive work begins.
+The charter is the foundational document. Get sponsor sign-off before substantive work begins, because the charter is what you point to when scope drifts in month three.
 
-**Charter elements**:
+Charter elements:
 - Project name, sponsor, project director, engagement manager
 - Start date and target end date
-- Problem statement: what problem does this solve?
-- Expected outcomes: what will this achieve?
-- Strategic alignment: how does this support organizational strategy?
-- Scope: what's in, what's out, what assumptions are we making, what constraints apply
-- Success criteria: specific, measurable targets
+- Problem statement: the specific problem this solves, in one or two sentences
+- Expected outcomes: what changes when this succeeds
+- Strategic alignment: which organizational priority this serves
+- Scope: in, out, assumptions, constraints (the "out" list prevents more disputes than the "in" list)
+- Success criteria: specific and measurable, tied to the outcomes above
 - Key milestones with target dates and dependencies
-- Budget by category with tracking columns (budget, spent, remaining)
-- Sign-off section for sponsor and project director
+- Budget by category with budget, spent, and remaining columns
+- Sign-off block for sponsor and project director
+
+Write the scope boundaries as if you will litigate them, because you may have to. "Out of scope: system implementation, vendor selection, change management beyond leadership alignment" saves a hard conversation later.
 
 ## RACI Matrix
 
-RACI clarifies who does what. The single most important rule: one Accountable person per activity. Multiple "A"s means nobody is accountable.
+RACI clarifies who does what. One rule matters above the rest: exactly one Accountable person per activity. Two A's means nobody is accountable, because each assumes the other has it.
 
-**RACI definitions**:
-- **R** (Responsible): Does the work
-- **A** (Accountable): Final decision authority, owns the outcome
-- **C** (Consulted): Provides input before the work is done
-- **I** (Informed): Kept updated after the work is done
+- R (Responsible): does the work
+- A (Accountable): final decision authority, owns the outcome, one per activity
+- C (Consulted): gives input before the work is done, two-way
+- I (Informed): told after the fact, one-way
 
-Build the RACI by project phase. A typical consulting engagement has phases like:
+Build the RACI by engagement phase. Fill each cell with a role, not a name where roles rotate, and confirm the assignments with the people named. A RACI the team has not seen is a guess.
 
-**Discovery**: Conduct interviews (R: engagement manager, A: project lead), gather data, synthesize findings, review current state.
+**Discovery**: conduct interviews (R: engagement manager, A: project lead), gather data, synthesize findings, review current state with the client.
 
-**Analysis**: Apply analytical frameworks, build financial models, develop options.
+**Analysis**: apply analytical frameworks, build financial models, develop and pressure-test options.
 
-**Recommendations**: Develop strategy, build business case, prepare executive presentation.
+**Recommendations**: develop the strategy, build the business case, prepare the executive readout.
 
-For each activity, assign exactly one A. The person doing the work (R) and the person accountable for the outcome (A) can be the same person on small teams but should be separated on larger engagements.
+On small teams the R and the A are often the same person, and that is fine. On larger engagements separate them, so the person doing the work is not also the sole judge of whether it is good enough. When roles change mid-engagement, update the RACI the same week. A stale RACI creates false confidence, which is worse than no RACI at all.
 
 ## Decision Rights
 
-Clarify decision authority before issues arise. Verbal agreements fade.
+Settle decision authority before the first disagreement, not during it. Verbal agreements fade, and they fade fastest across organizational boundaries where memory conveniently favors each side.
 
 | Decision Type | Decider | Input Required | Process |
 |---------------|---------|----------------|---------|
@@ -83,6 +83,8 @@ Clarify decision authority before issues arise. Verbal agreements fade.
 | Resource changes | Engagement manager | HR/PMO | Coordination |
 | Go/no-go on recommendations | Engagement manager | Team | Team consensus |
 
+Adapt this table to the actual client. The deciders above are a starting default, and a client with a strong PMO will pull several of these decisions to their side. Confirm each row with the sponsor rather than assuming.
+
 ### Escalation Path
 
 | Issue Type | First Escalation | Second Escalation | Timeline |
@@ -92,217 +94,212 @@ Clarify decision authority before issues arise. Verbal agreements fade.
 | Budget | EM to sponsor | Finance | 24 hours |
 | Strategic | Sponsor to steering committee | Board | Immediate |
 
-Escalate early, not late. Surprises destroy trust faster than bad news delivered promptly.
+Escalate early. Surprises destroy trust faster than bad news delivered promptly, because a late surprise tells the sponsor you either missed it or hid it, and both are worse than the problem itself.
 
 ## Meeting Cadence
 
+Keep the calendar light enough that people show up prepared. Every recurring meeting is a standing tax on the team's time, so justify each one.
+
 ### Steering Committee
-- **Frequency**: Monthly (or as governance tier dictates)
-- **Duration**: 60-90 minutes
-- **Attendees**: Sponsor, client executive, partner, engagement manager
-- **Purpose**: Strategic direction, major decisions, risk review
-- **Agenda structure**: Status overview (5 min), key decisions needed (15 min), deep dive topic (30 min), risks and issues (15 min), next steps (5 min)
+- Frequency: monthly, or as the governance tier dictates
+- Duration: 60-90 minutes
+- Attendees: sponsor, client executive, partner, engagement manager
+- Purpose: strategic direction, major decisions, risk review
+- Agenda: status overview (5 min), decisions needed (15 min), deep dive (30 min), risks and issues (15 min), next steps (5 min)
+
+The steerco exists to make decisions, so lead with the decisions you need and put the status update on one page behind it. A steerco that spends 60 minutes on status and 5 on decisions is a broadcast, not a governance body.
 
 ### Project Team
-- **Frequency**: Weekly
-- **Duration**: 60 minutes
-- **Attendees**: Engagement manager, analysts, client lead
-- **Purpose**: Work coordination, progress tracking, blocker resolution
-- **Agenda structure**: Quick wins and blockers (10 min), workstream updates (30 min), decisions needed (10 min), next week planning (10 min)
+- Frequency: weekly
+- Duration: 60 minutes
+- Attendees: engagement manager, analysts, client lead
+- Purpose: coordination, progress, blocker resolution
+- Agenda: wins and blockers (10 min), workstream updates (30 min), decisions needed (10 min), next-week planning (10 min)
 
 ### Working Sessions
-- **Frequency**: 2-3x per week as needed
-- **Duration**: 60-90 minutes
-- **Attendees**: As needed for specific work
-- **Purpose**: Analysis, draft development, problem-solving
+- Frequency: 2-3x per week as needed
+- Duration: 60-90 minutes
+- Attendees: whoever the specific work requires
+- Purpose: analysis, drafting, problem-solving
 
 ### Status Updates
-- **Frequency**: Bi-weekly (written)
-- **Distribution**: Extended stakeholders
-- **Format**: Standardized report (see Status Reporting below)
+- Frequency: bi-weekly, written
+- Distribution: extended stakeholders
+- Format: standardized report (see Status Reporting)
 
 ## Stage Gate Framework
 
-Stage gates provide formal checkpoints where the project must demonstrate readiness before proceeding.
+Stage gates are formal checkpoints where the project proves it is ready before it spends the next phase's budget. The gate is a decision point, not a status meeting. Someone with authority says go, redo, or stop.
 
-### Typical Consulting Stage Gates
+**Gate 1: Plan Approval** (end of planning). Evidence: approved charter, completed RACI, detailed work plan, team assigned, approved budget, initial risk register.
 
-**Gate 1: Plan Approval** (end of planning phase)
+**Gate 2: Issue Review** (end of analysis). Evidence: findings documented, options evaluated, draft recommendations clear, client aligned on direction.
 
-Required evidence: approved charter, completed RACI, detailed work plan, team assigned, approved budget, initial risk register.
+**Gate 3: Design Approval** (end of design). Evidence: solution documented, business case validated with updated financials, implementation roadmap approved, change plan approved.
 
-**Gate 2: Issue Review** (end of analysis phase)
-
-Required evidence: findings documented, options evaluated, draft recommendations clear, client aligned on direction.
-
-**Gate 3: Design Approval** (end of design phase)
-
-Required evidence: solution documented, business case validated with updated financials, implementation roadmap approved, change plan approved.
-
-**Gate 4: Go-Live Review** (end of implementation)
-
-Required evidence: deliverables accepted, benefits tracking in place, control plan operational, lessons learned captured.
+**Gate 4: Go-Live Review** (end of implementation). Evidence: deliverables accepted, benefits tracking live, control plan operational, lessons learned captured.
 
 ### Gate Decisions
 
 | Decision | Meaning | Action |
 |----------|---------|--------|
 | GO | Approved to proceed | Move to next stage |
-| GO WITH CONDITIONS | Approved with specific modifications | Document conditions and track completion |
-| REDO | Insufficient readiness | Address gaps and return to gate |
-| STOP | Terminate project | Initiate closure procedures |
+| GO WITH CONDITIONS | Approved with specific modifications | Document conditions, track to closure |
+| REDO | Insufficient readiness | Address the named gaps, return to the gate |
+| STOP | Terminate | Initiate closure procedures |
+
+The gate only works if STOP is genuinely on the table. If every gate is a rubber stamp, drop the ceremony and stop pretending. A real gate has, at least once, sent someone back to redo work.
 
 ## Status Reporting
 
+This is where governance earns or loses the sponsor's trust. Spend real effort here.
+
 ### RAG Methodology
 
-RAG (Red-Amber-Green) provides a standardized way to communicate project health.
-
-| Status | Definition | Action Required |
-|--------|------------|-----------------|
+| Status | Definition | Action |
+|--------|------------|--------|
 | GREEN | On track, no significant issues | Continue normal monitoring |
-| AMBER | Some concerns, mitigation in place | Monitor closely, escalate if worsens |
-| RED | Critical issues, intervention needed | Immediate escalation, recovery plan |
+| AMBER | Concerns identified, mitigation in place | Monitor closely, escalate if it worsens |
+| RED | Critical issue, intervention needed | Immediate escalation, recovery plan |
+
+The failure mode is watermelon status: green on the outside, red on the inside. It happens when teams treat AMBER as an admission of failure rather than an early warning. Reward the first person who calls a justified AMBER, because they just bought the sponsor time to help. A project that goes straight from GREEN to RED had a reporting problem, not just a delivery problem.
 
 ### Status Report Structure
 
-A status report should cover these sections, in this order. Keep it to 2 pages for steering committee consumption.
+Cover these sections, in this order, in two pages. Steering committee members read the first paragraph and skim the rest, so the executive summary carries the report.
 
-**Executive summary**: 2-3 sentences. Overall status, key wins, key concerns. If a steering committee member reads only this section, they should know the state of the project.
+**Executive summary**: three sentences maximum. Overall RAG, the one thing going well, the one thing you need help with. If a steerco member reads only this, they know where the project stands and what you need from them.
 
-**Status dashboard**: RAG rating and trend (improving, stable, declining) for each dimension: schedule, budget, scope, quality, resources.
+**Status dashboard**: RAG plus trend (improving, stable, declining) for schedule, budget, scope, quality, and resources. The trend arrow matters as much as the color. GREEN and declining deserves a sentence of explanation.
 
-**Progress this period**: Deliverables completed, key achievements, work in progress with completion percentages.
+**Progress this period**: deliverables completed, key achievements, work in progress with completion percentages. Percentages must be defensible, not vibes. "Financial model 60% complete" should mean 3 of 5 modules built, not a feeling.
 
-**Milestone status**: Each milestone with target date, forecast date, status, and variance. Use symbols (achieved, at risk, missed) for quick scanning.
+**Milestone status**: each milestone with target date, forecast date, status, and variance. Use symbols (achieved, at risk, missed) so the reader scans it in seconds.
 
-**Budget status**: Total budget, spent to date, percentage spent vs. percentage complete, forecast at completion, variance. A project that is 50% through its budget but 30% complete has a problem.
+**Budget status**: total, spent to date, percent spent against percent complete, forecast at completion, variance. This comparison is the single most useful line in the report. A project 50% through budget but 30% complete is heading for an overrun, and the sponsor needs to see it while there is still runway to act.
 
-**Burn rate analysis**: Planned vs. actual spend by period. Diverging trends signal trouble before it shows up in the overall numbers.
+**Burn rate analysis**: planned against actual spend by period. Diverging lines flag trouble before the totals do.
 
-**Risks and issues**: Top risks with probability, impact, and mitigation. Open issues with severity, owner, and due date. Resolved issues from this period.
+**Risks and issues**: top risks with probability, impact, and mitigation. Open issues with severity, owner, and due date. Issues resolved this period, so the sponsor sees the team clearing them.
 
-**Forward look**: Next period priorities, upcoming milestones, decisions required, dependency awareness.
+**Forward look**: next-period priorities, upcoming milestones, decisions required, and dependencies you are waiting on.
 
-**Governance**: Steering committee meeting notes, escalations, change log.
+**Governance**: steerco notes, escalations, change log.
 
-### Status Reporting Discipline
-
-- Be honest with RAG status. Don't greenwash problems
-- Escalate RED issues immediately. Don't wait for the next status report
-- Quantify progress wherever possible. "Good progress" is not a status
-- Focus on what changed since the last report
-- Keep the executive summary to 3 sentences maximum
-- Send reports at the same time each period. Consistency builds trust
-- Track action items from previous reports explicitly
-- Report outcomes achieved, not just tasks completed
+### Reporting Discipline
+- Be honest with the RAG. Greenwashing delays the help you need and burns credibility when it surfaces.
+- Escalate RED the day you find it. Do not save it for the next scheduled report.
+- Quantify progress. "Good progress" is not a status.
+- Report what changed since last time, not the full history again.
+- Cap the executive summary at three sentences.
+- Send at the same time each period. Predictability is itself a trust signal.
+- Track prior action items explicitly, open and closed.
+- Report outcomes delivered, not tasks performed. "Board approved the target operating model" beats "held 4 workshops".
 
 ## Risk Management
 
-### Risk Identification
+The second place to go deep. A risk register that is filled in once and never revisited is theater. The value is in the weekly discipline of updating it.
 
-Systematically identify risks using established categories.
+### Risk Identification
 
 | Category | Scope |
 |----------|-------|
-| Strategic | Market changes, competitor actions, regulatory shifts |
-| Financial | Cost overruns, currency fluctuation, funding uncertainty |
-| Operational | Process failures, key person dependency, supply chain |
-| Technical | Technology issues, integration problems, cybersecurity |
-| Regulatory | Compliance requirements, legal exposure, data privacy |
+| Strategic | Market shifts, competitor moves, regulatory change |
+| Financial | Cost overrun, currency, funding uncertainty |
+| Operational | Process failure, key-person dependency, supply chain |
+| Technical | Technology gaps, integration, cybersecurity |
+| Regulatory | Compliance, legal exposure, data privacy |
 | Schedule | Delays, dependencies, resource availability |
-| Quality | Defects, scope creep, acceptance criteria disputes |
+| Quality | Defects, scope creep, acceptance disputes |
 
-**Identification techniques**: Team brainstorming, expert judgment, SWOT analysis, historical checklists from similar projects, root cause analysis working backwards from potential failures, horizon scanning for emerging risks.
+Techniques: team brainstorming, expert judgment, SWOT, checklists from comparable past projects, pre-mortem reasoning backward from a hypothetical failure, and horizon scanning for emerging threats. The pre-mortem is the highest-yield of these. Ask the team to imagine the project has failed and explain why, and the risks people were too polite to raise in a status meeting come out.
 
 ### Risk Assessment
 
-**Probability scale** (1-5):
-- 5 (Very High): >80% likelihood
-- 4 (High): 60-80%
-- 3 (Medium): 40-60%
-- 2 (Low): 20-40%
-- 1 (Very Low): <20%
+Score every risk on probability and impact, 1 to 5 each. These bands are a working default. Tune them to the engagement, and where the client has their own risk scale, adopt it rather than imposing a second one.
 
-**Impact scale** (1-5):
-- 5 (Very High): >30% schedule delay, >20% cost overrun, major quality failures
-- 4 (High): 15-30% delay, 10-20% overrun, significant quality issues
-- 3 (Medium): 5-15% delay, 5-10% overrun, moderate quality issues
-- 2 (Low): <5% delay, <5% overrun, minor quality issues
-- 1 (Very Low): Minimal impact across all dimensions
+Probability (1-5):
+- 5 Very High: over 80% likely
+- 4 High: 60-80%
+- 3 Medium: 40-60%
+- 2 Low: 20-40%
+- 1 Very Low: under 20%
 
-**Risk score**: Probability x Impact
+Impact (1-5):
+- 5 Very High: over 30% schedule delay, over 20% cost overrun, or major quality failure
+- 4 High: 15-30% delay, 10-20% overrun, significant quality issues
+- 3 Medium: 5-15% delay, 5-10% overrun, moderate quality issues
+- 2 Low: under 5% delay, under 5% overrun, minor quality issues
+- 1 Very Low: minimal across all dimensions
 
-| Score Range | Classification | Required Action |
-|-------------|---------------|-----------------|
+Risk score is probability times impact. These percentage bands are directional estimates, not measured probabilities. Treat the score as a way to rank and triage, not as a precise forecast, and never present it to a client as if the underlying likelihood were known data.
+
+| Score | Class | Action |
+|-------|-------|--------|
 | 19-25 | CRITICAL | Immediate action, steering committee visibility |
 | 10-18 | HIGH | Priority mitigation, active management |
 | 5-9 | MEDIUM | Active monitoring, mitigation plan in place |
 | 1-4 | LOW | Accept and monitor |
 
-### Risk Response Strategies
+### Risk Response
 
 | Strategy | When to Use |
 |----------|-------------|
-| Avoid | Change the plan to eliminate the risk entirely. Use for high-impact, high-probability risks where avoidance is feasible |
-| Mitigate | Reduce the probability or impact. Most common strategy. Define specific actions with owners and deadlines |
-| Transfer | Shift risk to another party (insurance, outsourcing, contractual terms). Use when another party can manage the risk more effectively |
-| Accept | Acknowledge and monitor. Use when cost of mitigation exceeds expected cost of the risk, or when probability is very low |
+| Avoid | Change the plan to remove the risk. For high-impact, high-probability risks where avoidance is feasible |
+| Mitigate | Cut the probability or the impact. The default choice. Define specific actions with owners and deadlines |
+| Transfer | Move the risk to a party better placed to carry it: insurance, outsourcing, contract terms |
+| Accept | Acknowledge and watch. When mitigation costs more than the expected loss, or probability is very low |
 
-For each risk above LOW, document: mitigation actions with owners and timelines, contingency plan if the risk materializes, cost of mitigation vs. cost of occurrence.
+For every risk above LOW, document three things: mitigation actions with owners and dates, the contingency if it materializes anyway, and the cost of mitigation weighed against the cost of occurrence. That last comparison is what tells you whether to mitigate or accept. Do not spend $50k mitigating a $10k risk.
 
 ### Risk Monitoring
+- Weekly: the project manager checks trigger indicators on active risks
+- Monthly: full-team review, add new risks, update scores and statuses
+- Quarterly: steerco deep dive on trends and strategic risks
 
-**Review cadence**:
-- Weekly: project manager checks trigger indicators
-- Monthly: full team review, identify new risks, update statuses
-- Quarterly: steering committee deep dive on trends and strategic risks
-
-**Early warning indicators**: For each significant risk, define the signal that would indicate the risk is about to materialize, the monitoring method, and the monitoring frequency.
-
-**Risk trends**: Track total risks, high/critical risks, closed risks, and new risks over time. A rising count of high risks is itself a risk.
+For each significant risk, define the early-warning signal (the specific thing you will see before it hits), how you will monitor it, and how often. "Vendor slips a delivery date" is a signal. "Things feel behind" is not. Track total risks, high and critical counts, closed, and new over time, because a rising count of high risks is itself a risk worth reporting.
 
 ## Issue Management
 
-Issues are risks that have materialized, or problems that need resolution.
+Issues are risks that have already materialized, or problems that need resolving now. The line between a risk and an issue is tense: one might happen, the other is happening.
 
-**Issue severity definitions**:
-- **Critical**: Project cannot proceed without resolution. Requires immediate action
-- **High**: Significant impact on project outcomes. Requires escalation
-- **Medium**: Moderate impact. Needs attention within normal management cadence
-- **Low**: Minor impact. Address in normal course of work
+Severity:
+- Critical: the project cannot proceed. Immediate action.
+- High: significant impact on outcomes. Escalate.
+- Medium: moderate impact. Handle within normal cadence.
+- Low: minor. Address in the normal course of work.
 
-Track each issue with: ID, description, severity, status (open/in progress/resolved), date created, owner, due date, and resolution.
+Track each issue with ID, description, severity, status (open, in progress, resolved), date created, owner, and due date. Every open issue has exactly one owner with a name and a date. An issue owned by "the team" is owned by no one and will still be open next month.
 
 ## Hybrid Delivery Framework
 
-Many consulting engagements blend agile and waterfall approaches. This is pragmatic, not fashionable.
+Many engagements blend agile and waterfall. This is a pragmatic call, not a fashion statement, and the blend should follow the work rather than a methodology preference.
 
-**When to use which**:
-- Waterfall for workstreams with clear requirements and sequential dependencies
+When to use which:
+- Waterfall for workstreams with fixed requirements and sequential dependencies
 - Agile for workstreams with evolving requirements or iterative design
-- Hybrid when different workstreams have different characteristics
+- Hybrid when different workstreams genuinely differ in character
 
-**Sprint-phase alignment**: Sprints operate within project phases. Each sprint delivers incremental progress. Phase gates still apply at phase boundaries.
+Sprints run inside phases. Each sprint ships an increment, and phase gates still apply at phase boundaries. Governance elements:
+- Steerco reviews at phase boundaries (waterfall cadence)
+- Status reporting at sprint cadence, weekly
+- Scope managed through backlog grooming (agile)
+- Quality controlled through a Definition of Done per sprint
 
-**Hybrid governance elements**:
-- Steering committee reviews at phase boundaries (waterfall cadence)
-- Status reporting at sprint cadence (weekly)
-- Scope management through backlog grooming (agile)
-- Quality gates through Definition of Done (per sprint)
+The trap is running two governance systems in parallel and doubling everyone's meeting load. Pick one reporting rhythm and one backlog, and let the phase gates be the only place the waterfall structure asserts itself.
 
 ## Project Closure
 
-From a governance perspective, closure requires: final status report delivered, steering committee sign-off obtained, and decision rights formally handed back to the client organization. For the full closure methodology (deliverable handover, knowledge transfer, lessons learned, financial reconciliation), see the `project-closeout` skill.
+From a governance standpoint, closure requires three things: the final status report delivered, steerco sign-off obtained, and decision rights formally handed back to the client. Do the handback explicitly, in writing, so there is no ambiguity about when the engagement's authority ends and the client owns the outcome. For the full closure methodology (deliverable handover, knowledge transfer, lessons learned, financial reconciliation), see the project-closeout skill.
 
 ## Principles
 
-- Governance enables, it doesn't restrict. If governance isn't adding value, it's adding overhead. Redesign it
-- One accountable person per decision. Multiple "A"s in a RACI means nobody is accountable
-- Document explicitly. Verbal agreements fade, especially across organizational boundaries
-- Escalate early, not late. Surprises destroy trust faster than bad news delivered promptly
-- Living documents over shelf-ware. A RACI that isn't updated when roles change creates false confidence
-- Right-size to complexity. Light governance for light projects, heavy governance only when the risk warrants it
-- Get sign-off on decision rights before the first disagreement, not during it
-- Be honest with RAG status. Greenwashing problems delays resolution and erodes credibility
-- Close properly. The last impression matters as much as the first
+- Governance enables, it does not restrict. If it is not adding value, it is adding overhead. Redesign it.
+- One accountable owner per decision. Two A's in a RACI means nobody is accountable.
+- Document explicitly. Verbal agreements fade, fastest across organizational lines.
+- Escalate early. Surprises destroy trust faster than bad news delivered promptly.
+- Living documents over shelf-ware. A RACI nobody updates creates false confidence.
+- Right-size to complexity. Light governance for light projects, heavy only when the risk warrants it.
+- Settle decision rights before the first disagreement, not during it.
+- Be honest with the RAG. Greenwashing delays resolution and erodes credibility.
+- Close properly. The last impression carries as much weight as the first.
