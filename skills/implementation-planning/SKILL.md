@@ -1,6 +1,6 @@
 ---
 name: implementation-planning
-description: Translates a strategic recommendation into an investable, executable plan through option development, business case construction, roadmap design, and detailed implementation planning. Use when a recommendation exists and the work is to make it real: generating and scoring structurally different options, building financial projections with NPV and sensitivity analysis, sequencing phased roadmaps with dependencies, and defining workstreams, governance, RACI, and resourcing. Covers the full arc from "we have a recommendation" to "here is exactly how we execute it."
+description: 'Translates a strategic recommendation into an investable, executable plan through option development, business case construction, roadmap design, and detailed implementation planning. Use when a recommendation exists and the work is to make it real: generating and scoring structurally different options, building financial projections with NPV and sensitivity analysis, sequencing phased roadmaps with dependencies, and defining workstreams, governance, RACI, and resourcing. Covers the full arc from "we have a recommendation" to "here is exactly how we execute it."'
 license: MIT
 metadata:
   category: engagement-delivery

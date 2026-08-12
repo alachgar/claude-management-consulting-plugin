@@ -1,6 +1,6 @@
 ---
 name: project-closeout
-description: Executes consulting engagement closeout: deliverable handover, client acceptance sign-off, knowledge transfer, benefits tracking handover, lessons learned, financial reconciliation, and administrative wrap-up. Use when completing or terminating a consulting engagement, transitioning a project into business-as-usual, running a closure retrospective, handing benefits measurement to the client, or planning stakeholder transition before the team departs. Covers successful completion, early termination, and regulated-industry closeout requirements.
+description: "Executes consulting engagement closeout: deliverable handover, client acceptance sign-off, knowledge transfer, benefits tracking handover, lessons learned, financial reconciliation, and administrative wrap-up. Use when completing or terminating a consulting engagement, transitioning a project into business-as-usual, running a closure retrospective, handing benefits measurement to the client, or planning stakeholder transition before the team departs. Covers successful completion, early termination, and regulated-industry closeout requirements."
 license: MIT
 metadata:
   category: engagement-delivery
