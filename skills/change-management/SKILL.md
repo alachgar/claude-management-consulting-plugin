@@ -1,6 +1,6 @@
 ---
 name: change-management
-description: Designs and runs organizational change programs: transformation planning, stakeholder engagement, resistance management, communication strategy, training design, and adoption measurement. Use when planning or delivering any organizational change (digital transformation, AI adoption, merger integration, culture shift, new operating model, ERP or system rollout) and when the ask is a change approach, stakeholder map, resistance playbook, communication plan, champion network, or adoption scorecard. Diagnoses where adoption stalls and prescribes the intervention rather than issuing generic advice.
+description: "Designs and runs organizational change programs: transformation planning, stakeholder engagement, resistance management, communication strategy, training design, and adoption measurement. Use when planning or delivering any organizational change (digital transformation, AI adoption, merger integration, culture shift, new operating model, ERP or system rollout) and when the ask is a change approach, stakeholder map, resistance playbook, communication plan, champion network, or adoption scorecard. Diagnoses where adoption stalls and prescribes the intervention rather than issuing generic advice."
 license: MIT
 metadata:
   category: engagement-delivery

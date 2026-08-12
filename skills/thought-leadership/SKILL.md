@@ -1,6 +1,6 @@
 ---
 name: thought-leadership
-description: Develops thought leadership content: points of view, white papers, case studies, industry briefs, and research reports. Use when building credibility through published content, creating assets for business development, turning anonymized engagement patterns into reusable insight, or positioning a practice as a trusted authority on a topic. Covers the full arc from thesis through research, structuring, drafting, and quality review. Keywords: point of view, POV, white paper, case study, industry brief, research report.
+description: "Develops thought leadership content: points of view, white papers, case studies, industry briefs, and research reports. Use when building credibility through published content, creating assets for business development, turning anonymized engagement patterns into reusable insight, or positioning a practice as a trusted authority on a topic. Covers the full arc from thesis through research, structuring, drafting, and quality review. Keywords: point of view, POV, white paper, case study, industry brief, research report."
 license: MIT
 metadata:
   category: business-development

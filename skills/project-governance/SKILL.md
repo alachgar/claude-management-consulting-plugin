@@ -1,6 +1,6 @@
 ---
 name: project-governance
-description: Set up and run the oversight structure for a consulting engagement: governance tiering, RACI and decision rights, steering committee cadence, stage gates, RAG status reporting, risk and issue registers, and closure handback. Use when standing up engagement governance, defining who decides what, right-sizing a PMO, building a risk register, writing a steering committee status report, or scoring and tracking project health. Covers the management lifecycle from charter sign-off through closure. For the delivery plan itself (workstreams, phasing, business case), see implementation-planning.
+description: "Set up and run the oversight structure for a consulting engagement: governance tiering, RACI and decision rights, steering committee cadence, stage gates, RAG status reporting, risk and issue registers, and closure handback. Use when standing up engagement governance, defining who decides what, right-sizing a PMO, building a risk register, writing a steering committee status report, or scoring and tracking project health. Covers the management lifecycle from charter sign-off through closure. For the delivery plan itself (workstreams, phasing, business case), see implementation-planning."
 license: MIT
 metadata:
   category: engagement-delivery

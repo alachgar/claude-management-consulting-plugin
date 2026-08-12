@@ -1,6 +1,6 @@
 ---
 name: workshop-facilitation
-description: Design and facilitate consulting workshops: strategy offsites, design thinking sessions, innovation sprints, and discovery workshops. Use when planning client-facing facilitated sessions, running stakeholder alignment or prioritization exercises, designing working sessions for strategy development, or building facilitation guides and pre-work. Covers objective-setting, participant planning, methodology selection, agenda design, facilitation technique, and post-workshop follow-through.
+description: "Design and facilitate consulting workshops: strategy offsites, design thinking sessions, innovation sprints, and discovery workshops. Use when planning client-facing facilitated sessions, running stakeholder alignment or prioritization exercises, designing working sessions for strategy development, or building facilitation guides and pre-work. Covers objective-setting, participant planning, methodology selection, agenda design, facilitation technique, and post-workshop follow-through."
 license: MIT
 metadata:
   category: engagement-delivery
