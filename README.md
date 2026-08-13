@@ -43,7 +43,7 @@ One install for Claude Code, Codex, Cursor, Gemini CLI, and [40+ other agents](h
 
 ### Claude Desktop
 
-Download [`dist/management-consulting.skill`](dist/management-consulting.skill), then in Claude go to Customize (left nav) > Skills > `+` > Upload a skill. Requires "Code execution and file creation" enabled in Settings > Capabilities.
+Download [`dist/management-consulting.skill`](https://github.com/anotb/management-consulting-plugin/raw/main/dist/management-consulting.skill), then in Claude go to Customize (left nav) > Skills > `+` > Upload a skill. Requires "Code execution and file creation" enabled in Settings > Capabilities.
 
 This installs as a single `management-consulting` skill that routes by topic via an internal dispatcher. To get individual slash commands per skill (`/strategic-analysis`, `/financial-modeling`, etc.), install directly into the skills directory instead:
 
