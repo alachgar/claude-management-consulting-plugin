@@ -36,25 +36,25 @@ The mechanics of consulting follow the same patterns every engagement. Scoping, 
 ### Skills CLI (recommended, works across agents)
 
 ```bash
-npx skills add anotb/management-consulting-plugin
+npx skills add alachgar/claude-management-consulting-plugin
 ```
 
 One install for Claude Code, Codex, Cursor, Gemini CLI, and [40+ other agents](https://skills.sh).
 
 ### Claude Desktop
 
-Download [`dist/management-consulting.skill`](https://github.com/anotb/management-consulting-plugin/raw/main/dist/management-consulting.skill), then in Claude go to Customize (left nav) > Skills > `+` > Upload a skill. Requires "Code execution and file creation" enabled in Settings > Capabilities.
+Download [`dist/management-consulting.skill`](https://github.com/alachgar/claude-management-consulting-plugin/raw/main/dist/management-consulting.skill), then in Claude go to Customize (left nav) > Skills > `+` > Upload a skill. Requires "Code execution and file creation" enabled in Settings > Capabilities.
 
 This installs as a single `management-consulting` skill that routes by topic via an internal dispatcher. To get individual slash commands per skill (`/strategic-analysis`, `/financial-modeling`, etc.), install directly into the skills directory instead:
 
 ```bash
 # Option A: clone (updates via git pull)
-git clone https://github.com/anotb/management-consulting-plugin.git ~/.claude/skills/management-consulting
+git clone https://github.com/alachgar/claude-management-consulting-plugin.git ~/.claude/skills/management-consulting
 
 # Option B: download a snapshot
-curl -L https://github.com/anotb/management-consulting-plugin/archive/refs/heads/main.tar.gz | \
+curl -L https://github.com/alachgar/claude-management-consulting-plugin/archive/refs/heads/main.tar.gz | \
   tar -xz -C ~/.claude/skills/ && \
-  mv ~/.claude/skills/management-consulting-plugin-main ~/.claude/skills/management-consulting
+  mv ~/.claude/skills/claude-management-consulting-plugin-main ~/.claude/skills/management-consulting
 ```
 
 Restart Claude Desktop after either method.
@@ -62,8 +62,8 @@ Restart Claude Desktop after either method.
 ### Claude Code
 
 ```bash
-claude plugin marketplace add anotb/management-consulting-plugin
-claude plugin install management-consulting@anotb-management-consulting-plugin
+claude plugin marketplace add alachgar/claude-management-consulting-plugin
+claude plugin install management-consulting@alachgar-management-consulting-plugin
 ```
 
 ### Cowork
@@ -75,7 +75,7 @@ Download the repo as a ZIP, then in Cowork go to Customize > Browse plugins > cl
 Codex auto-discovers skills under `.agents/skills/`. The cross-agent installer places them there for you:
 
 ```bash
-npx skills add anotb/management-consulting-plugin
+npx skills add alachgar/claude-management-consulting-plugin
 ```
 
 To install manually, copy the individual skill folders (each `skills/<name>/`) into `.agents/skills/` at your repo root, or `~/.agents/skills/` for all projects. Each `SKILL.md` must sit one level down (for example `.agents/skills/strategic-analysis/SKILL.md`).
@@ -83,7 +83,7 @@ To install manually, copy the individual skill folders (each `skills/<name>/`) i
 ### Gemini CLI
 
 ```bash
-gemini skills install https://github.com/anotb/management-consulting-plugin.git
+gemini skills install https://github.com/alachgar/claude-management-consulting-plugin.git
 ```
 
 ### Other agents
