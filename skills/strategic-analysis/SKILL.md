@@ -5,7 +5,7 @@ license: MIT
 metadata:
   category: problem-solving
   version: "2.1.0"
-  author: Anot
+  author: alachgar
 ---
 
 # Strategic Analysis
