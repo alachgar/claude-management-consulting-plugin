@@ -63,7 +63,7 @@ Restart Claude Desktop after either method.
 
 ```bash
 claude plugin marketplace add alachgar/claude-management-consulting-plugin
-claude plugin install management-consulting@alachgar-management-consulting-plugin
+claude plugin install management-consulting@claude-management-consulting-plugin
 ```
 
 ### Cowork
